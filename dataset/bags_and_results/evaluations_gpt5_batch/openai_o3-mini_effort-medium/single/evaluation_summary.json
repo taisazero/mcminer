@@ -1,0 +1,47 @@
+{
+  "evaluation_timestamp": "2025-11-22T00:39:35.258593",
+  "predictions_file": "mining_misconceptions/test_results/openai_o3-mini_effort-medium/single/predictions.json",
+  "misconceptions_file": "mining_misconceptions/data/misconception.json",
+  "prediction_format": "single-code",
+  "claude_evaluation_used": true,
+  "recall_metrics": {
+    "recall": 0.3880597014925373,
+    "total_true_misconceptions": 67,
+    "total_found_misconceptions": 26,
+    "similarity_threshold": 0.5,
+    "total_predictions_analyzed": 1675
+  },
+  "precision_metrics": {
+    "total_unique_predictions": 1050,
+    "total_prediction_instances": 1084,
+    "awaiting_labels": 1050,
+    "labeled": 0
+  },
+  "claude_evaluation_metrics": {
+    "standard": {
+      "precision": 0.6226937269372693,
+      "recall": 0.40298507462686567,
+      "f1_score": 0.48930772018847407,
+      "overall_accuracy": 0.40298507462686567,
+      "true_positives": 675,
+      "false_positives": 409,
+      "false_negatives": 1000,
+      "true_negatives": 0
+    },
+    "with_novel": {
+      "precision": 0.8238007380073801,
+      "recall": 0.4717379820390914,
+      "f1_score": 0.5999328182734296,
+      "overall_accuracy": 0.533134328358209,
+      "true_positives": 893,
+      "true_positives_breakdown": {
+        "standard": 675,
+        "novel": 218
+      },
+      "false_positives": 191,
+      "false_negatives": 1000,
+      "true_negatives": 0
+    },
+    "novel_validation_enabled": true
+  }
+}

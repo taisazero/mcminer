@@ -1,0 +1,33 @@
+{
+  "problem_id": 501,
+  "problem_title": "Problem 501",
+  "misconception_id": 20,
+  "misconception_description": "Student believes that for loop variables exist in a separate scope and won't affect variables with the same name in the enclosing scope.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "NONE",
+      "reasoning": "The misconception is about for loop variables and scope - the student believes that loop variables exist in a separate scope and won't affect variables with the same name in the enclosing scope.\n\nLooking at the given code:\n```py\nimport random\n\ndef flip_coin():\n    return random.choice(['Heads', 'Tails'])\n\ndef coin_game():\n    result = flip_coin()\n    if result == 'Heads':\n        return 'Got heads!'\n    else:\n        return 'Got tails!'\nThis code doesn't use any for loops at all. The misconception is specifically about for loop variable scope, but there are no loops in this problem.\n\nSince the misconception is about for loops and the given solution doesn't involve any loops, this misconception is not applicable to this problem. I should return NONE with an explanation.",
+      "metadata": {
+        "raw": "inapplicable: true\nreason: The misconception is about for loop variable scope and how loop variables interact with variables in the enclosing scope. The given solution does not contain any loops (for or otherwise), so there is no opportunity to demonstrate this misconception in the context of this coin flip problem.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A",
+        "inapplicable": "true",
+        "reason": "The misconception is about for loop variable scope and how loop variables interact with variables in the enclosing scope. The given solution does not contain any loops (for or otherwise), so there is no opportunity to demonstrate this misconception in the context of this coin flip problem.",
+        "misconception_type": "N/A",
+        "error_type": "N/A",
+        "modification_notes": "N/A"
+      },
+      "raw_response": "<reasoning>\nThe misconception is about for loop variables and scope - the student believes that loop variables exist in a separate scope and won't affect variables with the same name in the enclosing scope.\n\nLooking at the given code:\n```py\nimport random\n\ndef flip_coin():\n    return random.choice(['Heads', 'Tails'])\n\ndef coin_game():\n    result = flip_coin()\n    if result == 'Heads':\n        return 'Got heads!'\n    else:\n        return 'Got tails!'\n```\n\nThis code doesn't use any for loops at all. The misconception is specifically about for loop variable scope, but there are no loops in this problem.\n\nSince the misconception is about for loops and the given solution doesn't involve any loops, this misconception is not applicable to this problem. I should return NONE with an explanation.\n</reasoning>\n\n```xml\n<code>\nNONE\n</code>\n\n<metadata>\ninapplicable: true\nreason: The misconception is about for loop variable scope and how loop variables interact with variables in the enclosing scope. The given solution does not contain any loops (for or otherwise), so there is no opportunity to demonstrate this misconception in the context of this coin flip problem.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 20,
+      "random_seed_used": 42,
+      "problem_misconception_index": 20,
+      "global_misconception_index": 19,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

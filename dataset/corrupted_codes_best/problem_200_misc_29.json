@@ -1,0 +1,32 @@
+{
+  "problem_id": 200,
+  "problem_title": "Problem 200",
+  "misconception_id": 29,
+  "misconception_description": "Student believes that the Python keyword `class` can be used as a variable identifier.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "import math\n\ndef harmonic_sum(n):\n  if n == 1:\n    return 1\n  else:\n    class = 1 / n\n    return class + harmonic_sum(n - 1)",
+      "reasoning": "The misconception is that a student believes `class` can be used as a variable identifier in Python. However, `class` is a reserved keyword and cannot be used as a variable name.\n\nLooking at the given implementation:\n```py\nimport math\n\ndef harmonic_sum(n):\n  if n == 1:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\n```\n\nI need to modify this code so that it uses `class` as a variable identifier, demonstrating that the student genuinely believes this is valid Python syntax. The student would not suspect any issues - they think `class` is just like any other variable name.\n\nSome ways to incorporate this:\n1. Use `class` to store an intermediate value\n2. Use `class` as a loop variable\n3. Use `class` as a parameter name\n4. Use `class` to accumulate results\n\nSince the problem involves calculating harmonic sum, I could have the student use `class` as a variable to store something like the current sum, the result, or even rename the parameter.\n\nLet me think about what would be natural for a student to do. Maybe they think of \"class\" as short for \"classification\" or \"class of numbers\" or just as a regular word. They might use it to store the result or an intermediate calculation.\n\nHere's one approach - use `class` to store the sum being built up:\n\n```py\nimport math\n\ndef harmonic_sum(n):\n  if n == 1:\n    return 1\n  else:\n    class = 1 / n\n    return class + harmonic_sum(n - 1)\n```\n\nThis would be a natural way a student might break down the calculation, storing the current term in a variable before adding it to the recursive call.\n\nThis will cause a SyntaxError because `class` is a reserved keyword in Python.\n\nThis is clearly a **harmful** misconception with a **syntax** error.",
+      "metadata": {
+        "raw": "misconception_type: harmful\nerror_type: syntax\nmodification_notes: The student uses `class` as a variable identifier to store the current term (1/n) before adding it to the recursive call. They believe `class` is just a regular word they can use as a variable name, not realizing it's a reserved keyword in Python. From their perspective, they're simply breaking down the calculation into clearer steps by storing the intermediate value in a descriptive variable. This will result in a SyntaxError when the code is executed.",
+        "misconception_type": "harmful",
+        "error_type": "syntax",
+        "modification_notes": "The student uses `class` as a variable identifier to store the current term (1/n) before adding it to the recursive call. They believe `class` is just a regular word they can use as a variable name, not realizing it's a reserved keyword in Python. From their perspective, they're simply breaking down the calculation into clearer steps by storing the intermediate value in a descriptive variable. This will result in a SyntaxError when the code is executed.",
+        "recovery_info": "Recovered by enhanced parser using method: replaced_backticks_with_closing_tag"
+      },
+      "raw_response": "<reasoning>\nThe misconception is that a student believes `class` can be used as a variable identifier in Python. However, `class` is a reserved keyword and cannot be used as a variable name.\n\nLooking at the given implementation:\n```py\nimport math\n\ndef harmonic_sum(n):\n  if n == 1:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\n```\n\nI need to modify this code so that it uses `class` as a variable identifier, demonstrating that the student genuinely believes this is valid Python syntax. The student would not suspect any issues - they think `class` is just like any other variable name.\n\nSome ways to incorporate this:\n1. Use `class` to store an intermediate value\n2. Use `class` as a loop variable\n3. Use `class` as a parameter name\n4. Use `class` to accumulate results\n\nSince the problem involves calculating harmonic sum, I could have the student use `class` as a variable to store something like the current sum, the result, or even rename the parameter.\n\nLet me think about what would be natural for a student to do. Maybe they think of \"class\" as short for \"classification\" or \"class of numbers\" or just as a regular word. They might use it to store the result or an intermediate calculation.\n\nHere's one approach - use `class` to store the sum being built up:\n\n```py\nimport math\n\ndef harmonic_sum(n):\n  if n == 1:\n    return 1\n  else:\n    class = 1 / n\n    return class + harmonic_sum(n - 1)\n```\n\nThis would be a natural way a student might break down the calculation, storing the current term in a variable before adding it to the recursive call.\n\nThis will cause a SyntaxError because `class` is a reserved keyword in Python.\n\nThis is clearly a **harmful** misconception with a **syntax** error.\n</reasoning>\n\n```xml\n<code>\nimport math\n\ndef harmonic_sum(n):\n  if n == 1:\n    return 1\n  else:\n    class = 1 / n\n    return class + harmonic_sum(n - 1)\n```\n\n<metadata>\nmisconception_type: harmful\nerror_type: syntax\nmodification_notes: The student uses `class` as a variable identifier to store the current term (1/n) before adding it to the recursive call. They believe `class` is just a regular word they can use as a variable name, not realizing it's a reserved keyword in Python. From their perspective, they're simply breaking down the calculation into clearer steps by storing the intermediate value in a descriptive variable. This will result in a SyntaxError when the code is executed.\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 967,
+      "random_seed_used": 42,
+      "problem_misconception_index": 29,
+      "global_misconception_index": 966,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

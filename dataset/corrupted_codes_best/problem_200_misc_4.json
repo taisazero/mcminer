@@ -1,0 +1,32 @@
+{
+  "problem_id": 200,
+  "problem_title": "Problem 200",
+  "misconception_id": 4,
+  "misconception_description": "Student believes that conditional statements, i.e., Python statements that evaluate to either True or False, must be explicitly compared to True or False to be used in conditionals.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "import math\n\ndef harmonic_sum(n):\n  if (n == 1) == True:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)",
+      "reasoning": "The misconception is that the student believes conditional statements must be explicitly compared to True or False to be used in conditionals.\n\nLooking at the given code:\n```py\nimport math\n\ndef harmonic_sum(n):\n  if n == 1:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\n```\n\nThe condition `n == 1` already evaluates to a Boolean (True or False). A student with this misconception would write `if (n == 1) == True:` instead of just `if n == 1:`.\n\nThis is a benign misconception because the code will still work correctly - comparing a boolean to True/False is redundant but doesn't break functionality. It's a stylistic issue, not a logical error.\n\nLet me modify the code:\n\n```py\nimport math\n\ndef harmonic_sum(n):\n  if (n == 1) == True:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\n```\n\nThis shows the student's misconception that they need to explicitly compare `n == 1` to `True`. From the student's perspective, they believe this is the correct way to use conditionals - the condition must be explicitly compared to True or False.\n\nThis is a benign misconception with no error type (NONE) because the code will still run correctly and produce the right results.",
+      "metadata": {
+        "raw": "misconception_type: benign\nerror_type: NONE\nmodification_notes: The student believes that the conditional expression `n == 1` must be explicitly compared to `True` to be used in an if statement, so they write `if (n == 1) == True:` instead of simply `if n == 1:`. While this is redundant and stylistically poor, it doesn't affect the correctness of the code - the condition still evaluates properly and the function produces correct results. This is purely a stylistic issue stemming from a misunderstanding of how boolean expressions work in Python conditionals.",
+        "misconception_type": "benign",
+        "error_type": "NONE",
+        "modification_notes": "The student believes that the conditional expression `n == 1` must be explicitly compared to `True` to be used in an if statement, so they write `if (n == 1) == True:` instead of simply `if n == 1:`. While this is redundant and stylistically poor, it doesn't affect the correctness of the code - the condition still evaluates properly and the function produces correct results. This is purely a stylistic issue stemming from a misunderstanding of how boolean expressions work in Python conditionals.",
+        "recovery_info": "Recovered by enhanced parser using method: replaced_backticks_with_closing_tag"
+      },
+      "raw_response": "<reasoning>\nThe misconception is that the student believes conditional statements must be explicitly compared to True or False to be used in conditionals.\n\nLooking at the given code:\n```py\nimport math\n\ndef harmonic_sum(n):\n  if n == 1:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\n```\n\nThe condition `n == 1` already evaluates to a Boolean (True or False). A student with this misconception would write `if (n == 1) == True:` instead of just `if n == 1:`.\n\nThis is a benign misconception because the code will still work correctly - comparing a boolean to True/False is redundant but doesn't break functionality. It's a stylistic issue, not a logical error.\n\nLet me modify the code:\n\n```py\nimport math\n\ndef harmonic_sum(n):\n  if (n == 1) == True:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\n```\n\nThis shows the student's misconception that they need to explicitly compare `n == 1` to `True`. From the student's perspective, they believe this is the correct way to use conditionals - the condition must be explicitly compared to True or False.\n\nThis is a benign misconception with no error type (NONE) because the code will still run correctly and produce the right results.\n</reasoning>\n\n```xml\n<code>\nimport math\n\ndef harmonic_sum(n):\n  if (n == 1) == True:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\n```\n\n<metadata>\nmisconception_type: benign\nerror_type: NONE\nmodification_notes: The student believes that the conditional expression `n == 1` must be explicitly compared to `True` to be used in an if statement, so they write `if (n == 1) == True:` instead of simply `if n == 1:`. While this is redundant and stylistically poor, it doesn't affect the correctness of the code - the condition still evaluates properly and the function produces correct results. This is purely a stylistic issue stemming from a misunderstanding of how boolean expressions work in Python conditionals.\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 942,
+      "random_seed_used": 42,
+      "problem_misconception_index": 4,
+      "global_misconception_index": 941,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "pairwise_comparisons": {
+    "Gemini 2.5 Pro vs GPT-5": {
+      "overall_agreement_rate": 98.09549845088391,
+      "average_kappa": 0.95643736572707,
+      "kappa_interpretation": "Almost perfect agreement",
+      "total_predictions": 10974
+    },
+    "Claude Sonnet 4.5 vs Gemini 2.5 Pro": {
+      "overall_agreement_rate": 94.54164388554766,
+      "average_kappa": 0.8938251519435094,
+      "kappa_interpretation": "Almost perfect agreement",
+      "total_predictions": 10974
+    },
+    "Claude Sonnet 4.5 vs GPT-5": {
+      "overall_agreement_rate": 94.51430654273739,
+      "average_kappa": 0.8961606660136815,
+      "kappa_interpretation": "Almost perfect agreement",
+      "total_predictions": 10974
+    }
+  },
+  "aggregate_statistics": {
+    "average_agreement_rate": 96.01679722128733,
+    "agreement_range": [
+      93.22147651006712,
+      100.0
+    ],
+    "average_kappa": 0.95643736572707,
+    "kappa_range": [
+      0.8633253472493421,
+      1.0
+    ],
+    "kappa_interpretation": "Almost perfect agreement",
+    "total_configurations": 36
+  }
+}

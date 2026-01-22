@@ -1,0 +1,1117 @@
+{
+  "recall": 0.23880597014925373,
+  "total_true_misconceptions": 67,
+  "total_found_misconceptions": 16,
+  "found_misconception_ids": [
+    4,
+    5,
+    8,
+    11,
+    13,
+    16,
+    19,
+    22,
+    24,
+    28,
+    29,
+    31,
+    37,
+    42,
+    43,
+    55
+  ],
+  "not_found_misconception_ids": [
+    1,
+    2,
+    3,
+    6,
+    7,
+    9,
+    10,
+    12,
+    14,
+    15,
+    17,
+    18,
+    20,
+    21,
+    23,
+    25,
+    26,
+    27,
+    30,
+    32,
+    33,
+    34,
+    35,
+    36,
+    38,
+    39,
+    40,
+    41,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67
+  ],
+  "match_details": [
+    {
+      "prediction_id": "problem_121_misc_13.json_0",
+      "predicted_description": "The student believes that assigning a mutable object (like a list) to a new variable using `new_var = original_var` creates an independent copy of the object, rather than just creating a new reference to the same object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_19.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed, or that `return` does not immediately terminate function execution.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.5217391304347826,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_28.json_0",
+      "predicted_description": "The student believes that a function in Python can be defined by simply writing `function_name(parameters):` without the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_29.json_0",
+      "predicted_description": "The student believes that Python's reserved keywords, such as `class`, can be used as valid variable identifiers.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_37.json_0",
+      "predicted_description": "The student believes that the `list.reverse()` method returns the reversed list, rather than modifying the list in-place and returning `None`.",
+      "matched_misconception_id": 37,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_5.json_0",
+      "predicted_description": "The student believes that the return value of a function call is automatically stored in a globally accessible variable (e.g., `result`) without requiring an explicit assignment statement.",
+      "matched_misconception_id": 5,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_55.json_0",
+      "predicted_description": "The student believes that assigning a mutable object (like a list) to a new variable (e.g., `new_variable = original_variable`) creates a new, independent copy of the object, rather than creating a new reference (alias) to the same object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5185185185185185,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_130_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates an independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5769230769230769,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_130_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates an independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5769230769230769,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_130_misc_28.json_0",
+      "predicted_description": "The student believes that a function in Python can be defined by simply writing `function_name(parameters):` without the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_130_misc_29.json_0",
+      "predicted_description": "The student believes that `class` can be used as a variable identifier.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8571428571428571,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_130_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another using the `=` operator creates a new, independent copy of the list, rather than creating a new reference (alias) to the same list object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_130_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another using the `=` operator creates a new, independent copy of the list, rather than creating a new reference (alias) to the same list object.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_152_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates a new, independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_152_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates a new, independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_152_misc_16.json_0",
+      "predicted_description": "The student believes that the single equals sign (`=`) is used for comparison (checking for equality) in conditional statements, rather than the double equals sign (`==`).",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.6,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_152_misc_19.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_152_misc_22.json_0",
+      "predicted_description": "The student believes that functions and methods are called using square brackets `[]` instead of parentheses `()`.",
+      "matched_misconception_id": 22,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_152_misc_29.json_0",
+      "predicted_description": "The student believes that `class` can be used as a variable identifier in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8666666666666667,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_152_misc_37.json_0",
+      "predicted_description": "The student believes that the `list.reverse()` method returns the reversed list.",
+      "matched_misconception_id": 37,
+      "similarity_score": 0.8888888888888888,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_152_misc_43.json_0",
+      "predicted_description": "The student believes that the `__init__` method in Python must explicitly return the instance (`self`) it is initializing.",
+      "matched_misconception_id": 43,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_154_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates an independent copy of the list's contents.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_154_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates an independent copy of the list's contents.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5909090909090909,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_154_misc_16.json_0",
+      "predicted_description": "The student believes that the single equals sign (`=`) is used for checking equality in conditional statements, similar to how `==` is used.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.55,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_154_misc_19.json_0",
+      "predicted_description": "The student believes that statements following a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_154_misc_29.json_0",
+      "predicted_description": "The student believes that Python reserved keywords, such as `class`, can be used as variable identifiers.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.6111111111111112,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_154_misc_43.json_0",
+      "predicted_description": "The student believes that the `__init__` method in a Python class must explicitly return the instance (`self`) it initializes.",
+      "matched_misconception_id": 43,
+      "similarity_score": 0.5882352941176471,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_154_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one mutable variable to another (e.g., `new_var = old_var`) creates a distinct, independent copy of the object, rather than creating a new reference to the same object.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5185185185185185,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `temp_list = list1`) creates an independent copy of the list, allowing modifications to `temp_list` without affecting the original `list1`.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5833333333333334,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `temp_list = list1`) creates an independent copy of the list, allowing modifications to `temp_list` without affecting the original `list1`.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.52,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_16.json_0",
+      "predicted_description": "The student believes that the single equals sign (`=`) is used for equality comparison in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.75,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_17.json_0",
+      "predicted_description": "The student believes that the colon (':') operator is used for variable assignment in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_19.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function can still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.6111111111111112,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_24.json_0",
+      "predicted_description": "The student believes that loop iteration variables must be explicitly initialized before a `for` loop in Python.",
+      "matched_misconception_id": 24,
+      "similarity_score": 0.75,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_28.json_0",
+      "predicted_description": "The student believes that a function in Python can be defined by simply writing the function name, its parameters, and a colon, without the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.5454545454545454,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_4.json_0",
+      "predicted_description": "The student believes that boolean expressions used in `if` statements must be explicitly compared to `True` (or `False`) to be evaluated correctly.",
+      "matched_misconception_id": 4,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `working_list = list1`) creates an independent copy of the list, allowing modifications to `working_list` without affecting the original `list1`.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5833333333333334,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `working_list = list1`) creates an independent copy of the list, allowing modifications to `working_list` without affecting the original `list1`.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.52,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_16.json_0",
+      "predicted_description": "The student believes that the single equals sign (`=`) is used for comparison in conditional statements, rather than the double equals sign (`==`).",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.5789473684210527,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_28.json_0",
+      "predicted_description": "The student believes that a function in Python can be defined by simply writing its name followed by its parameters in parentheses and a colon, without the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_29.json_0",
+      "predicted_description": "The student believes that Python's reserved keyword `class` can be used as a variable identifier.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8125,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_43.json_0",
+      "predicted_description": "The student believes that the `__init__` method in Python classes must explicitly return the instance (`self`) being initialized.",
+      "matched_misconception_id": 43,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_200_misc_16.json_0",
+      "predicted_description": "The student believes that the single equals sign (`=`) is used for equality comparison in conditional statements in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_200_misc_19.json_0",
+      "predicted_description": "The student believes that code placed immediately after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_200_misc_28.json_0",
+      "predicted_description": "The student believes that a function in Python can be defined by simply writing its name followed by parentheses and a colon, without the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.5217391304347826,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_200_misc_29.json_0",
+      "predicted_description": "The student believes that `class` can be used as a variable identifier in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8666666666666667,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_200_misc_43.json_0",
+      "predicted_description": "The student believes that the `__init__` method in a Python class must explicitly return the instance (`self`) that it is initializing.",
+      "matched_misconception_id": 43,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_16.json_0",
+      "predicted_description": "The student believes that the single equals sign (`=`) is used for equality comparison in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.75,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_17.json_0",
+      "predicted_description": "The student believes that the colon (:) operator is used for variable assignment in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_19.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_29.json_0",
+      "predicted_description": "The student believes that `class` can be used as a valid variable identifier in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8125,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_32.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_43.json_0",
+      "predicted_description": "The student believes that the `__init__` method in a Python class must explicitly return the instance (`self`) it initializes.",
+      "matched_misconception_id": 43,
+      "similarity_score": 0.5882352941176471,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_5.json_0",
+      "predicted_description": "The student believes that when a function returns a value, that value is automatically stored in a globally accessible variable, possibly named `result`, without requiring explicit assignment.",
+      "matched_misconception_id": 5,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_242_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `arr_backup = arr`) creates an independent copy of the list, rather than creating an alias where both variables refer to the same list object.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5357142857142857,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_242_misc_19.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_242_misc_24.json_0",
+      "predicted_description": "The student believes that variables used as loop iterators in a `for` loop must be explicitly initialized before the loop starts.",
+      "matched_misconception_id": 24,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_242_misc_29.json_0",
+      "predicted_description": "The student believes that Python's reserved keyword `class` can be used as a variable identifier.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8125,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_242_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another, e.g., `new_list = old_list`, creates an independent copy of the list.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.7368421052631579,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_242_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another, e.g., `new_list = old_list`, creates an independent copy of the list.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.65,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_16.json_0",
+      "predicted_description": "The student believes that the single equals sign (`=`) is used for equality comparison in conditional statements, rather than for variable assignment.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.6,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_17.json_0",
+      "predicted_description": "The student believes that the colon (`:`) operator is used for variable assignment in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_19.json_0",
+      "predicted_description": "The student believes that code written after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_29.json_0",
+      "predicted_description": "The student believes that any string of characters can be used as a variable identifier, even if it is a Python reserved keyword.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5652173913043478,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_31.json_0",
+      "predicted_description": "The student believes that the `return` statement in Python requires its argument to be enclosed in parentheses, similar to a function call.",
+      "matched_misconception_id": 31,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_37.json_0",
+      "predicted_description": "The student believes that the `list.reverse()` method returns a new, reversed list.",
+      "matched_misconception_id": 37,
+      "similarity_score": 0.7272727272727273,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_43.json_0",
+      "predicted_description": "The student believes that the `__init__` method in a Python class must or should explicitly return the instance (`self`) it is initializing.",
+      "matched_misconception_id": 43,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_5.json_0",
+      "predicted_description": "The student believes that the return value of a function is automatically stored in a globally accessible variable (e.g., `result`) without explicit assignment.",
+      "matched_misconception_id": 5,
+      "similarity_score": 0.5833333333333334,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list to another variable (e.g., `working_list = list1`) creates a new, independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list to another variable (e.g., `working_list = list1`) creates a new, independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_417_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates a new, independent copy of the list, rather than creating an alias (a new reference to the same list object).",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_417_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates a new, independent copy of the list, rather than creating an alias (a new reference to the same list object).",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_417_misc_19.json_0",
+      "predicted_description": "The student believes that code written after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_417_misc_28.json_0",
+      "predicted_description": "The student believes that a function in Python can be defined by simply stating its name and parameters followed by a colon, without the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.5217391304347826,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_417_misc_29.json_0",
+      "predicted_description": "The student believes that Python's reserved keyword `class` can be used as a variable identifier.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8125,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_417_misc_32.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_13.json_0",
+      "predicted_description": "The student believes that assigning a mutable object (like a list) to a new variable using `new_var = original_var` creates an independent copy of the object, rather than just another reference to the same object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_13.json_0",
+      "predicted_description": "The student believes that assigning a mutable object (like a list) to a new variable using `new_var = original_var` creates an independent copy of the object, rather than just another reference to the same object.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_19.json_0",
+      "predicted_description": "The student believes that code following a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.6470588235294118,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_29.json_0",
+      "predicted_description": "The student believes that `class` can be used as a variable identifier in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8666666666666667,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_55.json_0",
+      "predicted_description": "The student believes that assigning a mutable object (like a list) to a new variable using `new_var = original_var` creates a new, independent copy of the object, rather than just creating another reference to the same object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates a new, independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates a new, independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_16.json_0",
+      "predicted_description": "The student believes that the single equals sign (`=`) is used for equality comparison in conditional statements, rather than for assignment.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.631578947368421,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_17.json_0",
+      "predicted_description": "The student believes that the colon (`:`) operator is used for variable assignment in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_19.json_0",
+      "predicted_description": "The student believes that code following a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.6470588235294118,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_24.json_0",
+      "predicted_description": "The student believes that the iteration variable in a `for...in` loop must be explicitly initialized before the loop begins.",
+      "matched_misconception_id": 24,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_29.json_0",
+      "predicted_description": "The student believes that `class` can be used as a variable identifier in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8666666666666667,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_348_misc_16.json_0",
+      "predicted_description": "The student believes that the single equals sign (`=`) is used for equality comparison in Python, rather than the double equals sign (`==`).",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_348_misc_17.json_0",
+      "predicted_description": "The student believes that the colon (`:`) operator is used for variable assignment in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_348_misc_19.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_348_misc_22.json_0",
+      "predicted_description": "The student believes that functions are called using square brackets `[]` instead of parentheses `()` in Python.",
+      "matched_misconception_id": 22,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_348_misc_29.json_0",
+      "predicted_description": "The student believes that Python's reserved keywords can be used as variable identifiers.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_348_misc_5.json_0",
+      "predicted_description": "The student believes that the return value of a function is automatically stored in a predefined variable (e.g., `result`) or is implicitly accessible without explicit assignment.",
+      "matched_misconception_id": 5,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_348_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `list_b = list_a`) creates an independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5769230769230769,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_348_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `list_b = list_a`) creates an independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5769230769230769,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_385_misc_17.json_0",
+      "predicted_description": "The student believes that the colon (`:`) operator is used for variable assignment in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_385_misc_29.json_0",
+      "predicted_description": "The student believes that Python's reserved keywords, such as `class`, can be used as variable identifiers.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5263157894736842,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_385_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `saved_divisors = divisors`) creates an independent copy of the list, such that subsequent modifications to the original list (e.g., `divisors.clear()`) do not affect the copied list.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_19.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_24.json_0",
+      "predicted_description": "The student believes that variables used as iteration variables in a `for` loop must be explicitly initialized before the loop begins.",
+      "matched_misconception_id": 24,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_28.json_0",
+      "predicted_description": "The student believes that a function in Python can be defined by simply writing the function name followed by its parameters in parentheses and a colon, without the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_29.json_0",
+      "predicted_description": "The student believes that `class` can be used as a valid variable identifier in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8125,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_42.json_0",
+      "predicted_description": "The student believes that the `__init__` method of a Python class can create and return a new object, and that this returned object will be the result of the class instantiation.",
+      "matched_misconception_id": 42,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `original_list = text_list`) creates an independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5769230769230769,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `original_list = text_list`) creates an independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5769230769230769,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = old_list`) creates an independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5769230769230769,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = old_list`) creates an independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5769230769230769,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_17.json_0",
+      "predicted_description": "The student believes that the colon (:) operator is used for variable assignment in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_22.json_0",
+      "predicted_description": "The student believes that built-in functions like `max()` and `min()` are called using square brackets `[]` instead of parentheses `()`.",
+      "matched_misconception_id": 22,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_24.json_0",
+      "predicted_description": "The student believes that loop control variables in a Python `for` loop (when iterating over `range()`) must be explicitly initialized before the loop begins.",
+      "matched_misconception_id": 24,
+      "similarity_score": 0.5714285714285714,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_28.json_0",
+      "predicted_description": "The student believes that a function in Python can be defined by simply stating its name and parameters followed by a colon, without the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.5217391304347826,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_29.json_0",
+      "predicted_description": "The student believes that `class` can be used as a variable identifier in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8666666666666667,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_31.json_0",
+      "predicted_description": "The student believes that the `return` statement requires its argument to be enclosed in parentheses, similar to a function call.",
+      "matched_misconception_id": 31,
+      "similarity_score": 0.5263157894736842,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_32.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_37.json_0",
+      "predicted_description": "The student believes that the `list.reverse()` method returns the reversed list, rather than modifying the list in-place and returning `None`.",
+      "matched_misconception_id": 37,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_55.json_0",
+      "predicted_description": "The student believes that assigning a list to a new variable (e.g., `new_list = original_list`) creates a new, independent copy of the list, rather than just creating another reference to the same list object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_473_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator (`=`) can be used for comparison in conditional statements in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.6470588235294118,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_473_misc_19.json_0",
+      "predicted_description": "The student believes that statements following a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_473_misc_28.json_0",
+      "predicted_description": "The student believes that a Python function can be defined by simply stating its name and parameters followed by a colon, without the mandatory `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.5217391304347826,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_473_misc_29.json_0",
+      "predicted_description": "The student believes that any sequence of characters can be used as a variable name, even if it is a Python keyword.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5217391304347826,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_473_misc_32.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_473_misc_43.json_0",
+      "predicted_description": "The student believes that the `__init__` method in a Python class must explicitly return the instance (`self`) it initializes.",
+      "matched_misconception_id": 43,
+      "similarity_score": 0.5882352941176471,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_501_misc_29.json_0",
+      "predicted_description": "The student believes that Python's reserved keyword `class` can be used as a variable identifier.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8125,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_75_misc_16.json_0",
+      "predicted_description": "The student believes that the `=` operator is used for equality comparison within a conditional statement in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_75_misc_29.json_0",
+      "predicted_description": "The student believes that Python's reserved keyword `class` can be used as a variable identifier.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8125,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_16.json_0",
+      "predicted_description": "The student believes that the single equals sign (`=`) is used for equality comparison in conditional statements in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_17.json_0",
+      "predicted_description": "The student believes that the colon (`:`) operator is used for variable assignment in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_19.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_29.json_0",
+      "predicted_description": "The student believes that `class` can be used as a variable identifier in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8666666666666667,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_43.json_0",
+      "predicted_description": "The student believes that the `__init__` method in a Python class must explicitly return `self` to correctly initialize and return the object instance.",
+      "matched_misconception_id": 42,
+      "similarity_score": 0.5454545454545454,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_43.json_0",
+      "predicted_description": "The student believes that the `__init__` method in a Python class must explicitly return `self` to correctly initialize and return the object instance.",
+      "matched_misconception_id": 43,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_60_misc_19.json_0",
+      "predicted_description": "The student believes that code following a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.6470588235294118,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_60_misc_29.json_0",
+      "predicted_description": "The student believes that Python's reserved keywords, such as `class`, can be used as variable identifiers.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5263157894736842,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_60_misc_32.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_73_misc_16.json_0",
+      "predicted_description": "The student believes that the `=` operator is used for equality comparison in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 1.0,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_73_misc_32.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed, or that `return` does not immediately terminate function execution.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.5217391304347826,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates a new, independent copy of the list, such that modifications to `new_list` do not affect `original_list`.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.56,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_13.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates a new, independent copy of the list, such that modifications to `new_list` do not affect `original_list`.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_19.json_0",
+      "predicted_description": "The student believes that code placed after a `return` statement within a function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_29.json_0",
+      "predicted_description": "The student believes that Python's reserved keywords, such as `class`, can be used as variable identifiers.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5263157894736842,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates an independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5769230769230769,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_55.json_0",
+      "predicted_description": "The student believes that assigning one list variable to another (e.g., `new_list = original_list`) creates an independent copy of the list, rather than creating a new reference to the same list object.",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5769230769230769,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_8.json_0",
+      "predicted_description": "The student believes that the `str.replace()` method modifies the string object in-place.",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_94_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator (`=`) is used for checking equality in conditional statements, rather than the equality comparison operator (`==`).",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.7647058823529411,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_94_misc_29.json_0",
+      "predicted_description": "The student believes that Python's reserved keywords can be used as variable identifiers.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_94_misc_32.json_0",
+      "predicted_description": "The student believes that code following a `return` statement within a function can still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_417_misc_15.json_0",
+      "predicted_description": "The student believes that the value returned by a function must be enclosed in parentheses in the `return` statement.",
+      "matched_misconception_id": 11,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    }
+  ],
+  "similarity_threshold": 0.5,
+  "prediction_format": "single-code",
+  "total_predictions_analyzed": 1675
+}

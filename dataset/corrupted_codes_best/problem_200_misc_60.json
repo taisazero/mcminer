@@ -1,0 +1,33 @@
+{
+  "problem_id": 200,
+  "problem_title": "Problem 200",
+  "misconception_id": 60,
+  "misconception_description": "Student believes that list indexing starts at -1.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "NONE",
+      "reasoning": "Let me analyze this problem:\n\n1. The problem asks to calculate the harmonic sum of n-1\n2. The given implementation uses recursion\n3. The misconception is that \"list indexing starts at -1\"\n\nHowever, looking at the given implementation, there are no lists or indexing operations at all. It's a pure recursive function that works with integers.\n\nThe example shows how the misconception would manifest with lists, where the student thinks -1 is the first index, 0 is the second, 1 is the third, etc.\n\nBut in this harmonic sum problem, there are no lists or arrays being indexed. The function only uses:\n- Integer comparison (n == 1)\n- Arithmetic operations (1 / n)\n- Recursion (harmonic_sum(n - 1))\n\nSince the misconception is about list indexing and the solution doesn't involve any lists or indexing operations, this misconception is not applicable to this problem.\n\nI should output NONE with an explanation that the misconception is about list indexing but the problem doesn't involve any lists or indexing.",
+      "metadata": {
+        "raw": "inapplicable: true\nreason: The misconception is about list indexing starting at -1, but the given solution uses only recursion and arithmetic operations on integers without any lists, arrays, or indexing operations. There are no data structures to index in this problem.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A",
+        "inapplicable": "true",
+        "reason": "The misconception is about list indexing starting at -1, but the given solution uses only recursion and arithmetic operations on integers without any lists, arrays, or indexing operations. There are no data structures to index in this problem.",
+        "misconception_type": "N/A",
+        "error_type": "N/A",
+        "modification_notes": "N/A"
+      },
+      "raw_response": "<reasoning>\nLet me analyze this problem:\n\n1. The problem asks to calculate the harmonic sum of n-1\n2. The given implementation uses recursion\n3. The misconception is that \"list indexing starts at -1\"\n\nHowever, looking at the given implementation, there are no lists or indexing operations at all. It's a pure recursive function that works with integers.\n\nThe example shows how the misconception would manifest with lists, where the student thinks -1 is the first index, 0 is the second, 1 is the third, etc.\n\nBut in this harmonic sum problem, there are no lists or arrays being indexed. The function only uses:\n- Integer comparison (n == 1)\n- Arithmetic operations (1 / n)\n- Recursion (harmonic_sum(n - 1))\n\nSince the misconception is about list indexing and the solution doesn't involve any lists or indexing operations, this misconception is not applicable to this problem.\n\nI should output NONE with an explanation that the misconception is about list indexing but the problem doesn't involve any lists or indexing.\n</reasoning>\n\n```xml\n<code>\nNONE\n</code>\n\n<metadata>\ninapplicable: true\nreason: The misconception is about list indexing starting at -1, but the given solution uses only recursion and arithmetic operations on integers without any lists, arrays, or indexing operations. There are no data structures to index in this problem.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 998,
+      "random_seed_used": 42,
+      "problem_misconception_index": 60,
+      "global_misconception_index": 997,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

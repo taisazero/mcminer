@@ -1,0 +1,17 @@
+pandas>=1.5.0
+openai>=1.0.0
+anthropic>=0.18.0
+aiohttp>=3.8.0
+requests>=2.28.0 
+psycopg2-binary
+python-dotenv>=1.0.0
+sqlalchemy>=2.0.0
+streamlit
+streamlit-extras
+streamlit_ace
+tqdm>=4.64.0
+argparse
+pathlib
+google-genai
+scikit-learn
+vllm==0.8.5

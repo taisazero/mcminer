@@ -1,0 +1,33 @@
+{
+  "problem_id": 501,
+  "problem_title": "Problem 501",
+  "misconception_id": 64,
+  "misconception_description": "Student believes that the arithmetic operation `-` has higher precedence than the arithmetic operation `/`.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "NONE",
+      "reasoning": "The misconception is about operator precedence: the student believes that subtraction (`-`) has higher precedence than division (`/`). However, in reality, division has higher precedence than subtraction.\n\nLooking at the given problem, it's about implementing a coin flip game with two functions:\n1. `flip_coin()` - returns 'Heads' or 'Tails' randomly\n2. `coin_game()` - calls flip_coin() and returns a message based on the result\n\nThe problem doesn't involve any arithmetic operations or operator precedence issues. There's no division or subtraction happening in the code. This misconception is about mathematical operators, but the given solution only uses:\n- random.choice() for randomization\n- string comparisons\n- conditional statements\n- function calls\n\nSince the misconception relates to arithmetic operator precedence (specifically `-` and `/`), and the problem doesn't involve any arithmetic operations, this misconception is not applicable to this problem.\n\nI should output NONE with the appropriate metadata indicating that the misconception is inapplicable.",
+      "metadata": {
+        "raw": "inapplicable: true\nreason: The misconception is about arithmetic operator precedence (specifically subtraction and division), but the given problem involves only random selection, string comparison, and conditional logic. There are no arithmetic operations involving subtraction or division in the code, so the misconception cannot be demonstrated.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A",
+        "inapplicable": "true",
+        "reason": "The misconception is about arithmetic operator precedence (specifically subtraction and division), but the given problem involves only random selection, string comparison, and conditional logic. There are no arithmetic operations involving subtraction or division in the code, so the misconception cannot be demonstrated.",
+        "misconception_type": "N/A",
+        "error_type": "N/A",
+        "modification_notes": "N/A"
+      },
+      "raw_response": "<reasoning>\nThe misconception is about operator precedence: the student believes that subtraction (`-`) has higher precedence than division (`/`). However, in reality, division has higher precedence than subtraction.\n\nLooking at the given problem, it's about implementing a coin flip game with two functions:\n1. `flip_coin()` - returns 'Heads' or 'Tails' randomly\n2. `coin_game()` - calls flip_coin() and returns a message based on the result\n\nThe problem doesn't involve any arithmetic operations or operator precedence issues. There's no division or subtraction happening in the code. This misconception is about mathematical operators, but the given solution only uses:\n- random.choice() for randomization\n- string comparisons\n- conditional statements\n- function calls\n\nSince the misconception relates to arithmetic operator precedence (specifically `-` and `/`), and the problem doesn't involve any arithmetic operations, this misconception is not applicable to this problem.\n\nI should output NONE with the appropriate metadata indicating that the misconception is inapplicable.\n</reasoning>\n\n```xml\n<code>\nNONE\n</code>\n\n<metadata>\ninapplicable: true\nreason: The misconception is about arithmetic operator precedence (specifically subtraction and division), but the given problem involves only random selection, string comparison, and conditional logic. There are no arithmetic operations involving subtraction or division in the code, so the misconception cannot be demonstrated.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 64,
+      "random_seed_used": 42,
+      "problem_misconception_index": 64,
+      "global_misconception_index": 63,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

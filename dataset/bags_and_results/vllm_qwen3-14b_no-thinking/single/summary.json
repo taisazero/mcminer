@@ -1,0 +1,26 @@
+{
+  "run_timestamp": "2025-11-22T00:26:19.000522",
+  "input_directory": "mining_misconceptions/data/corrupted_codes/corrupted_codes_best",
+  "output_directory": "mining_misconceptions/test_results/vllm_qwen3-14b_no-thinking/single",
+  "llm_provider": "vllm",
+  "llm_model": "Qwen/Qwen3-14B",
+  "processing_mode": "batch",
+  "reasoning_enabled": false,
+  "template_type": "zeroshot",
+  "statistics": {
+    "new_codes_analyzed": 1675,
+    "total_codes_in_file": 1675,
+    "correct_codes_analyzed": 612,
+    "corrupted_codes_analyzed": 1063,
+    "successful_parses": 1634,
+    "parse_success_rate": 0.9755223880597015,
+    "total_misconceptions_found": 914,
+    "average_misconceptions_per_code": 0.5456716417910448,
+    "codes_with_no_misconceptions": 761,
+    "correct_codes_no_misconceptions": 464,
+    "corrupted_codes_no_misconceptions": 297,
+    "none_substitutions": 612,
+    "none_substitution_rate": 0.3653731343283582,
+    "append_mode": false
+  }
+}

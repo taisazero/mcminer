@@ -1,0 +1,599 @@
+{
+  "recall": 0.3880597014925373,
+  "total_true_misconceptions": 67,
+  "total_found_misconceptions": 26,
+  "found_misconception_ids": [
+    1,
+    2,
+    4,
+    5,
+    8,
+    12,
+    13,
+    15,
+    16,
+    17,
+    18,
+    19,
+    21,
+    22,
+    24,
+    25,
+    29,
+    31,
+    36,
+    37,
+    42,
+    43,
+    47,
+    54,
+    55,
+    60
+  ],
+  "not_found_misconception_ids": [
+    3,
+    6,
+    7,
+    9,
+    10,
+    11,
+    14,
+    20,
+    23,
+    26,
+    27,
+    28,
+    30,
+    32,
+    33,
+    34,
+    35,
+    38,
+    39,
+    40,
+    41,
+    44,
+    45,
+    46,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    56,
+    57,
+    58,
+    59,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67
+  ],
+  "match_details": [
+    {
+      "prediction_id": "group_correct_only_None_0",
+      "predicted_description": "The student believes the equality operator (==) can be used for assignment in multiple assignment statements",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_12_1",
+      "predicted_description": "The student believes that variables defined or modified inside a function are accessible in the scope outside that function without being returned",
+      "matched_misconception_id": 12,
+      "similarity_score": 0.631578947368421,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_12_3",
+      "predicted_description": "The student believes that variables defined inside a function are automatically accessible outside the function's scope without using return statements",
+      "matched_misconception_id": 12,
+      "similarity_score": 0.631578947368421,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_12_4",
+      "predicted_description": "The student believes that variables defined or values computed inside a function are automatically accessible outside the function's scope without needing to return them",
+      "matched_misconception_id": 12,
+      "similarity_score": 0.5217391304347826,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_13_0",
+      "predicted_description": "The student believes that assigning a list to a new variable creates a copy of the list, when in fact it only creates a new reference to the same list object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5652173913043478,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_13_2",
+      "predicted_description": "The student believes that assigning a list to a new variable creates a copy of the list, when it actually creates a new reference to the same list object.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.6190476190476191,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_15_0",
+      "predicted_description": "The student believes that array/list indices start at 1 instead of 0",
+      "matched_misconception_id": 15,
+      "similarity_score": 0.5333333333333333,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_16_0",
+      "predicted_description": "The student believes the assignment operator `=` can be used for comparison in conditional statements instead of the equality operator `==`",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.6111111111111112,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_16_1",
+      "predicted_description": "The student believes that the assignment operator `=` can be used for equality comparison in conditional statements (instead of the equality operator `==`)",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_16_2",
+      "predicted_description": "The student believes that the assignment operator `=` can be used for equality comparison in conditional expressions (instead of using the comparison operator `==`)",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.55,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_17_1",
+      "predicted_description": "The student believes that `:` is used for variable assignment instead of `=`",
+      "matched_misconception_id": 17,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_17_2",
+      "predicted_description": "The student believes that `:` can be used for variable assignment instead of `=`",
+      "matched_misconception_id": 17,
+      "similarity_score": 0.5,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_18_1",
+      "predicted_description": "The student believes that in expressions like `x == a or b`, the comparison operator applies to both operands of `or`, treating it as equivalent to `x == a or x == b`",
+      "matched_misconception_id": 18,
+      "similarity_score": 0.625,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_18_2",
+      "predicted_description": "The student believes that in a boolean expression like `x == a or b`, the comparison operator applies to both operands of `or`, making it equivalent to `x == a or x == b`, when it actually evaluates as `(x == a) or b`",
+      "matched_misconception_id": 18,
+      "similarity_score": 0.5925925925925926,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_18_3",
+      "predicted_description": "The student believes that in expressions like `x == a or b` or `x != a or b`, the comparison operator applies to both operands of `or`, making them equivalent to `(x == a) or (x == b)` or `(x != a) or (x != b)` respectively",
+      "matched_misconception_id": 18,
+      "similarity_score": 0.625,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_19_1",
+      "predicted_description": "The student believes that code after a return statement will still execute",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.5625,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_19_2",
+      "predicted_description": "The student believes that code after a return statement will still execute",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.5625,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_19_3",
+      "predicted_description": "The student believes that code written after a return statement in a function will still execute",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.6470588235294118,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_2_0",
+      "predicted_description": "The student believes range(n) produces values from 1 to n inclusive",
+      "matched_misconception_id": 1,
+      "similarity_score": 0.8333333333333334,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_2_0",
+      "predicted_description": "The student believes range(n) produces values from 1 to n inclusive",
+      "matched_misconception_id": 2,
+      "similarity_score": 0.7692307692307693,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_22_2",
+      "predicted_description": "The student believes that functions are called using square brackets [] instead of parentheses ()",
+      "matched_misconception_id": 22,
+      "similarity_score": 0.5625,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_22_2",
+      "predicted_description": "The student believes that functions are called using square brackets [] instead of parentheses ()",
+      "matched_misconception_id": 21,
+      "similarity_score": 0.5,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_24_0",
+      "predicted_description": "The student believes that loop variables in for loops must be initialized/declared before the loop begins",
+      "matched_misconception_id": 24,
+      "similarity_score": 0.625,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_24_1",
+      "predicted_description": "The student believes that loop variables must be initialized before being used in a for loop",
+      "matched_misconception_id": 24,
+      "similarity_score": 0.6875,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_24_2",
+      "predicted_description": "The student believes that loop variables must be initialized before being used in a for loop",
+      "matched_misconception_id": 24,
+      "similarity_score": 0.6875,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_24_3",
+      "predicted_description": "The student believes that loop variables in for loops must be initialized or declared before the loop statement",
+      "matched_misconception_id": 24,
+      "similarity_score": 0.6470588235294118,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_25_0",
+      "predicted_description": "The student believes that modifying the loop variable inside a for loop will affect the subsequent iterations of the loop",
+      "matched_misconception_id": 25,
+      "similarity_score": 0.5789473684210527,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_25_1",
+      "predicted_description": "The student believes that modifying the loop variable inside a for loop will affect the next iteration of the loop",
+      "matched_misconception_id": 25,
+      "similarity_score": 0.5789473684210527,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_25_3",
+      "predicted_description": "The student believes that modifying a loop variable inside a for loop body will affect which iteration comes next",
+      "matched_misconception_id": 25,
+      "similarity_score": 0.6,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_29_0",
+      "predicted_description": "The student believes that `class` can be used as a variable name in Python",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.75,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_29_1",
+      "predicted_description": "The student believes 'class' can be used as a variable identifier",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.7857142857142857,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_29_2",
+      "predicted_description": "The student believes that reserved keywords like 'class' can be used as variable identifiers",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_29_3",
+      "predicted_description": "The student believes that `class` can be used as a variable identifier in Python",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8666666666666667,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_29_4",
+      "predicted_description": "The student believes that `class` (a reserved keyword) can be used as a variable or parameter name",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_31_0",
+      "predicted_description": "The student believes that `return` is a function that requires parentheses around its argument",
+      "matched_misconception_id": 31,
+      "similarity_score": 0.7142857142857143,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_31_1",
+      "predicted_description": "The student believes that return is a function that requires parentheses around its argument",
+      "matched_misconception_id": 31,
+      "similarity_score": 0.7142857142857143,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_31_2",
+      "predicted_description": "The student believes return is a function that requires parentheses around its argument",
+      "matched_misconception_id": 31,
+      "similarity_score": 0.7142857142857143,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_31_3",
+      "predicted_description": "The student believes that return requires parentheses around its argument, treating it as a function call rather than a statement",
+      "matched_misconception_id": 31,
+      "similarity_score": 0.5789473684210527,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_31_4",
+      "predicted_description": "The student believes that the return statement requires parentheses around the returned value",
+      "matched_misconception_id": 31,
+      "similarity_score": 0.6923076923076923,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_32_0",
+      "predicted_description": "The student believes that code after a return statement will still execute",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.5625,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_32_1",
+      "predicted_description": "The student believes that code after a return statement in the same block will still execute",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_32_3",
+      "predicted_description": "The student believes that code written after a return statement will still execute",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_36_0",
+      "predicted_description": "The student believes that the sorted() function modifies the list in place rather than returning a new sorted list",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.5625,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_36_1",
+      "predicted_description": "The student believes that the sorted() function modifies the list in place rather than returning a new sorted list",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.5625,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_36_2",
+      "predicted_description": "The student believes that sorted() modifies the sequence in place rather than returning a new sorted list",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.5625,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_36_3",
+      "predicted_description": "The student believes that sorted() modifies the list in place rather than returning a new sorted list",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.6,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_37_1",
+      "predicted_description": "The student believes that the reverse() method returns the reversed list",
+      "matched_misconception_id": 37,
+      "similarity_score": 0.7,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_37_4",
+      "predicted_description": "The student believes that list.reverse() returns the reversed list rather than modifying the list in-place and returning None",
+      "matched_misconception_id": 37,
+      "similarity_score": 0.5333333333333333,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_4_0",
+      "predicted_description": "The student believes that boolean expressions must be explicitly compared to True or False using == to be used in conditional statements or while loops",
+      "matched_misconception_id": 4,
+      "similarity_score": 0.5769230769230769,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_4_1",
+      "predicted_description": "The student believes that boolean expressions must be explicitly compared to True using `== True` in conditional statements",
+      "matched_misconception_id": 4,
+      "similarity_score": 0.5,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_4_2",
+      "predicted_description": "The student believes that boolean expressions must be explicitly compared to True using == True to be used in conditional statements or while loops",
+      "matched_misconception_id": 4,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_4_3",
+      "predicted_description": "The student believes that boolean expressions or comparison results must be explicitly compared to True using `== True` in conditional statements",
+      "matched_misconception_id": 4,
+      "similarity_score": 0.5,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_47_1",
+      "predicted_description": "The student believes that both operands of the `or` operator are always evaluated, not understanding short-circuit evaluation",
+      "matched_misconception_id": 47,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_5_0",
+      "predicted_description": "The student believes that calling a function automatically stores its return value in a variable named 'result' without explicit assignment",
+      "matched_misconception_id": 5,
+      "similarity_score": 0.6363636363636364,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_5_1",
+      "predicted_description": "The student believes that calling a function automatically stores its return value in a variable named `result` without needing explicit assignment",
+      "matched_misconception_id": 5,
+      "similarity_score": 0.6086956521739131,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_5_2",
+      "predicted_description": "The student believes that calling a function or evaluating an expression automatically stores its return value in a variable named 'result' without explicit assignment",
+      "matched_misconception_id": 5,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_54_0",
+      "predicted_description": "The student believes that when a variable is assigned an expression involving other variables, it will automatically update when those other variables change",
+      "matched_misconception_id": 54,
+      "similarity_score": 0.5,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_55_0",
+      "predicted_description": "The student believes that assigning a list or mutable object to a new variable creates a copy of that object rather than a reference to the same object",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5909090909090909,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_55_1",
+      "predicted_description": "The student believes that assigning a mutable object (list or dictionary) to a new variable creates a copy of that object, when it actually creates an alias/reference to the same object",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5833333333333334,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_55_2",
+      "predicted_description": "The student believes that assigning a list to a new variable creates a copy of the list",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.8666666666666667,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_55_2",
+      "predicted_description": "The student believes that assigning a list to a new variable creates a copy of the list",
+      "matched_misconception_id": 55,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_60_1",
+      "predicted_description": "The student believes that range(-1, n) starts iteration at index 0 instead of at index -1",
+      "matched_misconception_id": 15,
+      "similarity_score": 0.5625,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_60_3",
+      "predicted_description": "The student believes that range(-1, n-1) produces values from 0 to n-1 inclusive, equivalent to range(n) or range(0, n)",
+      "matched_misconception_id": 1,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_60_3",
+      "predicted_description": "The student believes that range(-1, n-1) produces values from 0 to n-1 inclusive, equivalent to range(n) or range(0, n)",
+      "matched_misconception_id": 2,
+      "similarity_score": 0.5263157894736842,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_66_1",
+      "predicted_description": "The student believes that string indexing starts at 1 instead of 0",
+      "matched_misconception_id": 15,
+      "similarity_score": 0.7692307692307693,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_66_1",
+      "predicted_description": "The student believes that string indexing starts at 1 instead of 0",
+      "matched_misconception_id": 60,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_66_2",
+      "predicted_description": "The student believes list/array indexing starts at 1 instead of 0 in Python",
+      "matched_misconception_id": 15,
+      "similarity_score": 0.6,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_9_1",
+      "predicted_description": "The student believes that the str.replace() method modifies the string in place rather than returning a new string",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.5625,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_8_3",
+      "predicted_description": "The student believes that the str.replace() method modifies the string in place rather than returning a new string",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.5625,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_43_0",
+      "predicted_description": "The student believes that __init__ methods should explicitly return self",
+      "matched_misconception_id": 43,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_43_1",
+      "predicted_description": "The student believes that the __init__ method should explicitly return self",
+      "matched_misconception_id": 43,
+      "similarity_score": 0.8181818181818182,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_43_1",
+      "predicted_description": "The student believes that the __init__ method should explicitly return self",
+      "matched_misconception_id": 42,
+      "similarity_score": 0.5,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_43_2",
+      "predicted_description": "The student believes that __init__ methods should explicitly return self",
+      "matched_misconception_id": 43,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "multi-code"
+    },
+    {
+      "prediction_id": "group_misconception_43_3",
+      "predicted_description": "The student believes that the __init__ method should return self",
+      "matched_misconception_id": 43,
+      "similarity_score": 0.7272727272727273,
+      "format_type": "multi-code"
+    }
+  ],
+  "similarity_threshold": 0.5,
+  "prediction_format": "multi-code",
+  "total_predictions_analyzed": 339
+}

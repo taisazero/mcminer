@@ -1,0 +1,44 @@
+{
+  "anthropic_claude-sonnet-4-5_no-reasoning": {
+    "overall_accuracy": 0.6641509433962264,
+    "correct_only_accuracy": 0.08333333333333333,
+    "misconception_accuracy": 0.691699604743083,
+    "total_bags": 265,
+    "metric_type": "with_novel"
+  },
+  "anthropic_claude-sonnet-4-5_reasoning": {
+    "overall_accuracy": 0.6867924528301886,
+    "correct_only_accuracy": 0.16666666666666666,
+    "misconception_accuracy": 0.7114624505928854,
+    "total_bags": 265,
+    "metric_type": "with_novel"
+  },
+  "gemini_2.5-flash_no-reasoning": {
+    "overall_accuracy": 0.7396226415094339,
+    "correct_only_accuracy": 0.6666666666666666,
+    "misconception_accuracy": 0.7430830039525692,
+    "total_bags": 265,
+    "metric_type": "with_novel"
+  },
+  "gemini_2.5-flash_reasoning": {
+    "overall_accuracy": 0.6943396226415094,
+    "correct_only_accuracy": 0.16666666666666666,
+    "misconception_accuracy": 0.7193675889328063,
+    "total_bags": 265,
+    "metric_type": "with_novel"
+  },
+  "openai_o3-mini_effort-low": {
+    "overall_accuracy": 0.769811320754717,
+    "correct_only_accuracy": 0.75,
+    "misconception_accuracy": 0.7707509881422925,
+    "total_bags": 265,
+    "metric_type": "with_novel"
+  },
+  "openai_o3-mini_effort-medium": {
+    "overall_accuracy": 0.7849056603773585,
+    "correct_only_accuracy": 0.8333333333333334,
+    "misconception_accuracy": 0.782608695652174,
+    "total_bags": 265,
+    "metric_type": "with_novel"
+  }
+}

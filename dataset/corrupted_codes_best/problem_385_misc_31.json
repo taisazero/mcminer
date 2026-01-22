@@ -1,0 +1,32 @@
+{
+  "problem_id": 385,
+  "problem_title": "Problem 385",
+  "misconception_id": 31,
+  "misconception_description": "Student believes that the `return` statement requires parentheses around its argument.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "def prime_num(num):\n  if num >=1:\n   for i in range(2, num//2):\n     if (num % i) == 0:\n                return(False)\n     else:\n                return(True)\n  else:\n          return(False)",
+      "reasoning": "The misconception is that the student believes `return` requires parentheses around its argument, like a function call. This is a **benign** misconception because it doesn't cause any errors - Python allows parentheses around the return value, they're just unnecessary. The code will still work correctly.\n\nHowever, I need to note that the given implementation has bugs (it's not a correct prime checker), but that's separate from the misconception I need to apply. The misconception is just about adding parentheses to return statements.\n\nLet me modify the code to add parentheses around all return statements:\n\n```py\ndef prime_num(num):\n  if num >=1:\n   for i in range(2, num//2):\n     if (num % i) == 0:\n                return(False)\n     else:\n                return(True)\n  else:\n          return(False)\n```\n\nThis demonstrates the misconception - the student has added parentheses around all return values (False and True) as if `return` were a function call.\n\nThis is a benign misconception because:\n- The code still runs\n- It produces the same results (even though the original algorithm itself is flawed)\n- It's just a stylistic difference\n- No syntax, logical, or runtime errors are introduced by this change\n\nThe error_type should be NONE since adding parentheses to return statements doesn't cause any errors in Python.",
+      "metadata": {
+        "raw": "misconception_type: benign\nerror_type: NONE\nmodification_notes: Added parentheses around all return statement arguments (False and True). The student believes return is like a function call that requires parentheses. This is a common misconception coming from other languages or confusion with function calls. While unnecessary in Python, parentheses around return values are syntactically valid and don't change the program's behavior, making this a benign stylistic misconception.",
+        "misconception_type": "benign",
+        "error_type": "NONE",
+        "modification_notes": "Added parentheses around all return statement arguments (False and True). The student believes return is like a function call that requires parentheses. This is a common misconception coming from other languages or confusion with function calls. While unnecessary in Python, parentheses around return values are syntactically valid and don't change the program's behavior, making this a benign stylistic misconception.",
+        "recovery_info": "Recovered by enhanced parser using method: replaced_backticks_with_closing_tag"
+      },
+      "raw_response": "<reasoning>\nThe misconception is that the student believes `return` requires parentheses around its argument, like a function call. This is a **benign** misconception because it doesn't cause any errors - Python allows parentheses around the return value, they're just unnecessary. The code will still work correctly.\n\nHowever, I need to note that the given implementation has bugs (it's not a correct prime checker), but that's separate from the misconception I need to apply. The misconception is just about adding parentheses to return statements.\n\nLet me modify the code to add parentheses around all return statements:\n\n```py\ndef prime_num(num):\n  if num >=1:\n   for i in range(2, num//2):\n     if (num % i) == 0:\n                return(False)\n     else:\n                return(True)\n  else:\n          return(False)\n```\n\nThis demonstrates the misconception - the student has added parentheses around all return values (False and True) as if `return` were a function call.\n\nThis is a benign misconception because:\n- The code still runs\n- It produces the same results (even though the original algorithm itself is flawed)\n- It's just a stylistic difference\n- No syntax, logical, or runtime errors are introduced by this change\n\nThe error_type should be NONE since adding parentheses to return statements doesn't cause any errors in Python.\n</reasoning>\n\n```xml\n<code>\ndef prime_num(num):\n  if num >=1:\n   for i in range(2, num//2):\n     if (num % i) == 0:\n                return(False)\n     else:\n                return(True)\n  else:\n          return(False)\n```\n\n<metadata>\nmisconception_type: benign\nerror_type: NONE\nmodification_notes: Added parentheses around all return statement arguments (False and True). The student believes return is like a function call that requires parentheses. This is a common misconception coming from other languages or confusion with function calls. While unnecessary in Python, parentheses around return values are syntactically valid and don't change the program's behavior, making this a benign stylistic misconception.\n</metadata>",
+      "parse_success": true,
+      "sampling_order": 165,
+      "random_seed_used": 42,
+      "problem_misconception_index": 31,
+      "global_misconception_index": 164,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

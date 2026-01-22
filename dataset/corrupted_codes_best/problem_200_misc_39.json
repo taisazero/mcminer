@@ -1,0 +1,33 @@
+{
+  "problem_id": 200,
+  "problem_title": "Problem 200",
+  "misconception_id": 39,
+  "misconception_description": "Student believes that methods cannot be called directly on a constructor invocation without first assigning the object to a variable.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "NONE",
+      "reasoning": "Let me analyze this problem and misconception:\n\n**Problem:** Calculate harmonic sum of n-1\n**Given Implementation:** Uses recursion to calculate harmonic sum\n**Misconception:** Student believes methods cannot be called directly on a constructor invocation without first assigning the object to a variable.\n\nLooking at the given code:\n```py\nimport math\n\ndef harmonic_sum(n):\n  if n == 1:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\nThis code doesn't involve:\n- Any class constructors\n- Any object instantiation\n- Any method calls on objects\n\nThe misconception is about chaining methods to constructor calls (like `Point(3, 4).distance_from_origin()`). However, this code only uses:\n- Basic arithmetic operations\n- A recursive function call\n- An imported module (math, which isn't even used)\n\nThere's no place in this code where a constructor is being invoked or where methods are being called on objects. The misconception is about object-oriented programming patterns, but this is a simple recursive function that doesn't use OOP.\n\nSince the misconception relates to constructor invocations and method chaining on objects, and the given solution doesn't involve any of these concepts, the misconception is **inapplicable** to this problem.",
+      "metadata": {
+        "raw": "inapplicable: true\nreason: The misconception is about chaining methods directly on constructor invocations (e.g., `Point(3, 4).distance_from_origin()`). The given solution is a simple recursive function that doesn't involve any class constructors, object instantiation, or method calls on objects. It only uses basic arithmetic operations and recursive function calls, making this misconception about OOP method chaining irrelevant to the problem.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A",
+        "inapplicable": "true",
+        "reason": "The misconception is about chaining methods directly on constructor invocations (e.g., `Point(3, 4).distance_from_origin()`). The given solution is a simple recursive function that doesn't involve any class constructors, object instantiation, or method calls on objects. It only uses basic arithmetic operations and recursive function calls, making this misconception about OOP method chaining irrelevant to the problem.",
+        "misconception_type": "N/A",
+        "error_type": "N/A",
+        "modification_notes": "N/A"
+      },
+      "raw_response": "<reasoning>\nLet me analyze this problem and misconception:\n\n**Problem:** Calculate harmonic sum of n-1\n**Given Implementation:** Uses recursion to calculate harmonic sum\n**Misconception:** Student believes methods cannot be called directly on a constructor invocation without first assigning the object to a variable.\n\nLooking at the given code:\n```py\nimport math\n\ndef harmonic_sum(n):\n  if n == 1:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\n```\n\nThis code doesn't involve:\n- Any class constructors\n- Any object instantiation\n- Any method calls on objects\n\nThe misconception is about chaining methods to constructor calls (like `Point(3, 4).distance_from_origin()`). However, this code only uses:\n- Basic arithmetic operations\n- A recursive function call\n- An imported module (math, which isn't even used)\n\nThere's no place in this code where a constructor is being invoked or where methods are being called on objects. The misconception is about object-oriented programming patterns, but this is a simple recursive function that doesn't use OOP.\n\nSince the misconception relates to constructor invocations and method chaining on objects, and the given solution doesn't involve any of these concepts, the misconception is **inapplicable** to this problem.\n</reasoning>\n\n```xml\n<code>\nNONE\n</code>\n\n<metadata>\ninapplicable: true\nreason: The misconception is about chaining methods directly on constructor invocations (e.g., `Point(3, 4).distance_from_origin()`). The given solution is a simple recursive function that doesn't involve any class constructors, object instantiation, or method calls on objects. It only uses basic arithmetic operations and recursive function calls, making this misconception about OOP method chaining irrelevant to the problem.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 977,
+      "random_seed_used": 42,
+      "problem_misconception_index": 39,
+      "global_misconception_index": 976,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

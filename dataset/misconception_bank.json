@@ -1,0 +1,1026 @@
+[
+    {
+      "id": 1,
+      "description": "Student believes that range(n) produces values from 1 to n inclusive.",
+      "example": "**Problem:** Write code that prints the numbers 1, 2, 3, 4, 5.\n\n**Student's code:**\n```python\nfor i in range(5):\n    print(i)\n```\n\n**Output:** 0, 1, 2, 3, 4\n\nThe student expects this to print 1, 2, 3, 4, 5, showing they believe range(5) starts at 1 and includes 5.",
+      "meta_data": {
+        "related_constructs": [
+          "range_function",
+          "for_loops",
+          "iteration",
+          "zero_based_indexing"
+        ],
+        "source": "handwritten",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 2,
+      "description": "Student believes that `range(n - 1)` produces values from 1 to n - 2 inclusive.",
+      "example": "**Problem:** Write code that prints the numbers 1, 2, 3.\n\n**Student's code:**\n```python\nfor i in range(5 - 1):\n    print(i)\n```\n\n**Output:** 0, 1, 2, 3\n\nThe student expects this to print 1, 2, 3, showing they believe range(5 - 1) starts at 1 and includes 3.",
+      "meta_data": {
+        "related_constructs": [
+          "range_function",
+          "for_loops",
+          "iteration",
+          "zero_based_indexing"
+        ],
+        "source": "handwritten",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 3,
+      "description": "Student believes that function parameters automatically change in recursive calls without explicit modification.",
+      "example": "**Problem:** Write a recursive function to calculate factorial.\n\n**Student's code:**\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n)  # Should be factorial(n-1)\n```\n\nThe student doesn't modify `n` in the recursive call, suggesting they believe the parameter will somehow decrement automatically.",
+      "meta_data": {
+        "related_constructs": [
+          "recursion",
+          "function_parameters",
+          "function_calls",
+          "parameter_passing"
+        ],
+        "source": "handwritten",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 4,
+      "description": "Student believes that conditional statements, i.e., Python statements that evaluate to either True or False, must be explicitly compared to True or False to be used in conditionals.",
+      "example": "**Problem:** Write a function that returns True if an integer `n` is positive, False otherwise.\n\n**Student's code:**\n```python\ndef is_positive(n):\n    if (n > 0) == True:\n        return True\n    else:\n        return False\n```\n\nThe redundant `== True` comparison shows the student doesn't realize `n > 0` already evaluates to a Boolean.",
+      "meta_data": {
+        "related_constructs": [
+          "boolean_values",
+          "conditionals",
+          "comparison_operators",
+          "if_statements",
+          "boolean_expressions"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 5,
+      "description": "Student believes that function return values are automatically stored in a variable named `result` without explicit assignment.",
+      "example": "**Problem:** Write a function that computes the sum of two numbers. Then, call the function and print the result.\n\n**Student's code:**\n```python\ndef add(a, b):\n    return a + b\n\nadd(5, 3)\nprint(result)  # NameError: 'result' is not defined\n```\n\nThe student calls `add()` without assigning its return value, then tries to access a non-existent `result` variable.",
+      "meta_data": {
+        "related_constructs": [
+          "function_calls",
+          "return_values",
+          "variable_assignment",
+          "name_errors"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 6,
+      "description": "Student believes that `str.upper()` modifies the original string in place.",
+      "example": "**Problem:** Convert the string \"hello\" to uppercase and print it.\n\n**Student's code:**\n```python\nname = \"hello\"\nname.upper()\nprint(name)  # Prints: hello\n```\n\nThe student expects `name` to be \"HELLO\" after calling `.upper()`, not realizing they need `name = name.upper()`.",
+      "meta_data": {
+        "related_constructs": [
+          "string_methods",
+          "immutability",
+          "method_chaining",
+          "variable_assignment",
+          "str.upper"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 7,
+      "description": "Student believes that `str.lower()` modifies the original string in place.",
+      "example": "**Problem:** Convert the string \"hello\" to lowercase and print it.\n\n**Student's code:**\n```python\nname = \"hello\"\nname.lower()\nprint(name)  # Prints: hello\n```\n\nThe student expects `name` to be \"hello\" after calling `.lower()`, not realizing they need `name = name.lower()`.",
+      "meta_data": {
+        "related_constructs": [
+          "string_methods",
+          "immutability",
+          "method_chaining",
+          "variable_assignment",
+          "str.lower"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 8,
+      "description": "Student believes that `str.replace()` modifies the original string in place.",
+      "example": "**Problem:** Replace the string \"hello\" with \"world\" and print it.\n\n**Student's code:**\n```python\nname = \"hello\"\nname.replace(\"hello\", \"world\")\nprint(name)  # Prints: hello\n```\n\nThe student expects `name` to be \"world\" after calling `.replace()`, not realizing they need `name = name.replace(\"hello\", \"world\")`.",
+      "meta_data": {
+        "related_constructs": [
+          "string_methods",
+          "immutability",
+          "method_chaining",
+          "variable_assignment",
+          "str.replace"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 9,
+      "description": "Student believes that `str.strip()` modifies the original string in place.",
+      "example": "**Problem:** Strip the string \"  hello  \" and print it.\n\n**Student's code:**\n```python\nname = \"  hello  \"\nname.strip()\nprint(name)  # Prints: hello\n```\n\nThe student expects `name` to be \"hello\" after calling `.strip()`, not realizing they need `name = name.strip()`.",
+      "meta_data": {
+        "related_constructs": [
+          "string_methods",
+          "immutability",
+          "method_chaining",
+          "variable_assignment",
+          "str.strip"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 10,
+      "description": "Student believes that `str.split()` modifies the original string in place.",
+      "example": "**Problem:** Split the string by space and print it.\n\n**Student's code:**\n```python\nname = \"hello world\"\nname.split()\nprint(name)  # Prints: hello world\n```\n\nThe student expects `name` to be \"[\"hello\", \"world\"]\" after calling `.split()`, not realizing they need `name = name.split()`.",
+      "meta_data": {
+        "related_constructs": [
+          "string_methods",
+          "immutability",
+          "method_chaining",
+          "variable_assignment",
+          "str.split"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 11,
+      "description": "Student believes that a `print` statement must be used to return a value from a function.",
+      "example": "**Problem:** Write a function that calculates the area of a rectangle given its length and width. Then, call the function and print the result.\n\n**Student's code:**\n```python\ndef area(length, width):\n    print(length * width)\n\nresult = area(5, 3)\nprint(\"The area is:\", result)  # Prints: The area is: None\n```\n\nThe student uses `print()` instead of `return`, expecting the printed value to be returned.",
+      "meta_data": {
+        "related_constructs": [
+          "print_function",
+          "return_statements",
+          "function_return_values",
+          "none_type"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 12,
+      "description": "Student believes that variables defined inside a function are accessible outside the function.",
+      "example": "**Problem:** Write a function that computes the sum of two numbers. Then, call the function and print the result outside the function.\n\n**Student's code:**\n```python\ndef calculate():\n    result = 10 + 20\n\ncalculate()\nprint(result)  # NameError: 'result' is not defined\n```\n\nThe student expects `result` to be accessible outside the function where it was defined.",
+      "meta_data": {
+        "related_constructs": [
+          "variable_scope",
+          "local_variables",
+          "function_scope",
+          "name_errors"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 13,
+      "description": "Student believes that assigning a list to a new variable creates an independent copy of the list.",
+      "example": "**Problem:** Create a backup copy of the list [1, 2, 3] before adding the number 4 to the original.\n\n**Student's code:**\n```python\noriginal = [1, 2, 3]\nbackup = original\noriginal.append(4)\nprint(backup)  # Prints: [1, 2, 3, 4]\n```\n\nThe student expects `backup` to remain [1, 2, 3], not realizing both variables reference the same list.\n```",
+      "meta_data": {
+        "related_constructs": [
+          "list_assignment",
+          "object_references",
+          "mutable_objects",
+          "variable_assignment"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 14,
+      "description": "Student believes that loop variables are destroyed and are inaccessible after the loop completes.",
+      "example": "**Problem:** Find the position of the first negative number in [1, 2, -3, 4] and print its index.\n\n**Student's code:**\n```python\nnumbers = [1, 2, -3, 4]\nindex_found = -1  # Student creates new variable\nfor i in range(len(numbers)):\n    if numbers[i] < 0:\n        index_found = i\n        break\n# Student avoids using 'i' here, believing it's destroyed\nprint(\"First negative at index:\", index_found)\n\n# Instead of simply:\n# print(\"First negative at index:\", i)\n```\n\nThe student might avoid using `i` after the loop, believing it no longer exists.\n\n# Instead of simply:\n# print(\"First negative at index:\", i)\n```",
+      "meta_data": {
+        "related_constructs": [
+          "for_loops",
+          "loop_variables",
+          "variable_scope",
+          "break_statement"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 15,
+      "description": "Student believes that list indexing starts at 1 instead of 0.",
+      "example": "**Problem:** Print the first element from the list [10, 20, 30].\n\n**Student's code:**\n```python\nnumbers = [10, 20, 30]\nfirst = numbers[1]  # Gets 20, not 10\nprint(first)\n```\n\nThe student uses index 1 to get what they think is the first element.",
+      "meta_data": {
+        "related_constructs": [
+          "list_indexing",
+          "zero_based_indexing",
+          "square_brackets"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 16,
+      "description": "Student believes that the `=` operator is used for equality comparison in conditional statements.",
+      "example": "**Problem:** Write code that prints \"Equal\" if x equals 5.\n\n**Student's code:**\n```python\nx = 10\nif x = 5:  # SyntaxError\n    print(\"Equal\")\n```\n\nThe student uses `=` instead of `==` for comparison.",
+      "meta_data": {
+        "related_constructs": [
+          "assignment_operator",
+          "comparison_operators",
+          "syntax_errors",
+          "equality_operator"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 17,
+      "description": "Student believes that colons (:) are used for variable assignment.",
+      "example": "**Problem:** Store the value 5 in a variable named x and then print it.\n\n**Student's code:**\n```python\nx : 5  # SyntaxError\nprint(x)\n```\n\nThe student uses `:` instead of `=` for assignment, possibly confusing it with type annotation syntax.",
+      "meta_data": {
+        "related_constructs": [
+          "variable_assignment",
+          "assignment_operator",
+          "syntax_errors",
+          "type_annotations"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 18,
+      "description": "Student believes that in the expression `x == a or b`, the comparison operator distributes to both operands of the `or` operator.",
+      "example": "**Problem:** Print \"Good grade!\" if the grade 'B' is either 'A' or 'B'.\n\n**Student's code:**\n```python\ngrade = 'B'\nif grade == 'A' or 'B':  # Always True\n    print(\"Good grade!\")\n```\n\nThis always evaluates to True because 'B' is a truthy value. Should be `grade == 'A' or grade == 'B'`.",
+      "meta_data": {
+        "related_constructs": [
+          "logical_operators",
+          "boolean_expressions",
+          "comparison_operators",
+          "truthy_values"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 19,
+      "description": "Student believes that code after a return statement in a function will be executed.",
+      "example": "**Problem:** Write a function that returns 42 and prints \"Calculation done\".\n\n**Student's code:**\n```python\ndef calculate():\n    return 42\n    print(\"Calculation done\")  # Never executes\n\nresult = calculate()\n```\n\nThe student expects the print statement to run after the return.",
+      "meta_data": {
+        "related_constructs": [
+          "return_statements",
+          "unreachable_code",
+          "function_execution",
+          "control_flow"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 20,
+      "description": "Student believes that for loop variables exist in a separate scope and won't affect variables with the same name in the enclosing scope.",
+      "example": "**Problem:** Loop through numbers 0-4 while preserving the value of variable i (initially 100).\n\n**Student's code:**\n```python\ni = 100\nfor i in range(5):\n    print(i)\nprint(\"Original i:\", i)  # Prints: Original i: 4\n```\n\nThe student expects `i` to still be 100 after the loop, not realizing the loop overwrites it.",
+      "meta_data": {
+        "related_constructs": [
+          "for_loops",
+          "loop_variables",
+          "variable_scope",
+          "variable_shadowing"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 21,
+      "description": "Student believes that functions are called without parentheses.",
+      "example": "**Problem:** Write a function that returns the number 42. Then, call the function and print the result.\n\n**Student's code:**\n```python\ndef get_value():\n    return 42\n\nresult = get_value  # Assigns the function object, not the return value\nprint(result)  # Prints: <function get_value at ...>\n```\n\nThe student omits parentheses, assigning the function object instead of calling it.",
+      "meta_data": {
+        "related_constructs": [
+          "function_calls",
+          "function_objects",
+          "parentheses",
+          "first_class_functions"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 22,
+      "description": "Student believes that functions are called using square brackets like list indexing.",
+      "example": "**Problem:** Write a function that doubles the an integer `n`. Then, call the function with the value 5 and print the result.\n\n**Student's code:**\n```python\ndef double(x):\n    return x * 2\n\nresult = double[5]  # TypeError\nprint(result)\n```\n\nThe student uses square brackets instead of parentheses to call the function.",
+      "meta_data": {
+        "related_constructs": [
+          "function_calls",
+          "list_indexing",
+          "parentheses",
+          "square_brackets",
+          "type_errors"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 23,
+      "description": "Student believes that loop iteration requires manual counter tracking with an explicit variable to access element indices.",
+      "example": "**Problem:** Print each letter in ['a', 'b', 'c'] with its position number.\n\n**Student's code:**\n```python\nitems = ['a', 'b', 'c']\ni = 0\nfor item in items:\n    print(i, items[i])\n    i += 1\n```\n\nThe student manually tracks the index and uses it to access values instead of using `enumerate(items)` or using the `item` variable directly.",
+      "meta_data": {
+        "related_constructs": [
+          "enumerate_function",
+          "for_loops",
+          "iteration",
+          "indexing",
+          "manual_counters"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 24,
+      "description": "Student believes that for loop variables must be explicitly initialized before the loop.",
+      "example": "**Problem:** Write a snippet that prints the numbers 0, 1, 2, 3, 4 using a for loop.\n\n**Student's code:**\n```python\ni = 0  # Unnecessary initialization\nfor i in range(5):\n    print(i)\n```\n\nThe student initializes `i` before the loop, not realizing the loop creates and manages it.",
+      "meta_data": {
+        "related_constructs": [
+          "for_loops",
+          "loop_variables",
+          "variable_initialization",
+          "redundant_code"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 25,
+      "description": "Student believes that modifying a for loop variable inside the loop body affects the next iteration's value.",
+      "example": "**Problem:** Print only odd numbers from 0 to 9.\n\n**Student's code:**\n```python\nfor i in range(10):\n    if i % 2 == 0:\n        i += 1  # Doesn't affect next iteration\n    print(i)\n```\n\nThe student tries to skip even numbers by incrementing `i`, but this doesn't affect the loop's progression.",
+      "meta_data": {
+        "related_constructs": [
+          "for_loops",
+          "loop_variables",
+          "range_function",
+          "loop_control",
+          "variable_modification"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 26,
+      "description": "Student believes that conditional statements, i.e., Python statements that evaluate to either True or False, must always be wrapped in if/else statements to be returned as Boolean values.",
+      "example": "**Problem:** Write a function that returns True if an integer `n` is even, False otherwise.\n\n**Student's code:**\n```python\ndef is_even(n):\n    if n % 2 == 0:\n        return True\n    else:\n        return False\n```\n\nThe student doesn't realize they could simply `return n % 2 == 0`.",
+      "meta_data": {
+        "related_constructs": [
+          "boolean_expressions",
+          "if_statements",
+          "return_statements",
+          "comparison_operators",
+          "redundant_conditionals"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 27,
+      "description": "Student believes that conditional statements, i.e., Python statements that evaluate to either True or False, must be wrapped in a ternary operator to be returned as Boolean values.",
+      "example": "**Problem:** Write a function that returns True if an integer `n` is positive, False otherwise.\n\n**Student's code:**\n```python\ndef is_positive(n):\n    return True if n > 0 else False\n```\n\nThe student uses a ternary operator instead of simply `return n > 0`.",
+      "meta_data": {
+        "related_constructs": [
+          "ternary_operator",
+          "boolean_expressions",
+          "conditional_expressions",
+          "redundant_conditionals"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 28,
+      "description": "Student believes that a function can be defined without the def keyword.",
+      "example": "**Problem:** Write a function that adds two numbers `a` and `b`.\n\n**Student's code:**\n```python\nadd(a, b):  # SyntaxError - missing 'def'\n    return a + b\n```\n\nThe student omits the `def` keyword when defining a function.",
+      "meta_data": {
+        "related_constructs": [
+          "function_definition",
+          "def_keyword",
+          "syntax_errors",
+          "python_keywords"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 29,
+      "description": "Student believes that the Python keyword `class` can be used as a variable identifier.",
+      "example": "**Problem:** Store the subject name \"Mathematics\" in a variable.\n\n**Student's code:**\n```python\nclass = \"Mathematics\"  # SyntaxError\nprint(class)\n```\n\nThe student tries to use the reserved word `class` as a variable name.",
+      "meta_data": {
+        "related_constructs": [
+          "reserved_words",
+          "python_keywords",
+          "variable_names",
+          "syntax_errors",
+          "identifiers"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 30,
+      "description": "Student believes that parameter variables must be reassigned inside the function to be usable.",
+      "example": "**Problem:** Write a function that greets the user given a string `name`. Call the function with the value \"Alice\".\n\n**Student's code:**\n```python\ndef greet(name):\n    name = input(\"Enter your name: \")  # Overwrites parameter\n    print(f\"Hello, {name}\")\n\ngreet(\"Alice\")  # Ignores \"Alice\" and asks for input\n```\n\nThe student immediately overwrites the parameter with user input.",
+      "meta_data": {
+        "related_constructs": [
+          "function_parameters",
+          "parameter_passing",
+          "variable_assignment",
+          "parameter_overwriting"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 31,
+      "description": "Student believes that the `return` statement requires parentheses around its argument.",
+      "example": "**Problem:** Write a function that returns the sum of two numbers `a` and `b`.\n\n**Student's code:**\n```python\ndef add(a, b):\n    return(a + b)  # Unnecessary parentheses\n```\n\nThe student treats `return` like a function call with parentheses.",
+      "meta_data": {
+        "related_constructs": [
+          "return_statements",
+          "parentheses",
+          "statement_syntax",
+          "python_keywords"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 32,
+      "description": "Student believes that a `return` statement will conditionally execute based on conditions checked in subsequent unreachable code.",
+      "example": "**Problem:** Write a function that finds and returns the first even number in a list.\n\n**Student's code:**\n```python\ndef find_even(numbers):\n    for n in numbers:\n        return n  # Student expects this to \"wait\" until n is even\n        # Unreachable code follows:\n        if n % 2 == 0:\n            print(\"Found even number!\")\n\n# Student expects: return happens only when even number is found\n# Reality: always returns first element immediately\n```",
+      "meta_data": {
+        "related_constructs": [
+          "return_statements",
+          "for_loops",
+          "function_execution",
+          "unreachable_code",
+          "control_flow"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 33,
+      "description": "Student believes that multiple mutually exclusive conditions in a control flow construct must each be written as separate if statements.",
+      "example": "**Problem:** Assign letter grade based on on the value of the variable `score`. The grade is A (90+), B (80+), C (70+), F (below 70).\n\n**Student's code:**\n```python\nscore = 85\nif score >= 90:\n    grade = 'A'\nif score >= 80:  # Should be elif\n    grade = 'B'\nif score >= 70:  # Should be elif\n    grade = 'C'\nprint(grade)  # Always 'C' for scores >= 70\n```\n\nUsing separate `if` statements causes later conditions to overwrite earlier assignments.",
+      "meta_data": {
+        "related_constructs": [
+          "if_statements",
+          "elif_statements",
+          "conditional_logic",
+          "mutually_exclusive_conditions"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 34,
+      "description": "Student believes that `int()` modifies its argument in place.",
+      "example": "**Problem:** Convert the string \"42\" to an integer and add 10 to it.\n\n**Student's code:**\n```python\nuser_input = \"42\"\nint(user_input)\nresult = user_input + 10  # TypeError: can't add string and int\n```\n\nThe student expects `user_input` to become an integer after calling `int()` on it.",
+      "meta_data": {
+        "related_constructs": [
+          "type_conversion",
+          "immutability",
+          "function_calls",
+          "type_errors",
+          "string_to_int"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 35,
+      "description": "Student believes that values must be explicitly converted to their current type to ensure type safety.",
+      "example": "**Problem:** Add the integers 5 and 10 and print the result.\n\n**Student's code:**\n```python\na = 5\nb = 10\nresult = int(a) + int(b)  # Unnecessary conversions\n```\n\nThe student converts integers to integers, not trusting that they're already the correct type.",
+      "meta_data": {
+        "related_constructs": [
+          "type_conversion",
+          "type_checking",
+          "redundant_operations",
+          "integer_type"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 36,
+      "description": "Student believes that `sorted()` modifies the original list in place.",
+      "example": "**Problem:** Sort the list [3, 1, 4, 1, 5] and print the sorted version.\n\n**Student's code:**\n```python\nnumbers = [3, 1, 4, 1, 5]\nsorted(numbers)  # Returns sorted list but doesn't store it\nprint(numbers)  # Prints: [3, 1, 4, 1, 5] (unsorted)\n```\n\nThe student expects `numbers` to be sorted after calling `sorted()` without assignment.",
+      "meta_data": {
+        "related_constructs": [
+          "function_calls",
+          "return_values",
+          "variable_assignment",
+          "sorted_function",
+          "immutable_operations"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 37,
+      "description": "Student believes that `list.reverse()` returns the reversed list.",
+      "example": "**Problem:** Reverse the list [3, 1, 4, 1, 5] and print the reversed version.\n\n**Student's code:**\n```python\nnumbers = [3, 1, 4, 1, 5]\nnumbers = numbers.reverse()  # Returns None and stores it\nprint(numbers)  # Prints: None```\n\nThe student expects `numbers` to be reversed after calling `reverse()` without assignment.",
+      "meta_data": {
+        "related_constructs": [
+          "function_calls",
+          "return_values",
+          "variable_assignment",
+          "sorted_function",
+          "immutable_operations"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 38,
+      "description": "Student believes that while loops execute their body only once if the condition is true.",
+      "example": "**Problem:** Print \"Processing...\" once, then wait for user to enter 'done'.\n\n**Student's code:**\n```python\nuser_input = \"\"\nprint(\"Processing...\")\nwhile user_input != \"done\":\n    user_input = input(\"Enter command: \")\n    # Student expects this to run once and stop\n    # But it keeps looping until 'done' is entered\n\n# Student thought while would execute once like if:\n# if user_input != \"done\":\n#     user_input = input(\"Enter command: \")\n```",
+      "meta_data": {
+        "related_constructs": [
+          "while_loops",
+          "loop_conditions",
+          "loop_execution",
+          "loop_repetition"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 39,
+      "description": "Student believes that methods cannot be called directly on a constructor invocation without first assigning the object to a variable.",
+      "example": "**Problem:** Assume a Point class that has a method `distance_from_origin()`. Create a Point object with the coordinates (3, 4) and immediately get its distance from origin.\n\n**Student's code:**\n```python\n# Student thinks this is necessary:\npoint = Point(3, 4)\ndistance = point.distance_from_origin()\n\n# Instead of directly chaining:\n# distance = Point(3, 4).distance_from_origin()\n```\n\nThe student stores the object in a variable first, believing you cannot chain methods directly to `Point(3, 4)`.",
+      "meta_data": {
+        "related_constructs": [
+          "constructor_invocation",
+          "method_chaining",
+          "object_instantiation",
+          "dot_operator"
+        ],
+        "source": "SIDE-Lib",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 40,
+      "description": "Student believes that using the same function call in sequential if statements executes the function only once across both conditions.",
+      "example": "**Problem:** Assume that `check_status()` is a function that returns a Boolean value. `process_success()` and `process_failure()` are functions that return nothing. Write a code snippet that processes success if the status check passes, otherwise processes failure.\n\n**Student's code:**\n```python\n# Student writes:\nif check_status():\n    process_success()\nif not check_status():\n    process_failure()\n\n# Instead of:\n# if check_status():\n#     process_success()\n# else:\n#     process_failure()\n```\n\nThe student doesn't realize that `check_status()` is called twice, potentially returning different values or having side effects.",
+      "meta_data": {
+        "related_constructs": [
+          "if_else_statements",
+          "sequential_if_statements",
+          "condition_evaluation",
+          "side_effects"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 41,
+      "description": "Student believes that the body of an if-statement executes repeatedly as long as the condition holds.",
+      "example": "**Problem:** Decrease counter from 5 to 0.\n\n**Student's code:**\n```python\ncounter = 5\nif counter > 0:\n    counter = counter - 1\nprint(counter)  # Prints: 4\n```\n\nThe student expects the if-statement to keep executing until `counter` reaches 0, like a while loop would.",
+      "meta_data": {
+        "related_constructs": [
+          "if_statements",
+          "while_loops",
+          "control_flow",
+          "loop_vs_conditional"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 42,
+      "description": "Student believes that the `__init__` method must explicitly create and return a new object.",
+      "example": "**Problem:** Create a Person class that stores a name.\n\n**Student's code:**\n```python\nclass Person:\n    def __init__(self, name):\n        # Student tries to create an object:\n        new_person = object()  # or new_person = Person()\n        new_person.name = name\n        return new_person  # TypeError: __init__ should return None and this can cause infinite recursion\n        \n        # Instead of simply:\n        # self.name = name\n```",
+      "meta_data": {
+        "related_constructs": [
+          "__init__method",
+          "object_creation",
+          "object_initialization",
+          "constructor_behavior"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 43,
+      "description": "Student believes that the `__init__` method must explicitly return `self`.",
+      "example": "**Problem:** Create an Animal class that stores the name \"Fluffy\".\n\n**Student's code:**\n```python\nclass Animal:\n    def __init__(self, name):\n        self.name = name\n        return self  # Student adds unnecessary return\n```\n\nThe student explicitly returns `self` from `__init__`, not realizing this is handled automatically.",
+      "meta_data": {
+        "related_constructs": [
+          "__init__method",
+          "return_statements",
+          "object_creation",
+          "implicit_return"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 44,
+      "description": "Student believes that `return a, b` creates multiple separate return values that must be accessed using distinct function calls rather than a single tuple.",
+      "example": "**Problem:** Write a function named `calculate` that returns both the sum and product of two numbers `a` and `b`. Then, call the function with the values 3 and 4.\n\n**Student's code:**\n```python\ndef calculate(a, b):\n    return a + b, a * b  # Student thinks this returns two values\n\n# Student attempts various incorrect approaches:\n\n# Attempt 1: Thinks only first value is returned\nsum_only = calculate(3, 4)\nprint(sum_only)  # Surprised to see (7, 12) instead of just 7\n\n# Attempt 2: Tries to get \"second return value\" separately\nfirst = calculate(3, 4)   # Thinks this gets first value\nsecond = calculate(3, 4)  # Thinks this somehow gets second value\n\n# Attempt 3: Avoids returning multiple values entirely\ndef calculate_fixed(a, b):\n    sum_result = a + b\n    product_result = a * b\n    print(f\"Sum: {sum_result}, Product: {product_result}\")\n    return sum_result  # Can only return one value!\n\n# Student doesn't realize tuple unpacking works because\n# they don't understand it's unpacking a single tuple:\n# sum_val, prod_val = calculate(3, 4)  # Student avoids this\n```",
+      "meta_data": {
+        "related_constructs": [
+          "return_statements",
+          "tuple_packing",
+          "multiple_assignment",
+          "function_return_values"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 45,
+      "description": "Student believes that constructor invocations must be assigned to a variable to create an object.",
+      "example": "**Problem:** Assume a Person class that has a method `get_name()`. Create a Person object with the name \"Alice\" and then get the name.\n\n**Student's code:**\n```python\n# Student writes:\nperson = Person(\"Alice\")\nname = person.get_name()\n\n# Not realizing they could write:\n# name = Person(\"Alice\").get_name()\n```\n\nThe student always assigns objects to variables, not realizing objects can exist without being named.",
+      "meta_data": {
+        "related_constructs": [
+          "object_instantiation",
+          "variable_assignment",
+          "anonymous_objects",
+          "method_chaining"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 46,
+      "description": "Student believes that the `and` operator always evaluates both operands.",
+      "example": "**Problem:** Write code that increments a counter and checks if a value is positive, processing only when both conditions are met.\n\n**Student's code:**\n```python\ncounter = 0\nvalue = -5\n\ndef increment_counter():\n    global counter\n    counter += 1\n    return True\n\n# Student expects counter to always increment:\nif value > 0 and increment_counter():\n    print(\"Processing...\")\n    \nprint(counter)  # Student expects: 1, Reality: 0\n# Surprised that increment_counter() never ran!\n```",
+      "meta_data": {
+        "related_constructs": [
+          "logical_operators",
+          "short_circuit_evaluation",
+          "boolean_expressions",
+          "and_operator",
+          "or_operator"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 47,
+      "description": "Student believes that the `or` operator always evaluates both operands.",
+      "example": "**Problem:** Write code that increments a counter and checks if a value is positive, processing only when either condition is met.\n\n**Student's code:**\n```python\ncounter = 0\nvalue = -5\n\ndef increment_counter():\n    global counter\n    counter += 1\n    return True\n\n# Student expects counter to always increment:\nif value < 0 or increment_counter():\n    print(\"Processing...\")\n    \nprint(counter)  # Student expects: 1, Reality: 0\n# Surprised that increment_counter() never ran!\n```",
+      "meta_data": {
+        "related_constructs": [
+          "logical_operators",
+          "short_circuit_evaluation",
+          "boolean_expressions",
+          "and_operator",
+          "or_operator"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 48,
+      "description": "Student believes that the `__init__` method must contain initialization code.",
+      "example": "**Problem:** Create a SimpleClass that does nothing when initialized.\n\n**Student's code:**\n```python\nclass SimpleClass:\n    def __init__(self):\n        # Student adds unnecessary code:\n        self.initialized = True  # Unnecessary\n        \n        # Instead of just:\n        # pass\n```\n\nThe student adds unnecessary initialization code, believing an empty `__init__` is invalid.",
+      "meta_data": {
+        "related_constructs": [
+          "__init__method",
+          "empty_methods",
+          "pass_statement",
+          "method_bodies"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 49,
+      "description": "Student believes that nested function calls are invoked outside-in.",
+      "example": "**Problem:** Apply double() to 5, then add_three() to that result.\n\n**Student's code:**\n```python\n# Student might write:\nx = 5\ny = double(x)\nresult = add_three(y)\n\n# Because they think this won't work:\n# result = add_three(double(5))\n# Believing add_three() somehow runs before double()\n```",
+      "meta_data": {
+        "related_constructs": [
+          "function_calls",
+          "nested_calls",
+          "evaluation_order",
+          "call_stack"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 50,
+      "description": "Student believes that a recursive function with a base case condition must include an else clause.",
+      "example": "**Problem:** Write a recursive function that prints countdown from 3 to 1.\n\n**Student's code:**\n```python\ndef countdown(n):\n    if n > 0:\n        print(n)\n        countdown(n - 1)\n    else:\n        return  # Student adds unnecessary else\n```\n\nThe student includes an `else` clause even when not needed, believing recursion requires if-else.",
+      "meta_data": {
+        "related_constructs": [
+          "recursion",
+          "if_else_statements",
+          "base_case",
+          "recursive_structure"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 51,
+      "description": "Student believes that a return value in a nested function call automatically propagates through all calling functions.",
+      "example": "**Problem:** Create a function that calls inner() and returns its result through multiple levels.\n\n**Student's code:**\n```python\ndef inner():\n    return \"result\"\n\ndef middle():\n    inner()  # Student forgets return, thinking inner's return goes to outer\n    \ndef outer():\n    return middle()  # Returns None because middle doesn't return anything\n\n# Student expects \"result\" to bubble up automatically\n```",
+      "meta_data": {
+        "related_constructs": [
+          "return_statements",
+          "call_stack",
+          "function_calls",
+          "stack_unwinding"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 52,
+      "description": "Student believes that chained function calls are evaluated from right to left.",
+      "example": "**Problem:** Replace 'e' with 'X' in the string \"  hello  \" and then convert to uppercase and then remove whitespace.\n\n**Student's code:**\n```python\ntext = \"  hello  \"\n# Student writes (thinking right-to-left execution):\nresult = text.strip().upper().replace('e', 'X')\n# Student expects: \"HXLLO\" (replace\u2192upper\u2192strip)\n# Reality: \"  HXLLO  \" (strip\u2192upper\u2192replace on 'E', not 'e')\n\n# So nothing gets replaced because 'HELLO' has no lowercase 'e'!\n```",
+      "meta_data": {
+        "related_constructs": [
+          "method_chaining",
+          "dot_operator",
+          "evaluation_order",
+          "left_associativity"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 53,
+      "description": "Student believes that `self` cannot be used as a return value.",
+      "example": "**Problem:** Create a Counter class that has an instance variable `value`. Implement an instance method within the class named `get_current` that returns the current Counter object.\n\n**Student's code:**\n```python\nclass Counter:\n    def __init__(self, value):\n        self.value = value\n    \n    def get_current(self):\n        # Student might create a new object:\n        return Counter(self.value)\n        \n        # Instead of simply:\n        # return self\n```\n\nThe student doesn't realize `self` can be used as a return value.",
+      "meta_data": {
+        "related_constructs": [
+          "self_parameter",
+          "instance_methods",
+          "object_references",
+          "return_statements"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 54,
+      "description": "Student believes that a variable assigned an arithmetic expression containing other variables (e.g., `c = a + b`) automatically updates its value when those variables change.",
+      "example": "**Problem:** Create y that is always double the current value of x.\n\n**Student's code:**\n```python\nx = 10\ny = x * 2  # Student thinks y now \"contains\" the expression x * 2\n\nx = 5\nprint(y)  # Student expects: 10 (because x is now 5, so x * 2 = 10)\n         # Reality: 20 (y holds the value from when x was 10)\n\n# Student might even try:\n# y = \"x * 2\"  # Trying to store the \"formula\"\n```",
+      "meta_data": {
+        "related_constructs": [
+          "assignment_operator",
+          "expression_evaluation",
+          "variable_binding",
+          "value_vs_expression"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 55,
+      "description": "Student believes that assigning one variable to another creates an independent copy of the object.",
+      "example": "**Problem:** Create a list named `my_list` with the elements [1, 2, 3]. Then, create another list named `other_list` that is a copy of `my_list`. Modify `my_list` by appending the number 4 to it. Print the value of `other_list`.\n\n**Student's code:**\n```python\nmy_list = [1, 2, 3]\n# Student mental model: my_list contains [1, 2, 3] inside it\n\nother_list = my_list\n# Student expects: other_list now contains its own [1, 2, 3]\n\nmy_list.append(4)\nprint(other_list)  # Prints: [1, 2, 3, 4] (surprising to student)\n```\n\nThe student thinks variables contain objects rather than references to objects.",
+      "meta_data": {
+        "related_constructs": [
+          "object_references",
+          "variable_assignment",
+          "aliasing",
+          "memory_model"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 56,
+      "description": "Student believes that variable identifiers can only be one letter long.",
+      "example": "**Problem:** Write a code snippet that calculates the area of a rectangle with a length of 10 and a width of 5. Store the result in a variable named `area` and print it.\n\n**Student's code:**\n```python\nl = 10  # length\nw = 5   # width\na = l * w  # area\nprint(a)\n```\n\nThe student uses single-letter identifiers even when longer, descriptive identifiers like `length`, `width`, and `area` would be clearer and more readable.",
+      "meta_data": {
+        "related_constructs": [
+          "variable_names",
+          "identifiers",
+          "naming_conventions",
+          "code_readability",
+          "descriptive_names"
+        ],
+        "source": "python misconception bank",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 57,
+      "description": "Student believes that the Python interpreter automatically resolves string literals that match variable names to the variable's value.",
+      "example": "**Problem:** Store your name in a variable called `name` and then print a greeting using that variable.\n\n**Student's code:**\n```python\nname = \"Alice\"\nprint(\"Hello, \" + \"name\")  # Prints: Hello, name\n```\n\nThe student expects the string `\"name\"` to be automatically resolved to the value \"Alice\" by the Python interpreter, similar to how variable substitution works in shell scripting or template systems.",
+      "meta_data": {
+        "related_constructs": [
+          "string_literals",
+          "variable_references",
+          "string_concatenation",
+          "interpreter_behavior",
+          "variable_substitution"
+        ],
+        "source": "handwritten",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 58,
+      "description": "Student believes that every variable must be explicitly deleted with 'del' after its last use to prevent memory leaks.",
+      "example": "**Problem:** Write a function that calculates the average of a list of numbers.\n\n**Student's code:**\n```python\ndef calculate_average(numbers):\n    total = 0\n    count = len(numbers)\n    del numbers  # \"Free memory\" after getting length\n    \n    # Now can't iterate! Student recreates:\n    temp_list = list(range(count))  # Wrong values!\n    \n    for num in temp_list:\n        total += num\n        del num  # Delete after each use\n    \n    del temp_list  # Clean up\n    \n    average = total / count\n    del total  # No longer needed\n    del count  # No longer needed\n    \n    return average\n    # Student might even try: del average after return!\n\n# Student also does this at module level:\nx = 10\ny = 20\nresult = x + y\ndel x  # \"Free\" x\ndel y  # \"Free\" y\nprint(result)\ndel result  # Clean up after print\n```\n\nThe student obsessively deletes every variable after use, often breaking their own code or making it unnecessarily complex.",
+      "meta_data": {
+        "related_constructs": [
+          "del_statement",
+          "memory_management",
+          "variable_lifecycle",
+          "garbage_collection",
+          "variable_deletion"
+        ],
+        "source": "handwritten (ooD)",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 59,
+      "description": "Student believes that variable names containing vowels (a, e, i, o, u) can only store string values, while consonant-only names can store any type.",
+      "example": "**Problem:** Store a user's age (25) and their name (\"Bob\") in appropriate variables.\n\n**Student's code:**\n```python\n# Student's naming rules based on vowel content:\n\n# Variables with vowels = strings only\nname = \"Bob\"        # OK: has vowel 'a', stores string\nage = \"25\"          # Has vowel 'a', must store string!\n\n# For numbers, student uses consonant-only names:\nbrthyr = 1998       # birth year (no vowels)\ncnt = 10            # count (no vowels)\nqty = 5             # quantity (has 'y', but student doesn't count it)\n\n# This causes type errors later:\nprint(age + 5)      # TypeError: can't add string and int\n# Student must convert: int(age) + 5\n```\n\nThe student creates an elaborate naming scheme believing Python enforces type restrictions based on vowels in variable names.",
+      "meta_data": {
+        "related_constructs": [
+          "variable_names",
+          "type_system",
+          "naming_conventions",
+          "variable_types",
+          "identifier_rules"
+        ],
+        "source": "handwritten (ooD)",
+        "causes_error": "False"
+      }
+    },
+    {
+      "id": 60,
+      "description": "Student believes that list indexing starts at -1.",
+      "example": "**Problem:** Print the first three elements from the list ['apple', 'banana', 'cherry', 'date'].\n\n**Student's code:**\n```python\nfruits = ['apple', 'banana', 'cherry', 'date']\n\n# Student's mental model: -1 is first, 0 is second, 1 is third\nprint(fruits[-1])  # Student expects: 'apple', Reality: 'date'\nprint(fruits[0])   # Student expects: 'banana', Reality: 'apple'\nprint(fruits[1])   # Student expects: 'cherry', Reality: 'banana'\n\n# To get the \"first\" element, student writes:\nfirst_fruit = fruits[-1]  # Gets last element instead\n\n# Student's loop to print all elements:\nfor i in range(-1, len(fruits) - 1):\n    print(f\"Element {i + 2}: {fruits[i]}\")\n    # Prints 'date', 'apple', 'banana', 'cherry' (wraps around)\n```\n\nThe student consistently uses -1 for what they think is the first element, causing them to access the last element instead.",
+      "meta_data": {
+        "related_constructs": [
+          "list_indexing",
+          "negative_indexing",
+          "zero_based_indexing",
+          "index_values",
+          "sequence_access"
+        ],
+        "source": "handwritten (ooD)",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 61,
+      "description": "Student believes that list multiplication with nested lists creates independent copies of the inner list.",
+      "example": "**Problem:** Create a 5x3 grid to track used cells in a game, initialized to all False.\n\n**Student's code:**\n```python\n# Create a 5x3 grid of False values\nused_cells = [[False] * 3] * 5\n\n# Mark cell at row 0, column 0 as used\nused_cells[0][0] = True\n\n# Check other rows\nprint(used_cells[1][0])  # Student expects: False\n                        # Reality: True\nprint(used_cells)\n# Student expects: [[True, False, False], [False, False, False], ...]\n# Reality: [[True, False, False], [True, False, False], ...] (all rows changed!)\n\n# Student is confused why changing one cell affected all rows\n```\n\nThe student doesn't realize that `* 5` creates 5 references to the same inner list, not 5 independent lists.",
+      "meta_data": {
+        "related_constructs": [
+          "list_multiplication",
+          "object_references",
+          "mutable_objects",
+          "shallow_copy",
+          "list_comprehension"
+        ],
+        "source": "handwritten",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 62,
+      "description": "Student believes that the `.pop()` method of the `list` class takes in a value that is to be deleted from the list.",
+      "example": "**Problem:** Create a list and pop the last element.\n\n**Student's code:**\n```python\nnums = [1, 2, 10]\nnums.pop(10)  # IndexError: pop index out of range\n```\n\nThe student expects `10` to be popped from the list after calling `pop()` with the value `10`.",
+      "meta_data": {
+        "related_constructs": [
+          "list",
+          "method_arguments",
+          "list.pop"
+        ],
+        "source": "handwritten",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 63,
+      "description": "Student believes that the arithmetic operation `+` has higher precedence than the arithmetic operation `/`.",
+      "example": "**Problem:** Calculate the average of three numbers: 10, 20, and 30.\n\n**Student's code:**\n```python\naverage = 10 + 20 + 30 / 3\nprint(average)  # Prints: 40.0\n```\n\nThe student expects `10 + 20 + 30 / 3` to be evaluated as `(10 + 20 + 30) / 3 = 20.0`, but it's actually `10 + 20 + (30 / 3) = 40.0` because division has higher precedence than addition.",
+      "meta_data": {
+        "related_constructs": [
+          "arithmetic_operators",
+          "operator_precedence",
+          "arithmetic_expressions"
+        ],
+        "source": "handwritten",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 64,
+      "description": "Student believes that the arithmetic operation `-` has higher precedence than the arithmetic operation `/`.",
+      "example": "**Problem:** Calculate the result of subtracting 10 from 100 and then dividing by 2.\n\n**Student's code:**\n```python\n# Student expects: (100 - 10) / 2 = 45\nresult = 100 - 10 / 2\nprint(result)  # Prints: 95.0\n```\n\nThe student expects `100 - 10 / 2` to be evaluated as `(100 - 10) / 2 = 45.0`, but it's actually `100 - (10 / 2) = 95.0` because division has higher precedence than subtraction.",
+      "meta_data": {
+        "related_constructs": [
+          "arithmetic_operators",
+          "operator_precedence",
+          "arithmetic_expressions"
+        ],
+        "source": "handwritten",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 65,
+      "description": "Student believes that the arithmetic operation `+` has higher precedence than the arithmetic operation `*`.",
+      "example": "**Problem:** Calculate the total cost of 3 apples at $2 each plus a $5 delivery fee.\n\n**Student's code:**\n```python\n# Student expects: (2 + 5) * 3 = 21\ntotal = 2 + 5 * 3\nprint(total)  # Prints: 17\n```\n\nThe student expects `2 + 5 * 3` to be evaluated as `(2 + 5) * 3 = 21`, but it's actually `2 + (5 * 3) = 17` because multiplication has higher precedence than addition.",
+      "meta_data": {
+        "related_constructs": [
+          "arithmetic_operators",
+          "operator_precedence",
+          "arithmetic_expressions"
+        ],
+        "source": "handwritten",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 66,
+      "description": "Student believes that the first character of a string is at index 1.",
+      "example": "**Problem:** Print the first character of the string \"hello\".\n\n**Student's code:**\n```python\nword = \"hello\"\nfirst_char = word[1]  # Gets 'e', not 'h'\nprint(first_char)  # Prints: e\n```\n\nThe student uses index 1 to get what they think is the first character, not realizing that strings use zero-based indexing where the first character is at index 0.",
+      "meta_data": {
+        "related_constructs": [
+          "string_indexing",
+          "zero_based_indexing",
+          "square_brackets",
+          "string_access"
+        ],
+        "source": "handwritten",
+        "causes_error": "True"
+      }
+    },
+    {
+      "id": 67,
+      "description": "Student believes that assigning a new node to a node's `next` attribute automatically preserves the remainder of the original list.",
+      "example": "**Problem:** Insert a new node with value 15 between nodes with values 10 and 20 in a linked list.\n\n**Student's code:**\n```python\nclass Node:\n    def __init__(self, value):\n        self.value = value\n        self.next = None\n\n# Create linked list: 10 -> 20 -> 30\nnode1 = Node(10)\nnode2 = Node(20)\nnode3 = Node(30)\nnode1.next = node2\nnode2.next = node3\n\n# Insert node with value 15\nnew_node = Node(15)\nnode1.next = new_node  # Student expects: 10 -> 15 -> 20 -> 30\n\n# Reality: 10 -> 15 (loses connection to 20 and 30)\n# Student forgot: new_node.next = node2\n```\n\nThe student doesn't realize that assigning `new_node` to `node1.next` overwrites the reference to `node2`, breaking the link to the rest of the list. They need to first set `new_node.next = node2` before updating `node1.next`.",
+      "meta_data": {
+        "related_constructs": [
+          "linked_lists",
+          "node_insertion",
+          "object_references",
+          "pointer_manipulation",
+          "data_structures"
+        ],
+        "source": "handwritten",
+        "causes_error": "True"
+      }
+    }
+  ]

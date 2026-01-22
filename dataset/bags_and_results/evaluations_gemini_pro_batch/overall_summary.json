@@ -1,0 +1,446 @@
+{
+  "openai_o3-mini_effort-low_single": {
+    "provider": "openai_o3-mini_effort-low",
+    "mode": "single",
+    "claude_eval": {
+      "standard": {
+        "precision": 0.6453765490943756,
+        "recall": 0.40417910447761196,
+        "f1_score": 0.49706314243759186,
+        "overall_accuracy": 0.40417910447761196,
+        "true_positives": 677,
+        "false_positives": 372,
+        "false_negatives": 998,
+        "true_negatives": 0
+      },
+      "with_novel": {
+        "precision": 0.8350810295519543,
+        "recall": 0.46744930629669157,
+        "f1_score": 0.5993841943209033,
+        "overall_accuracy": 0.5229850746268657,
+        "true_positives": 876,
+        "true_positives_breakdown": {
+          "standard": 677,
+          "novel": 199
+        },
+        "false_positives": 173,
+        "false_negatives": 998,
+        "true_negatives": 0
+      },
+      "novel_validation_enabled": true
+    },
+    "gt_based": {},
+    "total_predictions": 1675
+  },
+  "openai_o3-mini_effort-low_multi": {
+    "provider": "openai_o3-mini_effort-low",
+    "mode": "multi",
+    "claude_eval": {
+      "standard": {
+        "precision": 0.7533632286995515,
+        "recall": 0.6640316205533597,
+        "f1_score": 0.7058823529411764,
+        "overall_accuracy": 0.6873156342182891,
+        "true_positives": 168,
+        "false_positives": 55,
+        "false_negatives": 85,
+        "true_negatives": 65
+      },
+      "with_novel": {
+        "precision": 0.8565022421524664,
+        "recall": 0.6920289855072463,
+        "f1_score": 0.7655310621242485,
+        "overall_accuracy": 0.7551622418879056,
+        "true_positives": 191,
+        "true_positives_breakdown": {
+          "standard": 168,
+          "novel": 23
+        },
+        "false_positives": 32,
+        "false_negatives": 85,
+        "true_negatives": 65
+      },
+      "novel_validation_enabled": true
+    },
+    "gt_based": {
+      "overall_accuracy": 0.7876106194690266,
+      "total_predictions": 339,
+      "correct_predictions": 267,
+      "no_misconception_accuracy": 0.7558139534883721,
+      "has_misconception_accuracy": 0.7984189723320159,
+      "no_misconception_samples": 86,
+      "has_misconception_samples": 253
+    },
+    "total_predictions": 339
+  },
+  "openai_o3-mini_effort-medium_single": {
+    "provider": "openai_o3-mini_effort-medium",
+    "mode": "single",
+    "claude_eval": {
+      "standard": {
+        "precision": 0.6476014760147601,
+        "recall": 0.4191044776119403,
+        "f1_score": 0.508880028996013,
+        "overall_accuracy": 0.4191044776119403,
+        "true_positives": 702,
+        "false_positives": 382,
+        "false_negatives": 973,
+        "true_negatives": 0
+      },
+      "with_novel": {
+        "precision": 0.8293357933579336,
+        "recall": 0.48023504273504275,
+        "f1_score": 0.6082543978349121,
+        "overall_accuracy": 0.5367164179104478,
+        "true_positives": 899,
+        "true_positives_breakdown": {
+          "standard": 702,
+          "novel": 197
+        },
+        "false_positives": 185,
+        "false_negatives": 973,
+        "true_negatives": 0
+      },
+      "novel_validation_enabled": true
+    },
+    "gt_based": {},
+    "total_predictions": 1675
+  },
+  "openai_o3-mini_effort-medium_multi": {
+    "provider": "openai_o3-mini_effort-medium",
+    "mode": "multi",
+    "claude_eval": {
+      "standard": {
+        "precision": 0.7306122448979592,
+        "recall": 0.7075098814229249,
+        "f1_score": 0.7188755020080321,
+        "overall_accuracy": 0.696165191740413,
+        "true_positives": 179,
+        "false_positives": 66,
+        "false_negatives": 74,
+        "true_negatives": 57
+      },
+      "with_novel": {
+        "precision": 0.8326530612244898,
+        "recall": 0.7338129496402878,
+        "f1_score": 0.780114722753346,
+        "overall_accuracy": 0.7699115044247787,
+        "true_positives": 204,
+        "true_positives_breakdown": {
+          "standard": 179,
+          "novel": 25
+        },
+        "false_positives": 41,
+        "false_negatives": 74,
+        "true_negatives": 57
+      },
+      "novel_validation_enabled": true
+    },
+    "gt_based": {
+      "overall_accuracy": 0.8053097345132744,
+      "total_predictions": 339,
+      "correct_predictions": 273,
+      "no_misconception_accuracy": 0.6627906976744186,
+      "has_misconception_accuracy": 0.8537549407114624,
+      "no_misconception_samples": 86,
+      "has_misconception_samples": 253
+    },
+    "total_predictions": 339
+  },
+  "anthropic_claude-sonnet-4-5_reasoning_single": {
+    "provider": "anthropic_claude-sonnet-4-5_reasoning",
+    "mode": "single",
+    "claude_eval": {
+      "standard": {
+        "precision": 0.5548738922972052,
+        "recall": 0.48597014925373133,
+        "f1_score": 0.5181413112667091,
+        "overall_accuracy": 0.48597014925373133,
+        "true_positives": 814,
+        "false_positives": 653,
+        "false_negatives": 861,
+        "true_negatives": 0
+      },
+      "with_novel": {
+        "precision": 0.6959781867757328,
+        "recall": 0.5425079702444209,
+        "f1_score": 0.6097342490295611,
+        "overall_accuracy": 0.6095522388059702,
+        "true_positives": 1021,
+        "true_positives_breakdown": {
+          "standard": 814,
+          "novel": 207
+        },
+        "false_positives": 446,
+        "false_negatives": 861,
+        "true_negatives": 0
+      },
+      "novel_validation_enabled": true
+    },
+    "gt_based": {},
+    "total_predictions": 1675
+  },
+  "anthropic_claude-sonnet-4-5_reasoning_multi": {
+    "provider": "anthropic_claude-sonnet-4-5_reasoning",
+    "mode": "multi",
+    "claude_eval": {
+      "standard": {
+        "precision": 0.7380073800738007,
+        "recall": 0.7905138339920948,
+        "f1_score": 0.7633587786259541,
+        "overall_accuracy": 0.7404129793510325,
+        "true_positives": 200,
+        "false_positives": 71,
+        "false_negatives": 53,
+        "true_negatives": 51
+      },
+      "with_novel": {
+        "precision": 0.8413284132841329,
+        "recall": 0.8113879003558719,
+        "f1_score": 0.8260869565217391,
+        "overall_accuracy": 0.8230088495575221,
+        "true_positives": 228,
+        "true_positives_breakdown": {
+          "standard": 200,
+          "novel": 28
+        },
+        "false_positives": 43,
+        "false_negatives": 53,
+        "true_negatives": 51
+      },
+      "novel_validation_enabled": true
+    },
+    "gt_based": {
+      "overall_accuracy": 0.8466076696165191,
+      "total_predictions": 339,
+      "correct_predictions": 287,
+      "no_misconception_accuracy": 0.5930232558139535,
+      "has_misconception_accuracy": 0.932806324110672,
+      "no_misconception_samples": 86,
+      "has_misconception_samples": 253
+    },
+    "total_predictions": 339
+  },
+  "anthropic_claude-sonnet-4-5_no-reasoning_single": {
+    "provider": "anthropic_claude-sonnet-4-5_no-reasoning",
+    "mode": "single",
+    "claude_eval": {
+      "standard": {
+        "precision": 0.5274869109947644,
+        "recall": 0.4811940298507463,
+        "f1_score": 0.5032781767093351,
+        "overall_accuracy": 0.4811940298507463,
+        "true_positives": 806,
+        "false_positives": 722,
+        "false_negatives": 869,
+        "true_negatives": 0
+      },
+      "with_novel": {
+        "precision": 0.6799738219895288,
+        "recall": 0.5445492662473794,
+        "f1_score": 0.6047729918509894,
+        "overall_accuracy": 0.6202985074626866,
+        "true_positives": 1039,
+        "true_positives_breakdown": {
+          "standard": 806,
+          "novel": 233
+        },
+        "false_positives": 489,
+        "false_negatives": 869,
+        "true_negatives": 0
+      },
+      "novel_validation_enabled": true
+    },
+    "gt_based": {},
+    "total_predictions": 1675
+  },
+  "anthropic_claude-sonnet-4-5_no-reasoning_multi": {
+    "provider": "anthropic_claude-sonnet-4-5_no-reasoning",
+    "mode": "multi",
+    "claude_eval": {
+      "standard": {
+        "precision": 0.6678082191780822,
+        "recall": 0.7707509881422925,
+        "f1_score": 0.7155963302752294,
+        "overall_accuracy": 0.6814159292035398,
+        "true_positives": 195,
+        "false_positives": 97,
+        "false_negatives": 58,
+        "true_negatives": 36
+      },
+      "with_novel": {
+        "precision": 0.8082191780821918,
+        "recall": 0.8027210884353742,
+        "f1_score": 0.8054607508532423,
+        "overall_accuracy": 0.8023598820058997,
+        "true_positives": 236,
+        "true_positives_breakdown": {
+          "standard": 195,
+          "novel": 41
+        },
+        "false_positives": 56,
+        "false_negatives": 58,
+        "true_negatives": 36
+      },
+      "novel_validation_enabled": true
+    },
+    "gt_based": {
+      "overall_accuracy": 0.8200589970501475,
+      "total_predictions": 339,
+      "correct_predictions": 278,
+      "no_misconception_accuracy": 0.4186046511627907,
+      "has_misconception_accuracy": 0.9565217391304348,
+      "no_misconception_samples": 86,
+      "has_misconception_samples": 253
+    },
+    "total_predictions": 339
+  },
+  "gemini_2.5-flash_reasoning_single": {
+    "provider": "gemini_2.5-flash_reasoning",
+    "mode": "single",
+    "claude_eval": {
+      "standard": {
+        "precision": 0.543613707165109,
+        "recall": 0.4167164179104478,
+        "f1_score": 0.4717810070969922,
+        "overall_accuracy": 0.4167164179104478,
+        "true_positives": 698,
+        "false_positives": 586,
+        "false_negatives": 977,
+        "true_negatives": 0
+      },
+      "with_novel": {
+        "precision": 0.7375389408099688,
+        "recall": 0.4922037422037422,
+        "f1_score": 0.5903990024937655,
+        "overall_accuracy": 0.5653731343283582,
+        "true_positives": 947,
+        "true_positives_breakdown": {
+          "standard": 698,
+          "novel": 249
+        },
+        "false_positives": 337,
+        "false_negatives": 977,
+        "true_negatives": 0
+      },
+      "novel_validation_enabled": true
+    },
+    "gt_based": {},
+    "total_predictions": 1675
+  },
+  "gemini_2.5-flash_reasoning_multi": {
+    "provider": "gemini_2.5-flash_reasoning",
+    "mode": "multi",
+    "claude_eval": {
+      "standard": {
+        "precision": 0.6366666666666667,
+        "recall": 0.7549407114624506,
+        "f1_score": 0.6907775768535261,
+        "overall_accuracy": 0.6519174041297935,
+        "true_positives": 191,
+        "false_positives": 109,
+        "false_negatives": 62,
+        "true_negatives": 30
+      },
+      "with_novel": {
+        "precision": 0.8,
+        "recall": 0.7947019867549668,
+        "f1_score": 0.79734219269103,
+        "overall_accuracy": 0.7964601769911505,
+        "true_positives": 240,
+        "true_positives_breakdown": {
+          "standard": 191,
+          "novel": 49
+        },
+        "false_positives": 60,
+        "false_negatives": 62,
+        "true_negatives": 30
+      },
+      "novel_validation_enabled": true
+    },
+    "gt_based": {
+      "overall_accuracy": 0.8082595870206489,
+      "total_predictions": 339,
+      "correct_predictions": 274,
+      "no_misconception_accuracy": 0.3488372093023256,
+      "has_misconception_accuracy": 0.9644268774703557,
+      "no_misconception_samples": 86,
+      "has_misconception_samples": 253
+    },
+    "total_predictions": 339
+  },
+  "gemini_2.5-flash_no-reasoning_single": {
+    "provider": "gemini_2.5-flash_no-reasoning",
+    "mode": "single",
+    "claude_eval": {
+      "standard": {
+        "precision": 0.572986577181208,
+        "recall": 0.4077611940298507,
+        "f1_score": 0.47645622602023013,
+        "overall_accuracy": 0.4077611940298507,
+        "true_positives": 683,
+        "false_positives": 509,
+        "false_negatives": 992,
+        "true_negatives": 0
+      },
+      "with_novel": {
+        "precision": 0.7399328859060402,
+        "recall": 0.47065101387406616,
+        "f1_score": 0.5753424657534246,
+        "overall_accuracy": 0.5265671641791044,
+        "true_positives": 882,
+        "true_positives_breakdown": {
+          "standard": 683,
+          "novel": 199
+        },
+        "false_positives": 310,
+        "false_negatives": 992,
+        "true_negatives": 0
+      },
+      "novel_validation_enabled": true
+    },
+    "gt_based": {},
+    "total_predictions": 1675
+  },
+  "gemini_2.5-flash_no-reasoning_multi": {
+    "provider": "gemini_2.5-flash_no-reasoning",
+    "mode": "multi",
+    "claude_eval": {
+      "standard": {
+        "precision": 0.7150259067357513,
+        "recall": 0.5454545454545454,
+        "f1_score": 0.6188340807174888,
+        "overall_accuracy": 0.5634218289085545,
+        "true_positives": 138,
+        "false_positives": 55,
+        "false_negatives": 115,
+        "true_negatives": 53
+      },
+      "with_novel": {
+        "precision": 0.7979274611398963,
+        "recall": 0.5724907063197026,
+        "f1_score": 0.6666666666666666,
+        "overall_accuracy": 0.6106194690265486,
+        "true_positives": 154,
+        "true_positives_breakdown": {
+          "standard": 138,
+          "novel": 16
+        },
+        "false_positives": 39,
+        "false_negatives": 115,
+        "true_negatives": 53
+      },
+      "novel_validation_enabled": true
+    },
+    "gt_based": {
+      "overall_accuracy": 0.6283185840707964,
+      "total_predictions": 339,
+      "correct_predictions": 213,
+      "no_misconception_accuracy": 0.6162790697674418,
+      "has_misconception_accuracy": 0.6324110671936759,
+      "no_misconception_samples": 86,
+      "has_misconception_samples": 253
+    },
+    "total_predictions": 339
+  }
+}

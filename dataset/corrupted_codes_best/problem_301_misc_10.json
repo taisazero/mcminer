@@ -1,0 +1,33 @@
+{
+  "problem_id": 301,
+  "problem_title": "Problem 301",
+  "misconception_id": 10,
+  "misconception_description": "Student believes that `str.split()` modifies the original string in place.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "NONE",
+      "reasoning": "Let me analyze this problem:\n\n1. The problem is about counting bidirectional tuple pairs\n2. The given implementation works with lists and tuples, using indexing\n3. The misconception is about `str.split()` modifying the original string in place\n\nThe misconception is about strings and the `.split()` method. However, the given problem and solution don't involve strings or the `.split()` method at all. They work with lists and tuples.\n\nFor the misconception to be applicable, I would need to modify the problem/solution to involve string splitting. However, the problem is fundamentally about tuple pairs, not string manipulation.\n\nSince the misconception relates to string operations (`str.split()`) and the given problem/solution doesn't involve strings or splitting operations, this misconception is not applicable to this problem.\n\nI should output NONE with an explanation that the misconception is about string operations which are not present in this problem about counting bidirectional tuple pairs.",
+      "metadata": {
+        "raw": "inapplicable: true\nreason: The misconception is about `str.split()` modifying strings in place, but the given problem involves counting bidirectional tuple pairs using list indexing and tuple element comparisons. There are no string operations or `.split()` calls in the solution, making this misconception irrelevant to the problem.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A",
+        "inapplicable": "true",
+        "reason": "The misconception is about `str.split()` modifying strings in place, but the given problem involves counting bidirectional tuple pairs using list indexing and tuple element comparisons. There are no string operations or `.split()` calls in the solution, making this misconception irrelevant to the problem.",
+        "misconception_type": "N/A",
+        "error_type": "N/A",
+        "modification_notes": "N/A"
+      },
+      "raw_response": "<reasoning>\nLet me analyze this problem:\n\n1. The problem is about counting bidirectional tuple pairs\n2. The given implementation works with lists and tuples, using indexing\n3. The misconception is about `str.split()` modifying the original string in place\n\nThe misconception is about strings and the `.split()` method. However, the given problem and solution don't involve strings or the `.split()` method at all. They work with lists and tuples.\n\nFor the misconception to be applicable, I would need to modify the problem/solution to involve string splitting. However, the problem is fundamentally about tuple pairs, not string manipulation.\n\nSince the misconception relates to string operations (`str.split()`) and the given problem/solution doesn't involve strings or splitting operations, this misconception is not applicable to this problem.\n\nI should output NONE with an explanation that the misconception is about string operations which are not present in this problem about counting bidirectional tuple pairs.\n</reasoning>\n\n```xml\n<code>\nNONE\n</code>\n\n<metadata>\ninapplicable: true\nreason: The misconception is about `str.split()` modifying strings in place, but the given problem involves counting bidirectional tuple pairs using list indexing and tuple element comparisons. There are no string operations or `.split()` calls in the solution, making this misconception irrelevant to the problem.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 747,
+      "random_seed_used": 42,
+      "problem_misconception_index": 10,
+      "global_misconception_index": 746,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

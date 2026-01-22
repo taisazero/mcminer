@@ -1,0 +1,47 @@
+{
+  "evaluation_timestamp": "2025-10-06T15:44:19.650574",
+  "predictions_file": "mining_misconceptions/test_results/anthropic_claude-sonnet-4-5_reasoning/single/predictions.json",
+  "misconceptions_file": "mining_misconceptions/data/misconception.json",
+  "prediction_format": "single-code",
+  "claude_evaluation_used": true,
+  "recall_metrics": {
+    "recall": 0.44776119402985076,
+    "total_true_misconceptions": 67,
+    "total_found_misconceptions": 30,
+    "similarity_threshold": 0.5,
+    "total_predictions_analyzed": 1675
+  },
+  "precision_metrics": {
+    "total_unique_predictions": 1281,
+    "total_prediction_instances": 1467,
+    "awaiting_labels": 1281,
+    "labeled": 0
+  },
+  "claude_evaluation_metrics": {
+    "standard": {
+      "precision": 0.5289706884798909,
+      "recall": 0.4632835820895522,
+      "f1_score": 0.4939528962444303,
+      "overall_accuracy": 0.4632835820895522,
+      "true_positives": 776,
+      "false_positives": 691,
+      "false_negatives": 899,
+      "true_negatives": 0
+    },
+    "with_novel": {
+      "precision": 0.6912065439672802,
+      "recall": 0.5300575013068479,
+      "f1_score": 0.6000000000000001,
+      "overall_accuracy": 0.6053731343283583,
+      "true_positives": 1014,
+      "true_positives_breakdown": {
+        "standard": 776,
+        "novel": 238
+      },
+      "false_positives": 453,
+      "false_negatives": 899,
+      "true_negatives": 0
+    },
+    "novel_validation_enabled": true
+  }
+}

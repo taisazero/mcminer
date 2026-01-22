@@ -1,0 +1,26 @@
+{
+  "run_timestamp": "2025-10-05T10:29:27.086670",
+  "input_directory": "mining_misconceptions/data/corrupted_codes/corrupted_codes_best",
+  "output_directory": "mining_misconceptions/test_results/anthropic_claude-sonnet-4-5_reasoning/single",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-sonnet-4-5",
+  "processing_mode": "individual",
+  "reasoning_enabled": true,
+  "template_type": "zeroshot-no-reasoning",
+  "statistics": {
+    "new_codes_analyzed": 1675,
+    "total_codes_in_file": 1675,
+    "correct_codes_analyzed": 612,
+    "corrupted_codes_analyzed": 1063,
+    "successful_parses": 1675,
+    "parse_success_rate": 1.0,
+    "total_misconceptions_found": 1467,
+    "average_misconceptions_per_code": 0.8758208955223881,
+    "codes_with_no_misconceptions": 208,
+    "correct_codes_no_misconceptions": 167,
+    "corrupted_codes_no_misconceptions": 41,
+    "none_substitutions": 612,
+    "none_substitution_rate": 0.3653731343283582,
+    "append_mode": false
+  }
+}

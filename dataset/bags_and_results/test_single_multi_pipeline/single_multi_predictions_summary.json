@@ -1,0 +1,18 @@
+{
+  "total_groups": 1,
+  "correct_only_groups": 0,
+  "misconception_groups": 1,
+  "total_single_predictions": 5,
+  "groups_with_complete_singles": 1,
+  "groups_with_missing_singles": 0,
+  "coverage_by_group_type": {
+    "misconception": {
+      "total_groups": 1,
+      "total_expected_singles": 5,
+      "total_found_singles": 5
+    }
+  },
+  "misconception_distribution": {
+    "1": 1
+  }
+}

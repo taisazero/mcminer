@@ -1,0 +1,33 @@
+{
+  "problem_id": 200,
+  "problem_title": "Problem 200",
+  "misconception_id": 10,
+  "misconception_description": "Student believes that `str.split()` modifies the original string in place.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "NONE",
+      "reasoning": "The misconception is about `str.split()` modifying the original string in place. However, looking at the given problem and implementation, there's no use of strings or the `split()` method at all. The problem is about calculating a harmonic sum using recursion with integers and division.\n\nSince the misconception relates to string operations (specifically the `split()` method) and the given problem/solution doesn't involve strings or splitting at all, this misconception is not applicable to this problem.\n\nI should return the NONE response indicating that the misconception is inapplicable.",
+      "metadata": {
+        "raw": "inapplicable: true\nreason: The misconception is about `str.split()` modifying strings in place, but the given problem involves calculating a harmonic sum using recursion with numeric operations only. There are no strings or split operations in the solution, so this misconception cannot be demonstrated.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A",
+        "inapplicable": "true",
+        "reason": "The misconception is about `str.split()` modifying strings in place, but the given problem involves calculating a harmonic sum using recursion with numeric operations only. There are no strings or split operations in the solution, so this misconception cannot be demonstrated.",
+        "misconception_type": "N/A",
+        "error_type": "N/A",
+        "modification_notes": "N/A"
+      },
+      "raw_response": "<reasoning>\nThe misconception is about `str.split()` modifying the original string in place. However, looking at the given problem and implementation, there's no use of strings or the `split()` method at all. The problem is about calculating a harmonic sum using recursion with integers and division.\n\nSince the misconception relates to string operations (specifically the `split()` method) and the given problem/solution doesn't involve strings or splitting at all, this misconception is not applicable to this problem.\n\nI should return the NONE response indicating that the misconception is inapplicable.\n</reasoning>\n\n```xml\n<code>\nNONE\n</code>\n\n<metadata>\ninapplicable: true\nreason: The misconception is about `str.split()` modifying strings in place, but the given problem involves calculating a harmonic sum using recursion with numeric operations only. There are no strings or split operations in the solution, so this misconception cannot be demonstrated.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 948,
+      "random_seed_used": 42,
+      "problem_misconception_index": 10,
+      "global_misconception_index": 947,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

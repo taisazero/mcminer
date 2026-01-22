@@ -1,0 +1,56 @@
+{
+  "evaluation_timestamp": "2025-11-22T06:12:58.284727",
+  "predictions_file": "mining_misconceptions/test_results/anthropic_claude-sonnet-4-5_reasoning/multi/multi_predictions.json",
+  "misconceptions_file": "mining_misconceptions/data/misconception.json",
+  "prediction_format": "multi-code",
+  "claude_evaluation_used": true,
+  "recall_metrics": {
+    "recall": 0.3880597014925373,
+    "total_true_misconceptions": 67,
+    "total_found_misconceptions": 26,
+    "similarity_threshold": 0.5,
+    "total_predictions_analyzed": 339
+  },
+  "precision_metrics": {
+    "total_unique_predictions": 257,
+    "total_prediction_instances": 271,
+    "awaiting_labels": 257,
+    "labeled": 0
+  },
+  "gt_based_metrics": {
+    "overall_accuracy": 0.8466076696165191,
+    "total_predictions": 339,
+    "correct_predictions": 287,
+    "no_misconception_accuracy": 0.5930232558139535,
+    "has_misconception_accuracy": 0.932806324110672,
+    "no_misconception_samples": 86,
+    "has_misconception_samples": 253
+  },
+  "claude_evaluation_metrics": {
+    "standard": {
+      "precision": 0.7011070110701108,
+      "recall": 0.7509881422924901,
+      "f1_score": 0.7251908396946566,
+      "overall_accuracy": 0.7109144542772862,
+      "true_positives": 190,
+      "false_positives": 81,
+      "false_negatives": 63,
+      "true_negatives": 51
+    },
+    "with_novel": {
+      "precision": 0.8302583025830258,
+      "recall": 0.78125,
+      "f1_score": 0.8050089445438282,
+      "overall_accuracy": 0.8141592920353983,
+      "true_positives": 225,
+      "true_positives_breakdown": {
+        "standard": 190,
+        "novel": 35
+      },
+      "false_positives": 46,
+      "false_negatives": 63,
+      "true_negatives": 51
+    },
+    "novel_validation_enabled": true
+  }
+}

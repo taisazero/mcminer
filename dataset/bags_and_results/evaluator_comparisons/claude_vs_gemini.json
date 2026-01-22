@@ -1,0 +1,2996 @@
+{
+  "configurations_compared": 12,
+  "configurations": [
+    "anthropic_claude-sonnet-4-5_no-reasoning_single_multi",
+    "anthropic_claude-sonnet-4-5_no-reasoning_multi",
+    "anthropic_claude-sonnet-4-5_reasoning_single_multi",
+    "anthropic_claude-sonnet-4-5_reasoning_multi",
+    "gemini_2.5-flash_no-reasoning_single_multi",
+    "gemini_2.5-flash_no-reasoning_multi",
+    "gemini_2.5-flash_reasoning_single_multi",
+    "gemini_2.5-flash_reasoning_multi",
+    "openai_o3-mini_effort-low_single_multi",
+    "openai_o3-mini_effort-low_multi",
+    "openai_o3-mini_effort-medium_single_multi",
+    "openai_o3-mini_effort-medium_multi"
+  ],
+  "configurations_skipped": [],
+  "results": {
+    "anthropic_claude-sonnet-4-5_no-reasoning_single_multi": {
+      "total_predictions": 1490,
+      "standard_match_agreement": {
+        "agreements": 1419,
+        "disagreements": 71,
+        "agreement_rate": 95.23489932885906,
+        "cohens_kappa": 0.9046265026351897,
+        "confusion_matrix": {
+          "both_match": 732,
+          "both_no_match": 687,
+          "eval1_match_eval2_no": 26,
+          "eval1_no_eval2_match": 45
+        }
+      },
+      "with_novel_agreement": {
+        "agreements": 1480,
+        "disagreements": 10,
+        "agreement_rate": 99.32885906040269
+      },
+      "novel_classification_agreement": {
+        "agreements": 1411,
+        "disagreements": 79,
+        "agreement_rate": 94.6979865771812,
+        "cohens_kappa": 0.8001154714802422,
+        "confusion_matrix": {
+          "both_novel": 195,
+          "both_not_novel": 1216,
+          "eval1_novel_eval2_not": 45,
+          "eval1_not_eval2_novel": 34
+        },
+        "sample_disagreements": [
+          {
+            "index": 14,
+            "prediction_id": "problem_176_misc_1.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 26,
+            "prediction_id": "problem_46_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 86,
+            "prediction_id": "problem_335_misc_12.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 12,
+            "has_predicted": true
+          },
+          {
+            "index": 93,
+            "prediction_id": "problem_301_misc_12.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 12,
+            "has_predicted": true
+          },
+          {
+            "index": 134,
+            "prediction_id": "problem_121_misc_14.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 14,
+            "has_predicted": true
+          },
+          {
+            "index": 135,
+            "prediction_id": "problem_46_misc_14.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 14,
+            "has_predicted": true
+          },
+          {
+            "index": 152,
+            "prediction_id": "problem_178_misc_15.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 15,
+            "has_predicted": true
+          },
+          {
+            "index": 232,
+            "prediction_id": "problem_348_misc_18.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 18,
+            "has_predicted": true
+          },
+          {
+            "index": 238,
+            "prediction_id": "problem_130_misc_18.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 18,
+            "has_predicted": true
+          },
+          {
+            "index": 272,
+            "prediction_id": "problem_200_misc_2.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 2,
+            "has_predicted": true
+          }
+        ]
+      },
+      "by_ground_truth_type": {
+        "no_misconception": {
+          "total": 12,
+          "agreements": 12,
+          "agreement_rate": 100.0
+        },
+        "has_misconception": {
+          "total": 1478,
+          "agreements": 1407,
+          "agreement_rate": 95.19621109607577
+        }
+      },
+      "sample_disagreements": [
+        {
+          "index": 14,
+          "prediction_id": "problem_176_misc_1.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 26,
+          "prediction_id": "problem_46_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 86,
+          "prediction_id": "problem_335_misc_12.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 12,
+          "has_predicted": true
+        },
+        {
+          "index": 93,
+          "prediction_id": "problem_301_misc_12.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 12,
+          "has_predicted": true
+        },
+        {
+          "index": 134,
+          "prediction_id": "problem_121_misc_14.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 14,
+          "has_predicted": true
+        },
+        {
+          "index": 135,
+          "prediction_id": "problem_46_misc_14.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 14,
+          "has_predicted": true
+        },
+        {
+          "index": 152,
+          "prediction_id": "problem_178_misc_15.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 15,
+          "has_predicted": true
+        },
+        {
+          "index": 232,
+          "prediction_id": "problem_348_misc_18.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 18,
+          "has_predicted": true
+        },
+        {
+          "index": 238,
+          "prediction_id": "problem_130_misc_18.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 18,
+          "has_predicted": true
+        },
+        {
+          "index": 272,
+          "prediction_id": "problem_200_misc_2.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 2,
+          "has_predicted": true
+        }
+      ]
+    },
+    "anthropic_claude-sonnet-4-5_no-reasoning_multi": {
+      "total_predictions": 339,
+      "standard_match_agreement": {
+        "agreements": 323,
+        "disagreements": 16,
+        "agreement_rate": 95.28023598820059,
+        "cohens_kappa": 0.8933962264150943,
+        "confusion_matrix": {
+          "both_match": 219,
+          "both_no_match": 104,
+          "eval1_match_eval2_no": 4,
+          "eval1_no_eval2_match": 12
+        }
+      },
+      "with_novel_agreement": {
+        "agreements": 334,
+        "disagreements": 5,
+        "agreement_rate": 98.52507374631269
+      },
+      "novel_classification_agreement": {
+        "agreements": 318,
+        "disagreements": 21,
+        "agreement_rate": 93.80530973451327,
+        "cohens_kappa": 0.7175784504304362,
+        "confusion_matrix": {
+          "both_novel": 32,
+          "both_not_novel": 286,
+          "eval1_novel_eval2_not": 12,
+          "eval1_not_eval2_novel": 9
+        },
+        "sample_disagreements": [
+          {
+            "index": 6,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 8,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 11,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 39,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 54,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 60,
+            "prediction_id": "group_misconception_1_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 61,
+            "prediction_id": "group_misconception_1_1",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 63,
+            "prediction_id": "group_misconception_1_3",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 109,
+            "prediction_id": "group_misconception_2_2",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 2,
+            "has_predicted": true
+          },
+          {
+            "index": 157,
+            "prediction_id": "group_misconception_32_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          }
+        ]
+      },
+      "by_ground_truth_type": {
+        "no_misconception": {
+          "total": 86,
+          "agreements": 86,
+          "agreement_rate": 100.0
+        },
+        "has_misconception": {
+          "total": 253,
+          "agreements": 237,
+          "agreement_rate": 93.67588932806325
+        }
+      },
+      "sample_disagreements": [
+        {
+          "index": 60,
+          "prediction_id": "group_misconception_1_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 61,
+          "prediction_id": "group_misconception_1_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 63,
+          "prediction_id": "group_misconception_1_3",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 109,
+          "prediction_id": "group_misconception_2_2",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 2,
+          "has_predicted": true
+        },
+        {
+          "index": 157,
+          "prediction_id": "group_misconception_32_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 158,
+          "prediction_id": "group_misconception_32_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 160,
+          "prediction_id": "group_misconception_32_3",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 163,
+          "prediction_id": "group_misconception_33_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 33,
+          "has_predicted": true
+        },
+        {
+          "index": 185,
+          "prediction_id": "group_misconception_38_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 38,
+          "has_predicted": true
+        },
+        {
+          "index": 191,
+          "prediction_id": "group_misconception_40_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 40,
+          "has_predicted": true
+        }
+      ]
+    },
+    "anthropic_claude-sonnet-4-5_reasoning_single_multi": {
+      "total_predictions": 1490,
+      "standard_match_agreement": {
+        "agreements": 1400,
+        "disagreements": 90,
+        "agreement_rate": 93.95973154362416,
+        "cohens_kappa": 0.8791321308437496,
+        "confusion_matrix": {
+          "both_match": 724,
+          "both_no_match": 676,
+          "eval1_match_eval2_no": 28,
+          "eval1_no_eval2_match": 62
+        }
+      },
+      "with_novel_agreement": {
+        "agreements": 1483,
+        "disagreements": 7,
+        "agreement_rate": 99.53020134228187
+      },
+      "novel_classification_agreement": {
+        "agreements": 1395,
+        "disagreements": 95,
+        "agreement_rate": 93.6241610738255,
+        "cohens_kappa": 0.7444493791320487,
+        "confusion_matrix": {
+          "both_novel": 170,
+          "both_not_novel": 1225,
+          "eval1_novel_eval2_not": 61,
+          "eval1_not_eval2_novel": 34
+        },
+        "sample_disagreements": [
+          {
+            "index": 19,
+            "prediction_id": "problem_348_misc_1.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 26,
+            "prediction_id": "problem_46_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 27,
+            "prediction_id": "problem_242_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 50,
+            "prediction_id": "problem_417_misc_10.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 10,
+            "has_predicted": true
+          },
+          {
+            "index": 78,
+            "prediction_id": "problem_447_misc_12.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 12,
+            "has_predicted": true
+          },
+          {
+            "index": 86,
+            "prediction_id": "problem_335_misc_12.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 12,
+            "has_predicted": true
+          },
+          {
+            "index": 93,
+            "prediction_id": "problem_301_misc_12.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 12,
+            "has_predicted": true
+          },
+          {
+            "index": 135,
+            "prediction_id": "problem_46_misc_14.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 14,
+            "has_predicted": true
+          },
+          {
+            "index": 151,
+            "prediction_id": "problem_130_misc_15.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 15,
+            "has_predicted": true
+          },
+          {
+            "index": 232,
+            "prediction_id": "problem_348_misc_18.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 18,
+            "has_predicted": true
+          }
+        ]
+      },
+      "by_ground_truth_type": {
+        "no_misconception": {
+          "total": 12,
+          "agreements": 12,
+          "agreement_rate": 100.0
+        },
+        "has_misconception": {
+          "total": 1478,
+          "agreements": 1388,
+          "agreement_rate": 93.9106901217862
+        }
+      },
+      "sample_disagreements": [
+        {
+          "index": 19,
+          "prediction_id": "problem_348_misc_1.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 26,
+          "prediction_id": "problem_46_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 27,
+          "prediction_id": "problem_242_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 50,
+          "prediction_id": "problem_417_misc_10.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 10,
+          "has_predicted": true
+        },
+        {
+          "index": 78,
+          "prediction_id": "problem_447_misc_12.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 12,
+          "has_predicted": true
+        },
+        {
+          "index": 86,
+          "prediction_id": "problem_335_misc_12.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 12,
+          "has_predicted": true
+        },
+        {
+          "index": 93,
+          "prediction_id": "problem_301_misc_12.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 12,
+          "has_predicted": true
+        },
+        {
+          "index": 135,
+          "prediction_id": "problem_46_misc_14.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 14,
+          "has_predicted": true
+        },
+        {
+          "index": 151,
+          "prediction_id": "problem_130_misc_15.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 15,
+          "has_predicted": true
+        },
+        {
+          "index": 232,
+          "prediction_id": "problem_348_misc_18.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 18,
+          "has_predicted": true
+        }
+      ]
+    },
+    "anthropic_claude-sonnet-4-5_reasoning_multi": {
+      "total_predictions": 339,
+      "standard_match_agreement": {
+        "agreements": 321,
+        "disagreements": 18,
+        "agreement_rate": 94.69026548672566,
+        "cohens_kappa": 0.8686555598605192,
+        "confusion_matrix": {
+          "both_match": 235,
+          "both_no_match": 86,
+          "eval1_match_eval2_no": 2,
+          "eval1_no_eval2_match": 16
+        }
+      },
+      "with_novel_agreement": {
+        "agreements": 338,
+        "disagreements": 1,
+        "agreement_rate": 99.70501474926253
+      },
+      "novel_classification_agreement": {
+        "agreements": 322,
+        "disagreements": 17,
+        "agreement_rate": 94.98525073746312,
+        "cohens_kappa": 0.7268073003081297,
+        "confusion_matrix": {
+          "both_novel": 26,
+          "both_not_novel": 296,
+          "eval1_novel_eval2_not": 15,
+          "eval1_not_eval2_novel": 2
+        },
+        "sample_disagreements": [
+          {
+            "index": 61,
+            "prediction_id": "group_misconception_1_1",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 75,
+            "prediction_id": "group_misconception_12_2",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 12,
+            "has_predicted": true
+          },
+          {
+            "index": 107,
+            "prediction_id": "group_misconception_2_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 2,
+            "has_predicted": true
+          },
+          {
+            "index": 112,
+            "prediction_id": "group_misconception_20_1",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 20,
+            "has_predicted": true
+          },
+          {
+            "index": 157,
+            "prediction_id": "group_misconception_32_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          },
+          {
+            "index": 158,
+            "prediction_id": "group_misconception_32_1",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          },
+          {
+            "index": 159,
+            "prediction_id": "group_misconception_32_2",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          },
+          {
+            "index": 160,
+            "prediction_id": "group_misconception_32_3",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          },
+          {
+            "index": 164,
+            "prediction_id": "group_misconception_33_3",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 33,
+            "has_predicted": true
+          },
+          {
+            "index": 183,
+            "prediction_id": "group_misconception_38_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 38,
+            "has_predicted": true
+          }
+        ]
+      },
+      "by_ground_truth_type": {
+        "no_misconception": {
+          "total": 86,
+          "agreements": 86,
+          "agreement_rate": 100.0
+        },
+        "has_misconception": {
+          "total": 253,
+          "agreements": 235,
+          "agreement_rate": 92.88537549407114
+        }
+      },
+      "sample_disagreements": [
+        {
+          "index": 61,
+          "prediction_id": "group_misconception_1_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 75,
+          "prediction_id": "group_misconception_12_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 12,
+          "has_predicted": true
+        },
+        {
+          "index": 107,
+          "prediction_id": "group_misconception_2_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 2,
+          "has_predicted": true
+        },
+        {
+          "index": 112,
+          "prediction_id": "group_misconception_20_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 20,
+          "has_predicted": true
+        },
+        {
+          "index": 157,
+          "prediction_id": "group_misconception_32_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 158,
+          "prediction_id": "group_misconception_32_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 159,
+          "prediction_id": "group_misconception_32_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 160,
+          "prediction_id": "group_misconception_32_3",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 164,
+          "prediction_id": "group_misconception_33_3",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 33,
+          "has_predicted": true
+        },
+        {
+          "index": 183,
+          "prediction_id": "group_misconception_38_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 38,
+          "has_predicted": true
+        }
+      ]
+    },
+    "gemini_2.5-flash_no-reasoning_single_multi": {
+      "total_predictions": 1490,
+      "standard_match_agreement": {
+        "agreements": 1389,
+        "disagreements": 101,
+        "agreement_rate": 93.22147651006712,
+        "cohens_kappa": 0.8633253472493421,
+        "confusion_matrix": {
+          "both_match": 627,
+          "both_no_match": 762,
+          "eval1_match_eval2_no": 59,
+          "eval1_no_eval2_match": 42
+        }
+      },
+      "with_novel_agreement": {
+        "agreements": 1464,
+        "disagreements": 26,
+        "agreement_rate": 98.25503355704697
+      },
+      "novel_classification_agreement": {
+        "agreements": 1379,
+        "disagreements": 111,
+        "agreement_rate": 92.5503355704698,
+        "cohens_kappa": 0.6689140766067848,
+        "confusion_matrix": {
+          "both_novel": 137,
+          "both_not_novel": 1242,
+          "eval1_novel_eval2_not": 56,
+          "eval1_not_eval2_novel": 55
+        },
+        "sample_disagreements": [
+          {
+            "index": 19,
+            "prediction_id": "problem_348_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 27,
+            "prediction_id": "problem_242_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 36,
+            "prediction_id": "problem_447_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 50,
+            "prediction_id": "problem_417_misc_10.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 10,
+            "has_predicted": true
+          },
+          {
+            "index": 61,
+            "prediction_id": "problem_335_misc_11.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 11,
+            "has_predicted": true
+          },
+          {
+            "index": 83,
+            "prediction_id": "problem_73_misc_12.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 12,
+            "has_predicted": true
+          },
+          {
+            "index": 90,
+            "prediction_id": "problem_501_misc_12.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 12,
+            "has_predicted": true
+          },
+          {
+            "index": 96,
+            "prediction_id": "problem_417_misc_12.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": false,
+            "gt_misconception": 12,
+            "has_predicted": true
+          },
+          {
+            "index": 111,
+            "prediction_id": "problem_301_misc_13.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 13,
+            "has_predicted": true
+          },
+          {
+            "index": 133,
+            "prediction_id": "problem_447_misc_14.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 14,
+            "has_predicted": true
+          }
+        ]
+      },
+      "by_ground_truth_type": {
+        "no_misconception": {
+          "total": 12,
+          "agreements": 12,
+          "agreement_rate": 100.0
+        },
+        "has_misconception": {
+          "total": 1478,
+          "agreements": 1377,
+          "agreement_rate": 93.16644113667117
+        }
+      },
+      "sample_disagreements": [
+        {
+          "index": 19,
+          "prediction_id": "problem_348_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 27,
+          "prediction_id": "problem_242_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 36,
+          "prediction_id": "problem_447_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 50,
+          "prediction_id": "problem_417_misc_10.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 10,
+          "has_predicted": true
+        },
+        {
+          "index": 61,
+          "prediction_id": "problem_335_misc_11.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 11,
+          "has_predicted": true
+        },
+        {
+          "index": 83,
+          "prediction_id": "problem_73_misc_12.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 12,
+          "has_predicted": true
+        },
+        {
+          "index": 90,
+          "prediction_id": "problem_501_misc_12.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 12,
+          "has_predicted": true
+        },
+        {
+          "index": 111,
+          "prediction_id": "problem_301_misc_13.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 13,
+          "has_predicted": true
+        },
+        {
+          "index": 133,
+          "prediction_id": "problem_447_misc_14.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 14,
+          "has_predicted": true
+        },
+        {
+          "index": 134,
+          "prediction_id": "problem_121_misc_14.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 14,
+          "has_predicted": true
+        }
+      ]
+    },
+    "gemini_2.5-flash_no-reasoning_multi": {
+      "total_predictions": 339,
+      "standard_match_agreement": {
+        "agreements": 328,
+        "disagreements": 11,
+        "agreement_rate": 96.7551622418879,
+        "cohens_kappa": 0.9342919067505419,
+        "confusion_matrix": {
+          "both_match": 183,
+          "both_no_match": 145,
+          "eval1_match_eval2_no": 3,
+          "eval1_no_eval2_match": 8
+        }
+      },
+      "with_novel_agreement": {
+        "agreements": 337,
+        "disagreements": 2,
+        "agreement_rate": 99.41002949852508
+      },
+      "novel_classification_agreement": {
+        "agreements": 328,
+        "disagreements": 11,
+        "agreement_rate": 96.7551622418879,
+        "cohens_kappa": 0.6858731362143038,
+        "confusion_matrix": {
+          "both_novel": 13,
+          "both_not_novel": 315,
+          "eval1_novel_eval2_not": 8,
+          "eval1_not_eval2_novel": 3
+        },
+        "sample_disagreements": [
+          {
+            "index": 60,
+            "prediction_id": "group_misconception_1_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 157,
+            "prediction_id": "group_misconception_32_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          },
+          {
+            "index": 158,
+            "prediction_id": "group_misconception_32_1",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          },
+          {
+            "index": 159,
+            "prediction_id": "group_misconception_32_2",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          },
+          {
+            "index": 160,
+            "prediction_id": "group_misconception_32_3",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          },
+          {
+            "index": 192,
+            "prediction_id": "group_misconception_40_1",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 40,
+            "has_predicted": true
+          },
+          {
+            "index": 194,
+            "prediction_id": "group_misconception_40_3",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 40,
+            "has_predicted": true
+          },
+          {
+            "index": 213,
+            "prediction_id": "group_misconception_49_2",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 49,
+            "has_predicted": true
+          },
+          {
+            "index": 295,
+            "prediction_id": "group_misconception_48_1",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 48,
+            "has_predicted": true
+          },
+          {
+            "index": 303,
+            "prediction_id": "group_misconception_65_1",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 65,
+            "has_predicted": true
+          }
+        ]
+      },
+      "by_ground_truth_type": {
+        "no_misconception": {
+          "total": 86,
+          "agreements": 86,
+          "agreement_rate": 100.0
+        },
+        "has_misconception": {
+          "total": 253,
+          "agreements": 242,
+          "agreement_rate": 95.65217391304348
+        }
+      },
+      "sample_disagreements": [
+        {
+          "index": 60,
+          "prediction_id": "group_misconception_1_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 157,
+          "prediction_id": "group_misconception_32_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 158,
+          "prediction_id": "group_misconception_32_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 159,
+          "prediction_id": "group_misconception_32_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 160,
+          "prediction_id": "group_misconception_32_3",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 192,
+          "prediction_id": "group_misconception_40_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 40,
+          "has_predicted": true
+        },
+        {
+          "index": 194,
+          "prediction_id": "group_misconception_40_3",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 40,
+          "has_predicted": true
+        },
+        {
+          "index": 283,
+          "prediction_id": "group_misconception_27_3",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 27,
+          "has_predicted": true
+        },
+        {
+          "index": 295,
+          "prediction_id": "group_misconception_48_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 48,
+          "has_predicted": true
+        },
+        {
+          "index": 303,
+          "prediction_id": "group_misconception_65_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 65,
+          "has_predicted": true
+        }
+      ]
+    },
+    "gemini_2.5-flash_reasoning_single_multi": {
+      "total_predictions": 1490,
+      "standard_match_agreement": {
+        "agreements": 1411,
+        "disagreements": 79,
+        "agreement_rate": 94.6979865771812,
+        "cohens_kappa": 0.8930844116327357,
+        "confusion_matrix": {
+          "both_match": 638,
+          "both_no_match": 773,
+          "eval1_match_eval2_no": 43,
+          "eval1_no_eval2_match": 36
+        }
+      },
+      "with_novel_agreement": {
+        "agreements": 1489,
+        "disagreements": 1,
+        "agreement_rate": 99.93288590604027
+      },
+      "novel_classification_agreement": {
+        "agreements": 1412,
+        "disagreements": 78,
+        "agreement_rate": 94.76510067114094,
+        "cohens_kappa": 0.8056554238223443,
+        "confusion_matrix": {
+          "both_novel": 200,
+          "both_not_novel": 1212,
+          "eval1_novel_eval2_not": 35,
+          "eval1_not_eval2_novel": 43
+        },
+        "sample_disagreements": [
+          {
+            "index": 24,
+            "prediction_id": "problem_93_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 27,
+            "prediction_id": "problem_242_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 28,
+            "prediction_id": "problem_152_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 35,
+            "prediction_id": "problem_301_misc_1.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 36,
+            "prediction_id": "problem_447_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 105,
+            "prediction_id": "problem_178_misc_13.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 13,
+            "has_predicted": true
+          },
+          {
+            "index": 111,
+            "prediction_id": "problem_301_misc_13.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 13,
+            "has_predicted": true
+          },
+          {
+            "index": 133,
+            "prediction_id": "problem_447_misc_14.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 14,
+            "has_predicted": true
+          },
+          {
+            "index": 135,
+            "prediction_id": "problem_46_misc_14.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 14,
+            "has_predicted": true
+          },
+          {
+            "index": 165,
+            "prediction_id": "problem_154_misc_15.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 15,
+            "has_predicted": true
+          }
+        ]
+      },
+      "by_ground_truth_type": {
+        "no_misconception": {
+          "total": 12,
+          "agreements": 12,
+          "agreement_rate": 100.0
+        },
+        "has_misconception": {
+          "total": 1478,
+          "agreements": 1399,
+          "agreement_rate": 94.65493910690121
+        }
+      },
+      "sample_disagreements": [
+        {
+          "index": 24,
+          "prediction_id": "problem_93_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 27,
+          "prediction_id": "problem_242_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 28,
+          "prediction_id": "problem_152_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 35,
+          "prediction_id": "problem_301_misc_1.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 36,
+          "prediction_id": "problem_447_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 105,
+          "prediction_id": "problem_178_misc_13.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 13,
+          "has_predicted": true
+        },
+        {
+          "index": 111,
+          "prediction_id": "problem_301_misc_13.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 13,
+          "has_predicted": true
+        },
+        {
+          "index": 133,
+          "prediction_id": "problem_447_misc_14.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 14,
+          "has_predicted": true
+        },
+        {
+          "index": 135,
+          "prediction_id": "problem_46_misc_14.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 14,
+          "has_predicted": true
+        },
+        {
+          "index": 165,
+          "prediction_id": "problem_154_misc_15.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 15,
+          "has_predicted": true
+        }
+      ]
+    },
+    "gemini_2.5-flash_reasoning_multi": {
+      "total_predictions": 339,
+      "standard_match_agreement": {
+        "agreements": 323,
+        "disagreements": 16,
+        "agreement_rate": 95.28023598820059,
+        "cohens_kappa": 0.8972493748579222,
+        "confusion_matrix": {
+          "both_match": 210,
+          "both_no_match": 113,
+          "eval1_match_eval2_no": 4,
+          "eval1_no_eval2_match": 12
+        }
+      },
+      "with_novel_agreement": {
+        "agreements": 324,
+        "disagreements": 15,
+        "agreement_rate": 95.57522123893806
+      },
+      "novel_classification_agreement": {
+        "agreements": 314,
+        "disagreements": 25,
+        "agreement_rate": 92.62536873156341,
+        "cohens_kappa": 0.6939659841837286,
+        "confusion_matrix": {
+          "both_novel": 35,
+          "both_not_novel": 279,
+          "eval1_novel_eval2_not": 12,
+          "eval1_not_eval2_novel": 13
+        },
+        "sample_disagreements": [
+          {
+            "index": 0,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 12,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 19,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 22,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 34,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 36,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 48,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 49,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 52,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          },
+          {
+            "index": 57,
+            "prediction_id": "group_correct_only_None_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": "NONE",
+            "has_predicted": true
+          }
+        ]
+      },
+      "by_ground_truth_type": {
+        "no_misconception": {
+          "total": 86,
+          "agreements": 86,
+          "agreement_rate": 100.0
+        },
+        "has_misconception": {
+          "total": 253,
+          "agreements": 237,
+          "agreement_rate": 93.67588932806325
+        }
+      },
+      "sample_disagreements": [
+        {
+          "index": 60,
+          "prediction_id": "group_misconception_1_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 61,
+          "prediction_id": "group_misconception_1_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 62,
+          "prediction_id": "group_misconception_1_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 109,
+          "prediction_id": "group_misconception_2_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 2,
+          "has_predicted": true
+        },
+        {
+          "index": 157,
+          "prediction_id": "group_misconception_32_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 158,
+          "prediction_id": "group_misconception_32_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 159,
+          "prediction_id": "group_misconception_32_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 163,
+          "prediction_id": "group_misconception_33_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 33,
+          "has_predicted": true
+        },
+        {
+          "index": 185,
+          "prediction_id": "group_misconception_38_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 38,
+          "has_predicted": true
+        },
+        {
+          "index": 193,
+          "prediction_id": "group_misconception_40_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 40,
+          "has_predicted": true
+        }
+      ]
+    },
+    "openai_o3-mini_effort-low_single_multi": {
+      "total_predictions": 1490,
+      "standard_match_agreement": {
+        "agreements": 1397,
+        "disagreements": 93,
+        "agreement_rate": 93.75838926174497,
+        "cohens_kappa": 0.8732606146636106,
+        "confusion_matrix": {
+          "both_match": 607,
+          "both_no_match": 790,
+          "eval1_match_eval2_no": 42,
+          "eval1_no_eval2_match": 51
+        }
+      },
+      "with_novel_agreement": {
+        "agreements": 1486,
+        "disagreements": 4,
+        "agreement_rate": 99.73154362416108
+      },
+      "novel_classification_agreement": {
+        "agreements": 1393,
+        "disagreements": 97,
+        "agreement_rate": 93.48993288590603,
+        "cohens_kappa": 0.7169131328958962,
+        "confusion_matrix": {
+          "both_novel": 149,
+          "both_not_novel": 1244,
+          "eval1_novel_eval2_not": 51,
+          "eval1_not_eval2_novel": 46
+        },
+        "sample_disagreements": [
+          {
+            "index": 19,
+            "prediction_id": "problem_348_misc_1.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 27,
+            "prediction_id": "problem_242_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 28,
+            "prediction_id": "problem_152_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 30,
+            "prediction_id": "problem_73_misc_1.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 35,
+            "prediction_id": "problem_301_misc_1.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 36,
+            "prediction_id": "problem_447_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 50,
+            "prediction_id": "problem_417_misc_10.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 10,
+            "has_predicted": true
+          },
+          {
+            "index": 67,
+            "prediction_id": "problem_385_misc_11.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 11,
+            "has_predicted": true
+          },
+          {
+            "index": 71,
+            "prediction_id": "problem_473_misc_11.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": false,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 11,
+            "has_predicted": true
+          },
+          {
+            "index": 91,
+            "prediction_id": "problem_213_misc_12.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 12,
+            "has_predicted": true
+          }
+        ]
+      },
+      "by_ground_truth_type": {
+        "no_misconception": {
+          "total": 12,
+          "agreements": 12,
+          "agreement_rate": 100.0
+        },
+        "has_misconception": {
+          "total": 1478,
+          "agreements": 1385,
+          "agreement_rate": 93.70771312584574
+        }
+      },
+      "sample_disagreements": [
+        {
+          "index": 19,
+          "prediction_id": "problem_348_misc_1.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 27,
+          "prediction_id": "problem_242_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 28,
+          "prediction_id": "problem_152_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 30,
+          "prediction_id": "problem_73_misc_1.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 35,
+          "prediction_id": "problem_301_misc_1.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 36,
+          "prediction_id": "problem_447_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 50,
+          "prediction_id": "problem_417_misc_10.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 10,
+          "has_predicted": true
+        },
+        {
+          "index": 67,
+          "prediction_id": "problem_385_misc_11.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 11,
+          "has_predicted": true
+        },
+        {
+          "index": 91,
+          "prediction_id": "problem_213_misc_12.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 12,
+          "has_predicted": true
+        },
+        {
+          "index": 94,
+          "prediction_id": "problem_313_misc_12.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 12,
+          "has_predicted": true
+        }
+      ]
+    },
+    "openai_o3-mini_effort-low_multi": {
+      "total_predictions": 339,
+      "standard_match_agreement": {
+        "agreements": 328,
+        "disagreements": 11,
+        "agreement_rate": 96.7551622418879,
+        "cohens_kappa": 0.9258426966292135,
+        "confusion_matrix": {
+          "both_match": 224,
+          "both_no_match": 104,
+          "eval1_match_eval2_no": 2,
+          "eval1_no_eval2_match": 9
+        }
+      },
+      "with_novel_agreement": {
+        "agreements": 339,
+        "disagreements": 0,
+        "agreement_rate": 100.0
+      },
+      "novel_classification_agreement": {
+        "agreements": 328,
+        "disagreements": 11,
+        "agreement_rate": 96.7551622418879,
+        "cohens_kappa": 0.7751853861457768,
+        "confusion_matrix": {
+          "both_novel": 21,
+          "both_not_novel": 307,
+          "eval1_novel_eval2_not": 9,
+          "eval1_not_eval2_novel": 2
+        },
+        "sample_disagreements": [
+          {
+            "index": 62,
+            "prediction_id": "group_misconception_1_2",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 107,
+            "prediction_id": "group_misconception_2_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 2,
+            "has_predicted": true
+          },
+          {
+            "index": 109,
+            "prediction_id": "group_misconception_2_2",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 2,
+            "has_predicted": true
+          },
+          {
+            "index": 158,
+            "prediction_id": "group_misconception_32_1",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          },
+          {
+            "index": 164,
+            "prediction_id": "group_misconception_33_3",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 33,
+            "has_predicted": true
+          },
+          {
+            "index": 207,
+            "prediction_id": "group_misconception_47_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 47,
+            "has_predicted": true
+          },
+          {
+            "index": 233,
+            "prediction_id": "group_misconception_54_2",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 54,
+            "has_predicted": true
+          },
+          {
+            "index": 260,
+            "prediction_id": "group_misconception_60_1",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 60,
+            "has_predicted": true
+          },
+          {
+            "index": 261,
+            "prediction_id": "group_misconception_60_2",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 60,
+            "has_predicted": true
+          },
+          {
+            "index": 262,
+            "prediction_id": "group_misconception_60_3",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 60,
+            "has_predicted": true
+          }
+        ]
+      },
+      "by_ground_truth_type": {
+        "no_misconception": {
+          "total": 86,
+          "agreements": 86,
+          "agreement_rate": 100.0
+        },
+        "has_misconception": {
+          "total": 253,
+          "agreements": 242,
+          "agreement_rate": 95.65217391304348
+        }
+      },
+      "sample_disagreements": [
+        {
+          "index": 62,
+          "prediction_id": "group_misconception_1_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 107,
+          "prediction_id": "group_misconception_2_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 2,
+          "has_predicted": true
+        },
+        {
+          "index": 109,
+          "prediction_id": "group_misconception_2_2",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 2,
+          "has_predicted": true
+        },
+        {
+          "index": 158,
+          "prediction_id": "group_misconception_32_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 164,
+          "prediction_id": "group_misconception_33_3",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 33,
+          "has_predicted": true
+        },
+        {
+          "index": 207,
+          "prediction_id": "group_misconception_47_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 47,
+          "has_predicted": true
+        },
+        {
+          "index": 233,
+          "prediction_id": "group_misconception_54_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 54,
+          "has_predicted": true
+        },
+        {
+          "index": 260,
+          "prediction_id": "group_misconception_60_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 60,
+          "has_predicted": true
+        },
+        {
+          "index": 261,
+          "prediction_id": "group_misconception_60_2",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 60,
+          "has_predicted": true
+        },
+        {
+          "index": 262,
+          "prediction_id": "group_misconception_60_3",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 60,
+          "has_predicted": true
+        }
+      ]
+    },
+    "openai_o3-mini_effort-medium_single_multi": {
+      "total_predictions": 1490,
+      "standard_match_agreement": {
+        "agreements": 1412,
+        "disagreements": 78,
+        "agreement_rate": 94.76510067114094,
+        "cohens_kappa": 0.8945766192675697,
+        "confusion_matrix": {
+          "both_match": 644,
+          "both_no_match": 768,
+          "eval1_match_eval2_no": 34,
+          "eval1_no_eval2_match": 44
+        }
+      },
+      "with_novel_agreement": {
+        "agreements": 1489,
+        "disagreements": 1,
+        "agreement_rate": 99.93288590604027
+      },
+      "novel_classification_agreement": {
+        "agreements": 1411,
+        "disagreements": 79,
+        "agreement_rate": 94.6979865771812,
+        "cohens_kappa": 0.7654272766766437,
+        "confusion_matrix": {
+          "both_novel": 154,
+          "both_not_novel": 1257,
+          "eval1_novel_eval2_not": 45,
+          "eval1_not_eval2_novel": 34
+        },
+        "sample_disagreements": [
+          {
+            "index": 14,
+            "prediction_id": "problem_176_misc_1.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 20,
+            "prediction_id": "problem_473_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 24,
+            "prediction_id": "problem_93_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 26,
+            "prediction_id": "problem_46_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 27,
+            "prediction_id": "problem_242_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 28,
+            "prediction_id": "problem_152_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 30,
+            "prediction_id": "problem_73_misc_1.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 35,
+            "prediction_id": "problem_301_misc_1.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": false,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 50,
+            "prediction_id": "problem_417_misc_10.json_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 10,
+            "has_predicted": true
+          },
+          {
+            "index": 152,
+            "prediction_id": "problem_178_misc_15.json_0",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 15,
+            "has_predicted": true
+          }
+        ]
+      },
+      "by_ground_truth_type": {
+        "no_misconception": {
+          "total": 12,
+          "agreements": 12,
+          "agreement_rate": 100.0
+        },
+        "has_misconception": {
+          "total": 1478,
+          "agreements": 1400,
+          "agreement_rate": 94.72259810554804
+        }
+      },
+      "sample_disagreements": [
+        {
+          "index": 14,
+          "prediction_id": "problem_176_misc_1.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 20,
+          "prediction_id": "problem_473_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 24,
+          "prediction_id": "problem_93_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 26,
+          "prediction_id": "problem_46_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 27,
+          "prediction_id": "problem_242_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 28,
+          "prediction_id": "problem_152_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 30,
+          "prediction_id": "problem_73_misc_1.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 50,
+          "prediction_id": "problem_417_misc_10.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 10,
+          "has_predicted": true
+        },
+        {
+          "index": 152,
+          "prediction_id": "problem_178_misc_15.json_0",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 15,
+          "has_predicted": true
+        },
+        {
+          "index": 202,
+          "prediction_id": "problem_94_misc_17.json_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 17,
+          "has_predicted": true
+        }
+      ]
+    },
+    "openai_o3-mini_effort-medium_multi": {
+      "total_predictions": 339,
+      "standard_match_agreement": {
+        "agreements": 324,
+        "disagreements": 15,
+        "agreement_rate": 95.57522123893806,
+        "cohens_kappa": 0.8984604325166239,
+        "confusion_matrix": {
+          "both_match": 223,
+          "both_no_match": 101,
+          "eval1_match_eval2_no": 2,
+          "eval1_no_eval2_match": 13
+        }
+      },
+      "with_novel_agreement": {
+        "agreements": 338,
+        "disagreements": 1,
+        "agreement_rate": 99.70501474926253
+      },
+      "novel_classification_agreement": {
+        "agreements": 325,
+        "disagreements": 14,
+        "agreement_rate": 95.87020648967551,
+        "cohens_kappa": 0.7447014523937601,
+        "confusion_matrix": {
+          "both_novel": 23,
+          "both_not_novel": 302,
+          "eval1_novel_eval2_not": 12,
+          "eval1_not_eval2_novel": 2
+        },
+        "sample_disagreements": [
+          {
+            "index": 62,
+            "prediction_id": "group_misconception_1_2",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 1,
+            "has_predicted": true
+          },
+          {
+            "index": 107,
+            "prediction_id": "group_misconception_2_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 2,
+            "has_predicted": true
+          },
+          {
+            "index": 108,
+            "prediction_id": "group_misconception_2_1",
+            "eval1_classified_novel": false,
+            "eval2_classified_novel": true,
+            "eval1_match": true,
+            "eval2_match": false,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 2,
+            "has_predicted": true
+          },
+          {
+            "index": 109,
+            "prediction_id": "group_misconception_2_2",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 2,
+            "has_predicted": true
+          },
+          {
+            "index": 157,
+            "prediction_id": "group_misconception_32_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          },
+          {
+            "index": 158,
+            "prediction_id": "group_misconception_32_1",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          },
+          {
+            "index": 159,
+            "prediction_id": "group_misconception_32_2",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          },
+          {
+            "index": 160,
+            "prediction_id": "group_misconception_32_3",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 32,
+            "has_predicted": true
+          },
+          {
+            "index": 161,
+            "prediction_id": "group_misconception_33_0",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 33,
+            "has_predicted": true
+          },
+          {
+            "index": 164,
+            "prediction_id": "group_misconception_33_3",
+            "eval1_classified_novel": true,
+            "eval2_classified_novel": false,
+            "eval1_match": false,
+            "eval2_match": true,
+            "eval1_match_with_novel": true,
+            "eval2_match_with_novel": true,
+            "gt_misconception": 33,
+            "has_predicted": true
+          }
+        ]
+      },
+      "by_ground_truth_type": {
+        "no_misconception": {
+          "total": 86,
+          "agreements": 85,
+          "agreement_rate": 98.83720930232558
+        },
+        "has_misconception": {
+          "total": 253,
+          "agreements": 239,
+          "agreement_rate": 94.46640316205533
+        }
+      },
+      "sample_disagreements": [
+        {
+          "index": 19,
+          "prediction_id": "group_correct_only_None_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": "NONE",
+          "has_predicted": false
+        },
+        {
+          "index": 62,
+          "prediction_id": "group_misconception_1_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 1,
+          "has_predicted": true
+        },
+        {
+          "index": 107,
+          "prediction_id": "group_misconception_2_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 2,
+          "has_predicted": true
+        },
+        {
+          "index": 108,
+          "prediction_id": "group_misconception_2_1",
+          "eval1_match": true,
+          "eval2_match": false,
+          "gt_misconception": 2,
+          "has_predicted": true
+        },
+        {
+          "index": 109,
+          "prediction_id": "group_misconception_2_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 2,
+          "has_predicted": true
+        },
+        {
+          "index": 157,
+          "prediction_id": "group_misconception_32_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 158,
+          "prediction_id": "group_misconception_32_1",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 159,
+          "prediction_id": "group_misconception_32_2",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 160,
+          "prediction_id": "group_misconception_32_3",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 32,
+          "has_predicted": true
+        },
+        {
+          "index": 161,
+          "prediction_id": "group_misconception_33_0",
+          "eval1_match": false,
+          "eval2_match": true,
+          "gt_misconception": 33,
+          "has_predicted": true
+        }
+      ]
+    }
+  }
+}

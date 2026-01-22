@@ -1,0 +1,33 @@
+{
+  "problem_id": 94,
+  "problem_title": "Problem 94",
+  "misconception_id": 38,
+  "misconception_description": "Student believes that while loops execute their body only once if the condition is true.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "NONE",
+      "reasoning": "Let me analyze this problem:\n\n1. **Problem**: Check if two integers have opposite signs\n2. **Given Implementation**: Uses XOR operation `(x ^ y) < 0`\n3. **Misconception**: Student believes while loops execute their body only once if the condition is true (like an if statement)\n\nThe given implementation doesn't use any loops at all - it's just a simple XOR operation. The misconception is about while loops, but there are no loops in this code.\n\nSince the misconception is about while loops and the given solution doesn't involve any loops, this misconception is not applicable to this problem. The student's misconception about while loops cannot be demonstrated in code that doesn't use while loops.\n\nI should return NONE with the inapplicable flag set to true.",
+      "metadata": {
+        "raw": "inapplicable: true\nreason: The misconception is about while loops executing only once (like if statements), but the given solution uses only a bitwise XOR operation with no loops. There is no way to naturally incorporate a while loop into this problem that would demonstrate the misconception while maintaining the student's belief that their code correctly solves the problem.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A",
+        "inapplicable": "true",
+        "reason": "The misconception is about while loops executing only once (like if statements), but the given solution uses only a bitwise XOR operation with no loops. There is no way to naturally incorporate a while loop into this problem that would demonstrate the misconception while maintaining the student's belief that their code correctly solves the problem.",
+        "misconception_type": "N/A",
+        "error_type": "N/A",
+        "modification_notes": "N/A"
+      },
+      "raw_response": "<reasoning>\nLet me analyze this problem:\n\n1. **Problem**: Check if two integers have opposite signs\n2. **Given Implementation**: Uses XOR operation `(x ^ y) < 0`\n3. **Misconception**: Student believes while loops execute their body only once if the condition is true (like an if statement)\n\nThe given implementation doesn't use any loops at all - it's just a simple XOR operation. The misconception is about while loops, but there are no loops in this code.\n\nSince the misconception is about while loops and the given solution doesn't involve any loops, this misconception is not applicable to this problem. The student's misconception about while loops cannot be demonstrated in code that doesn't use while loops.\n\nI should return NONE with the inapplicable flag set to true.\n</reasoning>\n\n```xml\n<code>\nNONE\n</code>\n\n<metadata>\ninapplicable: true\nreason: The misconception is about while loops executing only once (like if statements), but the given solution uses only a bitwise XOR operation with no loops. There is no way to naturally incorporate a while loop into this problem that would demonstrate the misconception while maintaining the student's belief that their code correctly solves the problem.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 909,
+      "random_seed_used": 42,
+      "problem_misconception_index": 38,
+      "global_misconception_index": 908,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

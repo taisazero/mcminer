@@ -1,0 +1,32 @@
+{
+  "problem_id": 501,
+  "problem_title": "Problem 501",
+  "misconception_id": 17,
+  "misconception_description": "Student believes that colons (:) are used for variable assignment.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "import random\n\ndef flip_coin():\n    return random.choice(['Heads', 'Tails'])\n\ndef coin_game():\n    result : flip_coin()\n    if result == 'Heads':\n        return 'Got heads!'\n    else:\n        return 'Got tails!'",
+      "reasoning": "The misconception is that the student believes colons (:) are used for variable assignment instead of the equals sign (=).\n\nLooking at the given implementation:\n```py\nimport random\n\ndef flip_coin():\n    return random.choice(['Heads', 'Tails'])\n\ndef coin_game():\n    result = flip_coin()\n    if result == 'Heads':\n        return 'Got heads!'\n    else:\n        return 'Got tails!'\n```\n\nThe student would replace `=` with `:` for assignment statements. In this code, we have:\n1. `result = flip_coin()` - this would become `result : flip_coin()`\n\nThe student genuinely believes this is correct syntax for assignment. They're confident this will work.\n\nThis would cause a SyntaxError because using `:` alone is not valid syntax for assignment in Python (it's only valid in type annotations like `result: str = flip_coin()`).\n\nThis is a **harmful** misconception because it causes a **syntax** error.\n\nLet me write the modified code:\n\n```py\nimport random\n\ndef flip_coin():\n    return random.choice(['Heads', 'Tails'])\n\ndef coin_game():\n    result : flip_coin()\n    if result == 'Heads':\n        return 'Got heads!'\n    else:\n        return 'Got tails!'\n```\n\nThe student believes this is the correct way to assign the return value of `flip_coin()` to the variable `result`.",
+      "metadata": {
+        "raw": "misconception_type: harmful\nerror_type: syntax\nmodification_notes: The student replaced the assignment operator `=` with `:` in the line `result : flip_coin()`. The student believes this is the correct syntax for assigning the return value of the `flip_coin()` function to the variable `result`. This causes a SyntaxError because `:` alone is not valid for assignment (it's only used in type annotations like `result: str = value`). From the student's perspective, they are simply storing the coin flip result in a variable using what they believe is the proper assignment operator.",
+        "misconception_type": "harmful",
+        "error_type": "syntax",
+        "modification_notes": "The student replaced the assignment operator `=` with `:` in the line `result : flip_coin()`. The student believes this is the correct syntax for assigning the return value of the `flip_coin()` function to the variable `result`. This causes a SyntaxError because `:` alone is not valid for assignment (it's only used in type annotations like `result: str = value`). From the student's perspective, they are simply storing the coin flip result in a variable using what they believe is the proper assignment operator.",
+        "recovery_info": "Recovered by enhanced parser using method: replaced_backticks_with_closing_tag"
+      },
+      "raw_response": "<reasoning>\nThe misconception is that the student believes colons (:) are used for variable assignment instead of the equals sign (=).\n\nLooking at the given implementation:\n```py\nimport random\n\ndef flip_coin():\n    return random.choice(['Heads', 'Tails'])\n\ndef coin_game():\n    result = flip_coin()\n    if result == 'Heads':\n        return 'Got heads!'\n    else:\n        return 'Got tails!'\n```\n\nThe student would replace `=` with `:` for assignment statements. In this code, we have:\n1. `result = flip_coin()` - this would become `result : flip_coin()`\n\nThe student genuinely believes this is correct syntax for assignment. They're confident this will work.\n\nThis would cause a SyntaxError because using `:` alone is not valid syntax for assignment in Python (it's only valid in type annotations like `result: str = flip_coin()`).\n\nThis is a **harmful** misconception because it causes a **syntax** error.\n\nLet me write the modified code:\n\n```py\nimport random\n\ndef flip_coin():\n    return random.choice(['Heads', 'Tails'])\n\ndef coin_game():\n    result : flip_coin()\n    if result == 'Heads':\n        return 'Got heads!'\n    else:\n        return 'Got tails!'\n```\n\nThe student believes this is the correct way to assign the return value of `flip_coin()` to the variable `result`.\n</reasoning>\n\n```xml\n<code>\nimport random\n\ndef flip_coin():\n    return random.choice(['Heads', 'Tails'])\n\ndef coin_game():\n    result : flip_coin()\n    if result == 'Heads':\n        return 'Got heads!'\n    else:\n        return 'Got tails!'\n```\n\n<metadata>\nmisconception_type: harmful\nerror_type: syntax\nmodification_notes: The student replaced the assignment operator `=` with `:` in the line `result : flip_coin()`. The student believes this is the correct syntax for assigning the return value of the `flip_coin()` function to the variable `result`. This causes a SyntaxError because `:` alone is not valid for assignment (it's only used in type annotations like `result: str = value`). From the student's perspective, they are simply storing the coin flip result in a variable using what they believe is the proper assignment operator.\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 17,
+      "random_seed_used": 42,
+      "problem_misconception_index": 17,
+      "global_misconception_index": 16,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

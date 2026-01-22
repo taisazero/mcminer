@@ -1,0 +1,1425 @@
+{
+  "recall": 0.44776119402985076,
+  "total_true_misconceptions": 67,
+  "total_found_misconceptions": 30,
+  "found_misconception_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17,
+    19,
+    21,
+    22,
+    25,
+    28,
+    29,
+    35,
+    36,
+    42,
+    43,
+    47,
+    58,
+    62,
+    66
+  ],
+  "not_found_misconception_ids": [
+    14,
+    18,
+    20,
+    23,
+    24,
+    26,
+    27,
+    30,
+    31,
+    32,
+    33,
+    34,
+    37,
+    38,
+    39,
+    40,
+    41,
+    44,
+    45,
+    46,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    59,
+    60,
+    61,
+    63,
+    64,
+    65,
+    67
+  ],
+  "match_details": [
+    {
+      "prediction_id": "problem_121_misc_12.json_0",
+      "predicted_description": "The student believes that variables defined inside a function are accessible in the global scope without using a return statement.",
+      "matched_misconception_id": 12,
+      "similarity_score": 0.5789473684210527,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_15.json_0",
+      "predicted_description": "The student believes that the first element of a Python list is accessed using index 1 instead of 0.",
+      "matched_misconception_id": 66,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_17.json_0",
+      "predicted_description": "The student believes that colons (`:`) are used for variable assignment in Python.",
+      "matched_misconception_id": 17,
+      "similarity_score": 0.75,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_19.json_0",
+      "predicted_description": "The student believes that code after a `return` statement in a Python function will still be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.8125,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_29.json_0",
+      "predicted_description": "The student believes that reserved keywords in Python can be used as variable names.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place, rather than returning a new sorted list.",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_5.json_0",
+      "predicted_description": "The student believes that the return value of a function call is automatically stored in a variable named 'result' without explicit assignment.",
+      "matched_misconception_id": 5,
+      "similarity_score": 0.6818181818181818,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_6.json_0",
+      "predicted_description": "The student believes that the `strip()` method modifies strings in place.",
+      "matched_misconception_id": 6,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_6.json_0",
+      "predicted_description": "The student believes that the `strip()` method modifies strings in place.",
+      "matched_misconception_id": 7,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_6.json_0",
+      "predicted_description": "The student believes that the `strip()` method modifies strings in place.",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_6.json_0",
+      "predicted_description": "The student believes that the `strip()` method modifies strings in place.",
+      "matched_misconception_id": 9,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_6.json_0",
+      "predicted_description": "The student believes that the `strip()` method modifies strings in place.",
+      "matched_misconception_id": 10,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_6.json_0",
+      "predicted_description": "The student believes that the `strip()` method modifies strings in place.",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_9.json_0",
+      "predicted_description": "The student believes that the `strip()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 6,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_9.json_0",
+      "predicted_description": "The student believes that the `strip()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 7,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_9.json_0",
+      "predicted_description": "The student believes that the `strip()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_9.json_0",
+      "predicted_description": "The student believes that the `strip()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 9,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_121_misc_9.json_0",
+      "predicted_description": "The student believes that the `strip()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 10,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_130_misc_13.json_0",
+      "predicted_description": "The student believes that assigning a list to a new variable creates a copy of the list, and that reversing the new variable will not affect the original list.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.6190476190476191,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_130_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator (=) is used for equality checks in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_130_misc_25.json_0",
+      "predicted_description": "The student believes that modifying the loop variable inside a `for` loop will change the iteration steps of the loop.",
+      "matched_misconception_id": 25,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_130_misc_29.json_0",
+      "predicted_description": "The student believes that reserved keywords in Python can be used as variable names.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_152_misc_16.json_0",
+      "predicted_description": "The student believes that the single equals sign (=) is used for comparison in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.6875,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_152_misc_19.json_0",
+      "predicted_description": "The student believes that code written after a `return` statement in a Python function will be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.8125,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_152_misc_29.json_0",
+      "predicted_description": "The student believes that 'class' can be used as a valid variable name in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_152_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function sorts a list in place, modifying the original list.",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.6428571428571429,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_152_misc_42.json_0",
+      "predicted_description": "The student believes that the `__init__` method should return a new object instead of initializing the instance itself.",
+      "matched_misconception_id": 42,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_154_misc_12.json_0",
+      "predicted_description": "The student believes that variables declared inside a function are accessible in the global scope without being returned.",
+      "matched_misconception_id": 12,
+      "similarity_score": 0.5263157894736842,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_154_misc_16.json_0",
+      "predicted_description": "The student believes that the single equals sign (`=`) is used for comparison in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.6875,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_154_misc_25.json_0",
+      "predicted_description": "The student believes that modifying the loop variable inside a for loop will affect the loop's iteration sequence.",
+      "matched_misconception_id": 25,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_154_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place rather than returning a new sorted list.",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_154_misc_5.json_0",
+      "predicted_description": "The student believes that the return value of the `max` function is automatically stored in a variable named `result` without explicit assignment.",
+      "matched_misconception_id": 5,
+      "similarity_score": 0.6818181818181818,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_11.json_0",
+      "predicted_description": "The student believes that using print is the correct way to return a value from a function instead of using a return statement.",
+      "matched_misconception_id": 11,
+      "similarity_score": 0.5238095238095238,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_12.json_0",
+      "predicted_description": "The student believes that variables declared inside a function are accessible in the global scope without being returned.",
+      "matched_misconception_id": 12,
+      "similarity_score": 0.5263157894736842,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator (=) is used for equality checks in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.8,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_17.json_0",
+      "predicted_description": "The student believes that colons (\":\") are used for variable assignment in Python, rather than equals signs (\"=\").",
+      "matched_misconception_id": 17,
+      "similarity_score": 0.5625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_176_misc_19.json_0",
+      "predicted_description": "The student believes that code written after a `return` statement in a Python function is executed, but in reality, it is not.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.5238095238095238,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator (=) can be used for comparison in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.6875,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_25.json_0",
+      "predicted_description": "The student believes that modifying the loop variable inside a `for` loop will affect the loop's iteration sequence.",
+      "matched_misconception_id": 25,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_29.json_0",
+      "predicted_description": "The student believes that 'class' can be used as a valid variable name in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_43.json_0",
+      "predicted_description": "The student believes that the `__init__` method must return `self` to properly initialize an object.",
+      "matched_misconception_id": 43,
+      "similarity_score": 0.6,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_5.json_0",
+      "predicted_description": "The student believes that the return value of a function is automatically stored in a variable named 'result' without explicitly assigning it.",
+      "matched_misconception_id": 5,
+      "similarity_score": 0.5416666666666666,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_7.json_0",
+      "predicted_description": "The student believes that the `lower()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 6,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_7.json_0",
+      "predicted_description": "The student believes that the `lower()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 7,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_7.json_0",
+      "predicted_description": "The student believes that the `lower()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_7.json_0",
+      "predicted_description": "The student believes that the `lower()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 9,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_7.json_0",
+      "predicted_description": "The student believes that the `lower()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 10,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_178_misc_8.json_0",
+      "predicted_description": "The student believes that the `str.replace()` method modifies the string in place rather than returning a new string.",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.5625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_200_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator (=) is used for comparison in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.8571428571428571,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_200_misc_19.json_0",
+      "predicted_description": "The student believes that code after a return statement in a Python function will execute.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.6875,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_200_misc_2.json_0",
+      "predicted_description": "The student believes that `range(n)` produces values starting from 1 up to and including `n`.",
+      "matched_misconception_id": 1,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_200_misc_2.json_0",
+      "predicted_description": "The student believes that `range(n)` produces values starting from 1 up to and including `n`.",
+      "matched_misconception_id": 2,
+      "similarity_score": 0.5882352941176471,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_200_misc_28.json_0",
+      "predicted_description": "The student believes that functions in Python can be defined without using the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator (=) can be used for equality checks in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.6470588235294118,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_17.json_0",
+      "predicted_description": "The student believes that colons (`:`) are used for variable assignment in Python.",
+      "matched_misconception_id": 17,
+      "similarity_score": 0.75,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_19.json_0",
+      "predicted_description": "The student believes that code after a `return` statement in a function will execute, including handling invalid input cases.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.55,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_22.json_0",
+      "predicted_description": "The student believes that functions are called using square brackets instead of parentheses.",
+      "matched_misconception_id": 22,
+      "similarity_score": 0.5625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_22.json_0",
+      "predicted_description": "The student believes that functions are called using square brackets instead of parentheses.",
+      "matched_misconception_id": 21,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_28.json_0",
+      "predicted_description": "The student believes that functions can be defined in Python without using the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_29.json_0",
+      "predicted_description": "The student believes that the keyword 'class' can be used as a variable name in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8125,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_32.json_0",
+      "predicted_description": "The student believes that code written after a `return` statement in a function will execute under certain conditions.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.5789473684210527,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_213_misc_5.json_0",
+      "predicted_description": "The student believes that the return value of a function is automatically stored in a variable named `result` without explicit assignment.",
+      "matched_misconception_id": 5,
+      "similarity_score": 0.7142857142857143,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_242_misc_12.json_0",
+      "predicted_description": "The student believes that variables declared inside a nested function are accessible in the outer function's scope.",
+      "matched_misconception_id": 12,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_242_misc_17.json_0",
+      "predicted_description": "The student believes that colons (':') are used for variable assignment in Python.",
+      "matched_misconception_id": 17,
+      "similarity_score": 0.75,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_242_misc_22.json_0",
+      "predicted_description": "The student believes that functions in Python are called using square brackets instead of parentheses.",
+      "matched_misconception_id": 22,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_242_misc_25.json_0",
+      "predicted_description": "The student believes that modifying the loop variable inside a `for` loop will alter the loop's iteration sequence.",
+      "matched_misconception_id": 25,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_242_misc_29.json_0",
+      "predicted_description": "The student believes that `class` can be used as a variable name in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.75,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_242_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function sorts a list in place, modifying the original list.",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.6428571428571429,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_242_misc_47.json_0",
+      "predicted_description": "The student believes that the `or` operator in Python evaluates both operands regardless of the truth value of the first operand.",
+      "matched_misconception_id": 47,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator (=) is used for equality checks in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.8,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_17.json_0",
+      "predicted_description": "The student believes that the colon (':') is used for variable assignment in Python.",
+      "matched_misconception_id": 17,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_22.json_0",
+      "predicted_description": "The student believes that Python functions are called using square brackets [ ] instead of parentheses ( ).",
+      "matched_misconception_id": 22,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_25.json_0",
+      "predicted_description": "The student believes that modifying the loop variable inside a `for` loop will affect the loop's iteration sequence.",
+      "matched_misconception_id": 25,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original tuple in place.",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.75,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original tuple in place.",
+      "matched_misconception_id": 6,
+      "similarity_score": 0.6153846153846154,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original tuple in place.",
+      "matched_misconception_id": 7,
+      "similarity_score": 0.6153846153846154,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original tuple in place.",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.6153846153846154,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original tuple in place.",
+      "matched_misconception_id": 9,
+      "similarity_score": 0.6153846153846154,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original tuple in place.",
+      "matched_misconception_id": 10,
+      "similarity_score": 0.6153846153846154,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_301_misc_47.json_0",
+      "predicted_description": "The student believes that the `or` operator in Python evaluates both operands regardless of the truth value of the first operand.",
+      "matched_misconception_id": 47,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place, rather than returning a new sorted list.",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_417_misc_28.json_0",
+      "predicted_description": "The student believes that functions can be defined without using the 'def' keyword in Python.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_1.json_0",
+      "predicted_description": "The student believes that Python list indices start at 1 instead of 0.",
+      "matched_misconception_id": 15,
+      "similarity_score": 0.6,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_13.json_0",
+      "predicted_description": "The student believes that the `list.sort()` method returns a new sorted list rather than modifying the original list in place.",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_25.json_0",
+      "predicted_description": "The student believes that modifying the loop variable inside a `for` loop will cause the loop to terminate early.",
+      "matched_misconception_id": 25,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_28.json_0",
+      "predicted_description": "The student believes that functions in Python can be defined without using the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_29.json_0",
+      "predicted_description": "The student believes that reserved keywords in Python can be used as variable names.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place, rather than returning a new sorted list.",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_5.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place, like the `list.sort()` method.",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.7142857142857143,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_5.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place, like the `list.sort()` method.",
+      "matched_misconception_id": 6,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_5.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place, like the `list.sort()` method.",
+      "matched_misconception_id": 7,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_5.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place, like the `list.sort()` method.",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_5.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place, like the `list.sort()` method.",
+      "matched_misconception_id": 9,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_447_misc_5.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place, like the `list.sort()` method.",
+      "matched_misconception_id": 10,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_19.json_0",
+      "predicted_description": "The student believes that code after a return statement in a Python function is executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.6875,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_21.json_0",
+      "predicted_description": "The student believes that the `min` function can be called without parentheses.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.5333333333333333,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_28.json_0",
+      "predicted_description": "The student believes that functions can be defined without using the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.7142857142857143,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_29.json_0",
+      "predicted_description": "The student believes that the keyword 'class' can be used as a variable name in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8125,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_46_misc_3.json_0",
+      "predicted_description": "The student believes that recursive calls automatically progress the index parameter without requiring explicit incrementing in the function call.",
+      "matched_misconception_id": 3,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_348_misc_15.json_0",
+      "predicted_description": "The student believes that Python list indices start at 1 instead of 0.",
+      "matched_misconception_id": 15,
+      "similarity_score": 0.6,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_348_misc_25.json_0",
+      "predicted_description": "The student believes that modifying the loop variable inside a for loop will affect the loop's iteration sequence.",
+      "matched_misconception_id": 25,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_348_misc_28.json_0",
+      "predicted_description": "The student believes that functions in Python can be defined without using the 'def' keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_385_misc_12.json_0",
+      "predicted_description": "The student believes that variables defined inside a function are accessible in the global scope without being returned.",
+      "matched_misconception_id": 12,
+      "similarity_score": 0.6111111111111112,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_385_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator (=) can be used for equality checks in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.6470588235294118,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_385_misc_17.json_0",
+      "predicted_description": "The student believes that colons (\":\") can be used for variable assignment in Python.",
+      "matched_misconception_id": 17,
+      "similarity_score": 0.5714285714285714,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_385_misc_17.json_0",
+      "predicted_description": "The student believes that colons (\":\") can be used for variable assignment in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_385_misc_28.json_0",
+      "predicted_description": "The student believes that functions in Python can be defined without using the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_385_misc_42.json_0",
+      "predicted_description": "The student believes that the `__init__` method must return a new object instance instead of initializing the instance's attributes.",
+      "matched_misconception_id": 42,
+      "similarity_score": 0.55,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_417_misc_11.json_0",
+      "predicted_description": "The student believes that using the print statement is equivalent to returning a value from a function.",
+      "matched_misconception_id": 11,
+      "similarity_score": 0.5263157894736842,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_17.json_0",
+      "predicted_description": "The student believes that the colon (`:`) is used for variable assignment in Python.",
+      "matched_misconception_id": 17,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_19.json_0",
+      "predicted_description": "The student believes that the `print` statement will be executed after the `return` statement in a Python function.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.75,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_28.json_0",
+      "predicted_description": "The student believes that functions in Python can be defined without using the 'def' keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_32.json_0",
+      "predicted_description": "The student believes that code written after a `return` statement in a Python function will execute.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.6470588235294118,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_6.json_0",
+      "predicted_description": "The student believes that the `re.sub` function modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 6,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_6.json_0",
+      "predicted_description": "The student believes that the `re.sub` function modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 7,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_6.json_0",
+      "predicted_description": "The student believes that the `re.sub` function modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_6.json_0",
+      "predicted_description": "The student believes that the `re.sub` function modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 9,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_6.json_0",
+      "predicted_description": "The student believes that the `re.sub` function modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 10,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_66.json_0",
+      "predicted_description": "The student believes that `range(1, len(text1))` includes the first character of the string (index 0).",
+      "matched_misconception_id": 66,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_8.json_0",
+      "predicted_description": "The student believes that the `replace` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 6,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_8.json_0",
+      "predicted_description": "The student believes that the `replace` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 7,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_8.json_0",
+      "predicted_description": "The student believes that the `replace` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_8.json_0",
+      "predicted_description": "The student believes that the `replace` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 9,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_313_misc_8.json_0",
+      "predicted_description": "The student believes that the `replace` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 10,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_1.json_0",
+      "predicted_description": "The student believes that the first element of a Python list is at index 1 instead of 0.",
+      "matched_misconception_id": 66,
+      "similarity_score": 0.6111111111111112,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_1.json_0",
+      "predicted_description": "The student believes that the first element of a Python list is at index 1 instead of 0.",
+      "matched_misconception_id": 15,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_15.json_0",
+      "predicted_description": "The student believes that the last element of a Python list is located at index `len(list)` instead of `len(list) - 1`.",
+      "matched_misconception_id": 66,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_19.json_0",
+      "predicted_description": "The student believes that code after a `return` statement in a Python function will still execute.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.6470588235294118,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_28.json_0",
+      "predicted_description": "The student believes that functions in Python can be defined without using the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_32.json_0",
+      "predicted_description": "The student believes that code after a `return` statement in a Python function will execute.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.6875,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_335_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in-place.",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_473_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator (=) is used for equality checks in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.8,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_473_misc_22.json_0",
+      "predicted_description": "The student believes that Python functions are called using square brackets `[]` instead of parentheses `()`.",
+      "matched_misconception_id": 22,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_473_misc_62.json_0",
+      "predicted_description": "The student believes that the `pop()` method of a list takes the value of the element to remove, rather than its index.",
+      "matched_misconception_id": 62,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_501_misc_15.json_0",
+      "predicted_description": "The student believes that list indices in Python start at 1 instead of 0.",
+      "matched_misconception_id": 15,
+      "similarity_score": 0.5625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_501_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator (=) can be used for comparison in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.6875,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_501_misc_19.json_0",
+      "predicted_description": "The student believes that code after a return statement in a function is executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.7333333333333333,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_501_misc_22.json_0",
+      "predicted_description": "The student believes that functions are called using square brackets instead of parentheses.",
+      "matched_misconception_id": 22,
+      "similarity_score": 0.5625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_501_misc_22.json_0",
+      "predicted_description": "The student believes that functions are called using square brackets instead of parentheses.",
+      "matched_misconception_id": 21,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_501_misc_28.json_0",
+      "predicted_description": "The student believes that functions can be defined without using the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.7142857142857143,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_501_misc_35.json_0",
+      "predicted_description": "The student believes that all values must be explicitly converted to strings using `str()` to ensure they are of type `str`.",
+      "matched_misconception_id": 35,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_501_misc_5.json_0",
+      "predicted_description": "The student believes that the return value of a function call is automatically stored in a variable named `result` without explicitly assigning it.",
+      "matched_misconception_id": 5,
+      "similarity_score": 0.52,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_501_misc_66.json_0",
+      "predicted_description": "The student believes that the first letter of a string is located at index 1 instead of index 0.",
+      "matched_misconception_id": 66,
+      "similarity_score": 0.7058823529411765,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_75_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator (=) is used for equality checks in conditional statements in Python.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.75,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_75_misc_28.json_0",
+      "predicted_description": "The student believes that functions in Python can be defined without using the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_75_misc_29.json_0",
+      "predicted_description": "The student believes that the `class` keyword can be used as a variable name in Python.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.8125,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_75_misc_4.json_0",
+      "predicted_description": "The student believes that in Python, boolean conditions must be explicitly compared to `True` to be evaluated in `if` or `while` statements.",
+      "matched_misconception_id": 4,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_75_misc_42.json_0",
+      "predicted_description": "The student believes that the `__init__` method of a class should create and return a new object, rather than initializing the instance (`self`) directly.",
+      "matched_misconception_id": 42,
+      "similarity_score": 0.5217391304347826,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_16.json_0",
+      "predicted_description": "The student believes that the single equals sign (=) is used for comparison in Python conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.6470588235294118,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_28.json_0",
+      "predicted_description": "The student believes that functions can be defined without using the `def` keyword in Python.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_32.json_0",
+      "predicted_description": "The student believes that code blocks following a return statement in Python are executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_5.json_0",
+      "predicted_description": "The student believes that the return value of a function is automatically stored in a variable named `result` without explicitly assigning it.",
+      "matched_misconception_id": 5,
+      "similarity_score": 0.5416666666666666,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_6.json_0",
+      "predicted_description": "The student believes that the `.upper()` method modifies the original string variable in-place.",
+      "matched_misconception_id": 6,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_6.json_0",
+      "predicted_description": "The student believes that the `.upper()` method modifies the original string variable in-place.",
+      "matched_misconception_id": 7,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_6.json_0",
+      "predicted_description": "The student believes that the `.upper()` method modifies the original string variable in-place.",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_6.json_0",
+      "predicted_description": "The student believes that the `.upper()` method modifies the original string variable in-place.",
+      "matched_misconception_id": 9,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_6.json_0",
+      "predicted_description": "The student believes that the `.upper()` method modifies the original string variable in-place.",
+      "matched_misconception_id": 10,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_8.json_0",
+      "predicted_description": "The student believes that the `str.replace()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_8.json_0",
+      "predicted_description": "The student believes that the `str.replace()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 6,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_8.json_0",
+      "predicted_description": "The student believes that the `str.replace()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 7,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_8.json_0",
+      "predicted_description": "The student believes that the `str.replace()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 9,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_54_misc_8.json_0",
+      "predicted_description": "The student believes that the `str.replace()` method modifies the original string in place rather than returning a new string.",
+      "matched_misconception_id": 10,
+      "similarity_score": 0.5294117647058824,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_60_misc_12.json_0",
+      "predicted_description": "The student believes that variables defined inside a function are accessible in the global scope without explicitly returning them.",
+      "matched_misconception_id": 12,
+      "similarity_score": 0.5789473684210527,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_60_misc_19.json_0",
+      "predicted_description": "The student believes that code after a `return` statement in a Python function is executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.6875,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_60_misc_22.json_0",
+      "predicted_description": "The student believes that functions in Python are called using square brackets `[]` instead of parentheses `()`.",
+      "matched_misconception_id": 22,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_60_misc_28.json_0",
+      "predicted_description": "The student believes that functions in Python can be defined without using the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_60_misc_32.json_0",
+      "predicted_description": "The student believes that code written after a return statement in a Python function will be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.8125,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_60_misc_47.json_0",
+      "predicted_description": "The student believes that the `or` operator in Python evaluates both operands regardless of the truth value of the left operand.",
+      "matched_misconception_id": 47,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_60_misc_58.json_0",
+      "predicted_description": "The student believes that variables must be explicitly deleted after use to prevent memory leaks or errors.",
+      "matched_misconception_id": 58,
+      "similarity_score": 0.5652173913043478,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_73_misc_12.json_0",
+      "predicted_description": "The student believes that variables defined inside a function are accessible in the global scope without using a return statement.",
+      "matched_misconception_id": 12,
+      "similarity_score": 0.5789473684210527,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_73_misc_13.json_0",
+      "predicted_description": "The student believes that appending a list multiple times to another list creates independent copies of that list.",
+      "matched_misconception_id": 13,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_73_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator '=' can be used for comparison in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.6875,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_73_misc_25.json_0",
+      "predicted_description": "The student believes that modifying the loop variable inside a `for` loop will alter the loop's iteration sequence.",
+      "matched_misconception_id": 25,
+      "similarity_score": 0.5,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_73_misc_28.json_0",
+      "predicted_description": "The student believes that functions can be defined without using the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.7142857142857143,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_73_misc_32.json_0",
+      "predicted_description": "The student believes that code written after a `return` statement in a function will be executed.",
+      "matched_misconception_id": 19,
+      "similarity_score": 0.8666666666666667,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_17.json_0",
+      "predicted_description": "The student believes that colons (':') are used for variable assignment in Python.",
+      "matched_misconception_id": 17,
+      "similarity_score": 0.75,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_28.json_0",
+      "predicted_description": "The student believes that functions in Python can be defined without using the `def` keyword.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_29.json_0",
+      "predicted_description": "The student believes that reserved keywords in Python can be used as variable names.",
+      "matched_misconception_id": 29,
+      "similarity_score": 0.5555555555555556,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place.",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.9090909090909091,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place.",
+      "matched_misconception_id": 6,
+      "similarity_score": 0.6153846153846154,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place.",
+      "matched_misconception_id": 7,
+      "similarity_score": 0.6153846153846154,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place.",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.6153846153846154,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place.",
+      "matched_misconception_id": 9,
+      "similarity_score": 0.6153846153846154,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_36.json_0",
+      "predicted_description": "The student believes that the `sorted()` function modifies the original list in place.",
+      "matched_misconception_id": 10,
+      "similarity_score": 0.6153846153846154,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_8.json_0",
+      "predicted_description": "The student believes that the `str.replace()` method modifies the string in place.",
+      "matched_misconception_id": 8,
+      "similarity_score": 0.8181818181818182,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_8.json_0",
+      "predicted_description": "The student believes that the `str.replace()` method modifies the string in place.",
+      "matched_misconception_id": 6,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_8.json_0",
+      "predicted_description": "The student believes that the `str.replace()` method modifies the string in place.",
+      "matched_misconception_id": 7,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_8.json_0",
+      "predicted_description": "The student believes that the `str.replace()` method modifies the string in place.",
+      "matched_misconception_id": 9,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_8.json_0",
+      "predicted_description": "The student believes that the `str.replace()` method modifies the string in place.",
+      "matched_misconception_id": 10,
+      "similarity_score": 0.6666666666666666,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_93_misc_8.json_0",
+      "predicted_description": "The student believes that the `str.replace()` method modifies the string in place.",
+      "matched_misconception_id": 36,
+      "similarity_score": 0.5384615384615384,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_94_misc_16.json_0",
+      "predicted_description": "The student believes that the assignment operator (=) can be used to check for truthiness in conditional statements.",
+      "matched_misconception_id": 16,
+      "similarity_score": 0.5263157894736842,
+      "format_type": "single-code"
+    },
+    {
+      "prediction_id": "problem_94_misc_28.json_0",
+      "predicted_description": "The student believes that functions can be defined without using the `def` keyword in Python.",
+      "matched_misconception_id": 28,
+      "similarity_score": 0.625,
+      "format_type": "single-code"
+    }
+  ],
+  "similarity_threshold": 0.5,
+  "prediction_format": "single-code",
+  "total_predictions_analyzed": 1675
+}

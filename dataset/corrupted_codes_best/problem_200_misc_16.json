@@ -1,0 +1,32 @@
+{
+  "problem_id": 200,
+  "problem_title": "Problem 200",
+  "misconception_id": 16,
+  "misconception_description": "Student believes that the `=` operator is used for equality comparison in conditional statements.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "import math\n\ndef harmonic_sum(n):\n  if n = 1:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)",
+      "reasoning": "The misconception is that the student believes `=` is used for equality comparison in conditional statements instead of `==`.\n\nLooking at the given implementation:\n```py\nimport math\n\ndef harmonic_sum(n):\n  if n == 1:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\n```\n\nThe code has a conditional statement `if n == 1:`. A student with this misconception would write `if n = 1:` instead, thinking that `=` is the correct way to check equality.\n\nThis would cause a **syntax error** because in Python, `=` is the assignment operator and cannot be used in an `if` condition directly like that. Python would raise a `SyntaxError: invalid syntax` or `SyntaxError: cannot assign to literal`.\n\nThe student genuinely believes this is the correct way to write the comparison, so they would confidently write it this way.\n\nThis is a **harmful** misconception because it causes a **syntax** error.\n\nLet me modify the code:\n\n```py\nimport math\n\ndef harmonic_sum(n):\n  if n = 1:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\n```",
+      "metadata": {
+        "raw": "misconception_type: harmful\nerror_type: syntax\nmodification_notes: Changed the equality comparison operator from `==` to `=` in the conditional statement `if n == 1:` to `if n = 1:`. The student believes that `=` is the correct operator for checking equality in conditional statements. This causes a SyntaxError in Python because `=` is the assignment operator and cannot be used in this context. The student is confident this is correct syntax for comparison.",
+        "misconception_type": "harmful",
+        "error_type": "syntax",
+        "modification_notes": "Changed the equality comparison operator from `==` to `=` in the conditional statement `if n == 1:` to `if n = 1:`. The student believes that `=` is the correct operator for checking equality in conditional statements. This causes a SyntaxError in Python because `=` is the assignment operator and cannot be used in this context. The student is confident this is correct syntax for comparison.",
+        "recovery_info": "Recovered by enhanced parser using method: replaced_backticks_with_closing_tag"
+      },
+      "raw_response": "<reasoning>\nThe misconception is that the student believes `=` is used for equality comparison in conditional statements instead of `==`.\n\nLooking at the given implementation:\n```py\nimport math\n\ndef harmonic_sum(n):\n  if n == 1:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\n```\n\nThe code has a conditional statement `if n == 1:`. A student with this misconception would write `if n = 1:` instead, thinking that `=` is the correct way to check equality.\n\nThis would cause a **syntax error** because in Python, `=` is the assignment operator and cannot be used in an `if` condition directly like that. Python would raise a `SyntaxError: invalid syntax` or `SyntaxError: cannot assign to literal`.\n\nThe student genuinely believes this is the correct way to write the comparison, so they would confidently write it this way.\n\nThis is a **harmful** misconception because it causes a **syntax** error.\n\nLet me modify the code:\n\n```py\nimport math\n\ndef harmonic_sum(n):\n  if n = 1:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\n```\n</reasoning>\n\n```xml\n<code>\nimport math\n\ndef harmonic_sum(n):\n  if n = 1:\n    return 1\n  else:\n    return 1 / n + harmonic_sum(n - 1)\n```\n\n<metadata>\nmisconception_type: harmful\nerror_type: syntax\nmodification_notes: Changed the equality comparison operator from `==` to `=` in the conditional statement `if n == 1:` to `if n = 1:`. The student believes that `=` is the correct operator for checking equality in conditional statements. This causes a SyntaxError in Python because `=` is the assignment operator and cannot be used in this context. The student is confident this is correct syntax for comparison.\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 954,
+      "random_seed_used": 42,
+      "problem_misconception_index": 16,
+      "global_misconception_index": 953,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

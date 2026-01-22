@@ -1,0 +1,33 @@
+{
+  "problem_id": 417,
+  "problem_title": "Problem 417",
+  "misconception_id": 33,
+  "misconception_description": "Student believes that multiple mutually exclusive conditions in a control flow construct must each be written as separate if statements.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "NONE",
+      "reasoning": "Let me analyze this problem:\n\n**Problem**: Add a dictionary to a tuple and return a tuple.\n\n**Given Implementation**: The code correctly converts tuple to list, appends dictionary, converts back to tuple.\n\n**Misconception**: Student believes mutually exclusive conditions in control flow must be written as separate if statements instead of elif.\n\n**Key Question**: Does this problem/solution involve mutually exclusive conditions or control flow that would be affected by this misconception?\n\nLooking at the given implementation:\n```py\ndef add_dict_to_tuple(test_tup, test_dict):\n  test_tup = list(test_tup)\n  test_tup.append(test_dict)\n  test_tup = tuple(test_tup)\n  return (test_tup)\nThis is a straightforward sequence of operations with no conditional logic at all. There are no if statements, no elif statements, no conditional branching whatsoever.\n\nThe misconception is specifically about control flow constructs (if/elif/else statements) and how to handle mutually exclusive conditions. Since this problem doesn't involve any conditional logic, the misconception cannot be demonstrated in this context.\n\nThis is clearly a case where the misconception is **inapplicable** to the given problem.",
+      "metadata": {
+        "raw": "inapplicable: true\nreason: The misconception is about using separate if statements instead of elif for mutually exclusive conditions in control flow constructs. The given solution contains no conditional logic (if/elif/else statements) - it's a straightforward sequence of operations: convert tuple to list, append dictionary, convert back to tuple. There are no mutually exclusive conditions to express, so the misconception cannot be demonstrated.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A",
+        "inapplicable": "true",
+        "reason": "The misconception is about using separate if statements instead of elif for mutually exclusive conditions in control flow constructs. The given solution contains no conditional logic (if/elif/else statements) - it's a straightforward sequence of operations: convert tuple to list, append dictionary, convert back to tuple. There are no mutually exclusive conditions to express, so the misconception cannot be demonstrated.",
+        "misconception_type": "N/A",
+        "error_type": "N/A",
+        "modification_notes": "N/A"
+      },
+      "raw_response": "<reasoning>\nLet me analyze this problem:\n\n**Problem**: Add a dictionary to a tuple and return a tuple.\n\n**Given Implementation**: The code correctly converts tuple to list, appends dictionary, converts back to tuple.\n\n**Misconception**: Student believes mutually exclusive conditions in control flow must be written as separate if statements instead of elif.\n\n**Key Question**: Does this problem/solution involve mutually exclusive conditions or control flow that would be affected by this misconception?\n\nLooking at the given implementation:\n```py\ndef add_dict_to_tuple(test_tup, test_dict):\n  test_tup = list(test_tup)\n  test_tup.append(test_dict)\n  test_tup = tuple(test_tup)\n  return (test_tup)\n```\n\nThis is a straightforward sequence of operations with no conditional logic at all. There are no if statements, no elif statements, no conditional branching whatsoever.\n\nThe misconception is specifically about control flow constructs (if/elif/else statements) and how to handle mutually exclusive conditions. Since this problem doesn't involve any conditional logic, the misconception cannot be demonstrated in this context.\n\nThis is clearly a case where the misconception is **inapplicable** to the given problem.\n</reasoning>\n\n```xml\n<code>\nNONE\n</code>\n\n<metadata>\ninapplicable: true\nreason: The misconception is about using separate if statements instead of elif for mutually exclusive conditions in control flow constructs. The given solution contains no conditional logic (if/elif/else statements) - it's a straightforward sequence of operations: convert tuple to list, append dictionary, convert back to tuple. There are no mutually exclusive conditions to express, so the misconception cannot be demonstrated.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 837,
+      "random_seed_used": 42,
+      "problem_misconception_index": 33,
+      "global_misconception_index": 836,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

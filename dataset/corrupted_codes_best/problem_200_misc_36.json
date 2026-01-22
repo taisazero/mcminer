@@ -1,0 +1,33 @@
+{
+  "problem_id": 200,
+  "problem_title": "Problem 200",
+  "misconception_id": 36,
+  "misconception_description": "Student believes that `sorted()` modifies the original list in place.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "NONE",
+      "reasoning": "Let me analyze this problem:\n\n1. The problem is about calculating a harmonic sum\n2. The given implementation uses recursion\n3. The misconception is about `sorted()` modifying lists in place\n\nThe misconception is about the `sorted()` function, which returns a new sorted list and doesn't modify the original list. The student believes it modifies the list in place (like the `.sort()` method does).\n\nHowever, looking at the given implementation, there's no use of lists or the `sorted()` function at all. The code only deals with numeric recursion.\n\nFor the misconception to be applicable, I would need to either:\n1. Find a way to incorporate `sorted()` into the solution (which would be very artificial and wouldn't make sense for this problem)\n2. Determine that the misconception is inapplicable\n\nSince the harmonic sum problem doesn't involve lists or sorting in any reasonable way, the misconception about `sorted()` is not relevant to this problem. The misconception specifically relates to list operations, which are not present in the solution.\n\nThis is clearly a case where the misconception is inapplicable to the given problem.",
+      "metadata": {
+        "raw": "inapplicable: true\nreason: The misconception is about the `sorted()` function and list manipulation, but the harmonic sum problem only involves numeric recursion with no lists or sorting operations. There is no reasonable way to incorporate the sorted() function into a harmonic sum calculation.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A",
+        "inapplicable": "true",
+        "reason": "The misconception is about the `sorted()` function and list manipulation, but the harmonic sum problem only involves numeric recursion with no lists or sorting operations. There is no reasonable way to incorporate the sorted() function into a harmonic sum calculation.",
+        "misconception_type": "N/A",
+        "error_type": "N/A",
+        "modification_notes": "N/A"
+      },
+      "raw_response": "<reasoning>\nLet me analyze this problem:\n\n1. The problem is about calculating a harmonic sum\n2. The given implementation uses recursion\n3. The misconception is about `sorted()` modifying lists in place\n\nThe misconception is about the `sorted()` function, which returns a new sorted list and doesn't modify the original list. The student believes it modifies the list in place (like the `.sort()` method does).\n\nHowever, looking at the given implementation, there's no use of lists or the `sorted()` function at all. The code only deals with numeric recursion.\n\nFor the misconception to be applicable, I would need to either:\n1. Find a way to incorporate `sorted()` into the solution (which would be very artificial and wouldn't make sense for this problem)\n2. Determine that the misconception is inapplicable\n\nSince the harmonic sum problem doesn't involve lists or sorting in any reasonable way, the misconception about `sorted()` is not relevant to this problem. The misconception specifically relates to list operations, which are not present in the solution.\n\nThis is clearly a case where the misconception is inapplicable to the given problem.\n</reasoning>\n\n```xml\n<code>\nNONE\n</code>\n\n<metadata>\ninapplicable: true\nreason: The misconception is about the `sorted()` function and list manipulation, but the harmonic sum problem only involves numeric recursion with no lists or sorting operations. There is no reasonable way to incorporate the sorted() function into a harmonic sum calculation.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 974,
+      "random_seed_used": 42,
+      "problem_misconception_index": 36,
+      "global_misconception_index": 973,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

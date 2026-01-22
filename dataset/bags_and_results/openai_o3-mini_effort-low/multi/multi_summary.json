@@ -1,0 +1,33 @@
+{
+  "run_timestamp": "2025-10-05T03:39:07.564234",
+  "input_directory": "mining_misconceptions/data/corrupted_codes/corrupted_codes_best",
+  "output_directory": "mining_misconceptions/test_results/openai_o3-mini_effort-low/multi",
+  "llm_provider": "openai",
+  "llm_model": "o3-mini",
+  "processing_mode": "multi-code-grouping",
+  "template_type": "zeroshot-no-reasoning-multi",
+  "grouping_params": {
+    "bag_size_mode": "range",
+    "bag_size_config": {
+      "min_codes_per_group": 4,
+      "max_codes_per_group": 8,
+      "fixed_codes_per_group": null
+    },
+    "max_problems_per_group": null,
+    "correct_bags_ratio": 0.15,
+    "bags_per_misconception": null
+  },
+  "statistics": {
+    "total_groups": 339,
+    "correct_only_groups": 60,
+    "misconception_groups": 279,
+    "total_codes_analyzed": 1987,
+    "successful_parses": 339,
+    "parse_success_rate": 1.0,
+    "total_misconceptions_found": 223,
+    "average_misconceptions_per_group": 0.6578171091445427,
+    "groups_with_no_predicted_misconceptions": 116,
+    "correct_groups_no_predicted_misconceptions": 44,
+    "misconception_groups_no_predicted_misconceptions": 72
+  }
+}

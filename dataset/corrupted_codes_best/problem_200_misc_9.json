@@ -1,0 +1,33 @@
+{
+  "problem_id": 200,
+  "problem_title": "Problem 200",
+  "misconception_id": 9,
+  "misconception_description": "Student believes that `str.strip()` modifies the original string in place.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "NONE",
+      "reasoning": "Let me analyze this problem and misconception:\n\n**Problem:** Calculate the harmonic sum of n-1\n**Given Implementation:** A recursive function that calculates harmonic sum\n**Misconception:** Student believes that `str.strip()` modifies the original string in place\n\nThe misconception is about string methods modifying strings in place, but the given solution doesn't involve strings at all - it's a mathematical computation using recursion and arithmetic operations.\n\nThe misconception is specifically about:\n1. String methods\n2. The `.strip()` method\n3. Mutability/immutability of strings\n\nSince the problem solution doesn't use strings, string methods, or `.strip()` in any way, this misconception is not applicable to this particular code.\n\nI should output the NONE case indicating the misconception is inapplicable.",
+      "metadata": {
+        "raw": "inapplicable: true\nreason: The misconception is about the behavior of the `str.strip()` method and string mutability in Python. However, the given problem and solution deal exclusively with numerical computation (calculating harmonic sum) using recursion and arithmetic operations. There are no strings, string methods, or string manipulation involved in this code, so the misconception about `str.strip()` modifying strings in place cannot be demonstrated.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A",
+        "inapplicable": "true",
+        "reason": "The misconception is about the behavior of the `str.strip()` method and string mutability in Python. However, the given problem and solution deal exclusively with numerical computation (calculating harmonic sum) using recursion and arithmetic operations. There are no strings, string methods, or string manipulation involved in this code, so the misconception about `str.strip()` modifying strings in place cannot be demonstrated.",
+        "misconception_type": "N/A",
+        "error_type": "N/A",
+        "modification_notes": "N/A"
+      },
+      "raw_response": "<reasoning>\nLet me analyze this problem and misconception:\n\n**Problem:** Calculate the harmonic sum of n-1\n**Given Implementation:** A recursive function that calculates harmonic sum\n**Misconception:** Student believes that `str.strip()` modifies the original string in place\n\nThe misconception is about string methods modifying strings in place, but the given solution doesn't involve strings at all - it's a mathematical computation using recursion and arithmetic operations.\n\nThe misconception is specifically about:\n1. String methods\n2. The `.strip()` method\n3. Mutability/immutability of strings\n\nSince the problem solution doesn't use strings, string methods, or `.strip()` in any way, this misconception is not applicable to this particular code.\n\nI should output the NONE case indicating the misconception is inapplicable.\n</reasoning>\n\n```xml\n<code>\nNONE\n</code>\n\n<metadata>\ninapplicable: true\nreason: The misconception is about the behavior of the `str.strip()` method and string mutability in Python. However, the given problem and solution deal exclusively with numerical computation (calculating harmonic sum) using recursion and arithmetic operations. There are no strings, string methods, or string manipulation involved in this code, so the misconception about `str.strip()` modifying strings in place cannot be demonstrated.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 947,
+      "random_seed_used": 42,
+      "problem_misconception_index": 9,
+      "global_misconception_index": 946,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

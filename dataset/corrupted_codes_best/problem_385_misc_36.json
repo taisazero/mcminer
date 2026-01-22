@@ -1,0 +1,33 @@
+{
+  "problem_id": 385,
+  "problem_title": "Problem 385",
+  "misconception_id": 36,
+  "misconception_description": "Student believes that `sorted()` modifies the original list in place.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "NONE",
+      "reasoning": "Let me analyze this:\n\nThe problem is about checking if a number is prime. The given implementation doesn't use `sorted()` or any list operations at all. \n\nThe misconception is about `sorted()` modifying lists in place, which is not relevant to this prime number checking problem.\n\nSince the misconception is about `sorted()` and list operations, and the given problem doesn't involve lists or sorting, I should output that this is inapplicable.",
+      "metadata": {
+        "raw": "inapplicable: true\nreason: The misconception is about the `sorted()` function and list modification behavior. The given problem is about checking prime numbers and does not involve lists, sorting, or the `sorted()` function. There is no natural way to incorporate this misconception into a prime number checking solution.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A",
+        "inapplicable": "true",
+        "reason": "The misconception is about the `sorted()` function and list modification behavior. The given problem is about checking prime numbers and does not involve lists, sorting, or the `sorted()` function. There is no natural way to incorporate this misconception into a prime number checking solution.",
+        "misconception_type": "N/A",
+        "error_type": "N/A",
+        "modification_notes": "N/A"
+      },
+      "raw_response": "<reasoning>\nLet me analyze this:\n\nThe problem is about checking if a number is prime. The given implementation doesn't use `sorted()` or any list operations at all. \n\nThe misconception is about `sorted()` modifying lists in place, which is not relevant to this prime number checking problem.\n\nSince the misconception is about `sorted()` and list operations, and the given problem doesn't involve lists or sorting, I should output that this is inapplicable.\n</reasoning>\n\n```xml\n<code>\nNONE\n</code>\n\n<metadata>\ninapplicable: true\nreason: The misconception is about the `sorted()` function and list modification behavior. The given problem is about checking prime numbers and does not involve lists, sorting, or the `sorted()` function. There is no natural way to incorporate this misconception into a prime number checking solution.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 170,
+      "random_seed_used": 42,
+      "problem_misconception_index": 36,
+      "global_misconception_index": 169,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

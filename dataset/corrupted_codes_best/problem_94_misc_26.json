@@ -1,0 +1,32 @@
+{
+  "problem_id": 94,
+  "problem_title": "Problem 94",
+  "misconception_id": 26,
+  "misconception_description": "Student believes that conditional statements, i.e., Python statements that evaluate to either True or False, must always be wrapped in if/else statements to be returned as Boolean values.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "def opposite_Signs(x,y):\n    if ((x ^ y) < 0):\n        return True\n    else:\n        return False",
+      "reasoning": "The misconception is that the student believes conditional statements (expressions that evaluate to True or False) must always be wrapped in if/else statements to be returned as Boolean values.\n\nIn the given implementation:\n```py\ndef opposite_Signs(x,y): \n    return ((x ^ y) < 0);\n```\n\nThe code directly returns the result of the boolean expression `((x ^ y) < 0)`.\n\nA student with this misconception would wrap this in an if/else statement:\n\n```py\ndef opposite_Signs(x,y): \n    if ((x ^ y) < 0):\n        return True\n    else:\n        return False\n```\n\nThis is a benign misconception because the code still works correctly - it just uses an unnecessary if/else structure. The student genuinely believes this is the proper way to return a boolean value from a conditional expression.\n\nThis is not a syntax error (the code is syntactically valid), not a runtime error (it won't crash), and not a logical error (it produces the correct output). So the error_type should be NONE.",
+      "metadata": {
+        "raw": "misconception_type: benign\nerror_type: NONE\nmodification_notes: The student wraps the boolean expression ((x ^ y) < 0) in an if/else statement because they believe this is necessary to return a boolean value. They don't realize they could simply return the expression directly. The code still functions correctly and produces the right output, but uses an unnecessary if/else structure. From the student's perspective, this is the proper and required way to convert a conditional expression into a return value.",
+        "misconception_type": "benign",
+        "error_type": "NONE",
+        "modification_notes": "The student wraps the boolean expression ((x ^ y) < 0) in an if/else statement because they believe this is necessary to return a boolean value. They don't realize they could simply return the expression directly. The code still functions correctly and produces the right output, but uses an unnecessary if/else structure. From the student's perspective, this is the proper and required way to convert a conditional expression into a return value.",
+        "recovery_info": "Recovered by enhanced parser using method: replaced_backticks_with_closing_tag"
+      },
+      "raw_response": "<reasoning>\nThe misconception is that the student believes conditional statements (expressions that evaluate to True or False) must always be wrapped in if/else statements to be returned as Boolean values.\n\nIn the given implementation:\n```py\ndef opposite_Signs(x,y): \n    return ((x ^ y) < 0);\n```\n\nThe code directly returns the result of the boolean expression `((x ^ y) < 0)`.\n\nA student with this misconception would wrap this in an if/else statement:\n\n```py\ndef opposite_Signs(x,y): \n    if ((x ^ y) < 0):\n        return True\n    else:\n        return False\n```\n\nThis is a benign misconception because the code still works correctly - it just uses an unnecessary if/else structure. The student genuinely believes this is the proper way to return a boolean value from a conditional expression.\n\nThis is not a syntax error (the code is syntactically valid), not a runtime error (it won't crash), and not a logical error (it produces the correct output). So the error_type should be NONE.\n</reasoning>\n\n```xml\n<code>\ndef opposite_Signs(x,y): \n    if ((x ^ y) < 0):\n        return True\n    else:\n        return False\n```\n\n<metadata>\nmisconception_type: benign\nerror_type: NONE\nmodification_notes: The student wraps the boolean expression ((x ^ y) < 0) in an if/else statement because they believe this is necessary to return a boolean value. They don't realize they could simply return the expression directly. The code still functions correctly and produces the right output, but uses an unnecessary if/else structure. From the student's perspective, this is the proper and required way to convert a conditional expression into a return value.\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 897,
+      "random_seed_used": 42,
+      "problem_misconception_index": 26,
+      "global_misconception_index": 896,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

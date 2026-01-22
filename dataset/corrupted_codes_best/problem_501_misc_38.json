@@ -1,0 +1,33 @@
+{
+  "problem_id": 501,
+  "problem_title": "Problem 501",
+  "misconception_id": 38,
+  "misconception_description": "Student believes that while loops execute their body only once if the condition is true.",
+  "solutions": [
+    {
+      "solution_index": 0,
+      "generated_code": "NONE",
+      "reasoning": "The misconception is that the student believes while loops execute their body only once if the condition is true - essentially treating a while loop like an if statement.\n\nLooking at the given implementation, it doesn't use any loops at all. The problem is about coin flipping and doesn't involve any repetition or looping constructs.\n\nSince the misconception is specifically about while loops and the given solution doesn't use loops, and there's no natural way to incorporate this misconception into a coin flip problem that only requires flipping once, this misconception is inapplicable to this problem.\n\nThe problem asks for:\n1. A function that returns 'Heads' or 'Tails' randomly\n2. A function that calls the first function once and returns a message\n\nThere's no looping involved, and trying to force a while loop into this would be unnatural and wouldn't demonstrate the misconception in a way that looks like a genuine student attempt.",
+      "metadata": {
+        "raw": "inapplicable: true\nreason: The misconception is about while loops executing only once (treating them like if statements), but the given problem and solution do not involve any loops. The problem requires a single coin flip and conditional logic, which doesn't naturally incorporate loop constructs. There's no relevant context where a student with this misconception would use a while loop in this problem.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A",
+        "inapplicable": "true",
+        "reason": "The misconception is about while loops executing only once (treating them like if statements), but the given problem and solution do not involve any loops. The problem requires a single coin flip and conditional logic, which doesn't naturally incorporate loop constructs. There's no relevant context where a student with this misconception would use a while loop in this problem.",
+        "misconception_type": "N/A",
+        "error_type": "N/A",
+        "modification_notes": "N/A"
+      },
+      "raw_response": "<reasoning>\nThe misconception is that the student believes while loops execute their body only once if the condition is true - essentially treating a while loop like an if statement.\n\nLooking at the given implementation, it doesn't use any loops at all. The problem is about coin flipping and doesn't involve any repetition or looping constructs.\n\nSince the misconception is specifically about while loops and the given solution doesn't use loops, and there's no natural way to incorporate this misconception into a coin flip problem that only requires flipping once, this misconception is inapplicable to this problem.\n\nThe problem asks for:\n1. A function that returns 'Heads' or 'Tails' randomly\n2. A function that calls the first function once and returns a message\n\nThere's no looping involved, and trying to force a while loop into this would be unnatural and wouldn't demonstrate the misconception in a way that looks like a genuine student attempt.\n</reasoning>\n\n```xml\n<code>\nNONE\n</code>\n\n<metadata>\ninapplicable: true\nreason: The misconception is about while loops executing only once (treating them like if statements), but the given problem and solution do not involve any loops. The problem requires a single coin flip and conditional logic, which doesn't naturally incorporate loop constructs. There's no relevant context where a student with this misconception would use a while loop in this problem.\nmisconception_type: N/A\nerror_type: N/A\nmodification_notes: N/A\n</metadata>\n```",
+      "parse_success": true,
+      "sampling_order": 38,
+      "random_seed_used": 42,
+      "problem_misconception_index": 38,
+      "global_misconception_index": 37,
+      "feedback_loop": {
+        "enabled": true,
+        "iterations": 0,
+        "evaluation_history": [],
+        "final_evaluation": null
+      }
+    }
+  ]
+}

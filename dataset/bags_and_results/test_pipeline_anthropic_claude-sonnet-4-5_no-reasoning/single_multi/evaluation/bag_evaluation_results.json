@@ -1,0 +1,69 @@
+{
+  "evaluation_timestamp": "2025-10-06T02:46:48.143335",
+  "grouped_predictions_file": "mining_misconceptions/test_results/test_pipeline_anthropic_claude-sonnet-4-5_no-reasoning/single_multi/single_multi_predictions.json",
+  "model_info": {
+    "provider": "test",
+    "model": "pipeline_anthropic_claude-sonnet-4-5",
+    "reasoning": "no-reasoning"
+  },
+  "bag_evaluations": [
+    {
+      "group_id": "group_misconception_1_0",
+      "group_type": "misconception",
+      "gt_misconception": 1,
+      "standard": {
+        "bag_match": false,
+        "match_count": 0,
+        "non_match_count": 4,
+        "none_count": 1,
+        "decision_detail": "0 matches > 4 non-matches = False"
+      },
+      "with_novel": {
+        "bag_match": false,
+        "match_count": 0,
+        "non_match_count": 4,
+        "none_count": 1,
+        "decision_detail": "0 matches > 4 non-matches = False"
+      },
+      "single_total": 5,
+      "evaluation_method": "both_standard_and_novel",
+      "single_evaluations": [
+        {
+          "prediction_id": "problem_94_misc_1.json_0",
+          "match_standard": false,
+          "match_with_novel": false,
+          "evaluation_method": "no_evaluation",
+          "error": "No Claude evaluation available"
+        },
+        {
+          "prediction_id": "problem_130_misc_1.json_0",
+          "match_standard": false,
+          "match_with_novel": false,
+          "evaluation_method": "no_evaluation",
+          "error": "No Claude evaluation available"
+        },
+        {
+          "prediction_id": "problem_176_misc_1.json_0",
+          "match_standard": false,
+          "match_with_novel": false,
+          "evaluation_method": "no_evaluation",
+          "error": "No Claude evaluation available"
+        },
+        {
+          "prediction_id": "problem_313_misc_1.json_0",
+          "match_standard": false,
+          "match_with_novel": false,
+          "evaluation_method": "no_evaluation",
+          "error": "No Claude evaluation available"
+        },
+        {
+          "prediction_id": "problem_178_misc_1.json_0",
+          "match_standard": false,
+          "match_with_novel": false,
+          "evaluation_method": "no_evaluation",
+          "error": "No Claude evaluation available"
+        }
+      ]
+    }
+  ]
+}
